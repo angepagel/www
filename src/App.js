@@ -6,6 +6,7 @@ import './App.scss';
 import Header from './components/header';
 import Footer from './components/footer';
 import Home from './pages/home/home';
+import Projects from './pages/projects/projects';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
           <Header/>
             <Switch>
               <Route exact path="/" component={ Home } />
+              <Route exact path="/projects" component={ Projects } />
             </Switch>
           <Footer/>
         </div>
