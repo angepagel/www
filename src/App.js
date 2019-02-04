@@ -6,6 +6,7 @@ import './App.scss';
 import Header from './components/header';
 import Footer from './components/footer';
 import Home from './pages/home/home';
+import Resume from './pages/resume/resume';
 import Projects from './pages/projects/projects';
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
           <Header/>
             <Switch>
               <Route exact path="/" component={ Home } />
+              <Route exact path="/resume" component={ Resume } />
               <Route exact path="/projects" component={ Projects } />
             </Switch>
           <Footer/>
