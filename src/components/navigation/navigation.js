@@ -8,6 +8,7 @@ import {
     NavItem, 
     NavLink 
 } from 'reactstrap';
+import './navigation.scss';
 
 class NavElem extends Component {
     render() {
