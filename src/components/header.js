@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navigation from './navigation.js';
+import Navigation from './navigation/navigation.js';
 
 class Header extends Component {
   render() {
