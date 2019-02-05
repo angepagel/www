@@ -5,28 +5,7 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
-/* Color palette */
-$orange: #ffa502;
-$coral: #ff7f50;
-$bruschetta-tomato: #ff6348;
-$wild-watermelon: #ff6b81;
-$watermelon: #ff4757;
-$lime-soap: #7bed9f;
-$ufo-green: #2ed573;
-$french-sky-blue: #70a1ff;
-$clear-chill: #1e90ff;
-$saturated-sky: #5352ed;
-$bright-greek: #3742fa;
-$white: #ffffff;
-$anti-flash-white: #f1f2f6;
-$city-lights: #dfe4ea;
-$twinkle-blue: #ced6e0;
-$peace: #a4b0be;
-$bay-wharf: #747d8c;
-$grisaille: #57606f;
-$prestige-blue: #2f3542;
-$black: #000000;
-
+@import './scss/colors.scss';
 
 
 body {
