@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import './App.scss';
 
 import Header from './components/header';
-import Footer from './components/footer';
+import Footer from './components/footer/footer';
 import Home from './pages/home/home';
 import Resume from './pages/resume/resume';
 import Projects from './pages/projects/projects';
