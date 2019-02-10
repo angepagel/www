@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink as ReactNavLink } from 'react-router-dom';
 import { 
+    Container,
     Navbar, 
     NavbarToggler, 
     Collapse, 
@@ -9,16 +10,6 @@ import {
     NavLink 
 } from 'reactstrap';
 import './navigation.scss';
-
-class NavElem extends Component {
-    render() {
-        return (
-            <NavItem>
-                <NavLink tag={Link} to={this.props.link}>{this.props.title}</NavLink>
-            </NavItem>
-        )
-    }
-}
 
 class Navigation extends Component {
 
@@ -39,15 +30,29 @@ class Navigation extends Component {
 
     render() {
         return (
-            <Navbar light expand="md">
+            <Navbar dark expand='md'>
+                <Container>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
-                        <Nav navbar>
-                            <NavElem link='/' title='Accueil' />
-                            <NavElem link='/resume' title='Curriculum Vitæ' />
-                            <NavElem link='/projects' title='Projets' />
+                        <Nav className='ml-auto' navbar>
+                            <NavItem>
+                                <NavLink exact to='/' tag={ReactNavLink} activeClassName='active'>
+                                    Accueil
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink to='/resume' tag={ReactNavLink} activeClassName='active'>
+                                    Curriculum Vitæ
+                                </NavLink>
+                            </NavItem>                 
+                            <NavItem>
+                                <NavLink to='/projects' tag={ReactNavLink} activeClassName='active'>
+                                    Projets
+                                </NavLink>
+                            </NavItem>
                         </Nav>
                     </Collapse>
+                </Container>
             </Navbar>
         );
     }
