@@ -4,21 +4,10 @@
 
 
 body {
-  background-image: radial-gradient(circle, $city-lights, $city-lights 1px, $white 1px, $white);
-  background-size: 20px 20px;
   font-family: 'Maven Pro';
-  color: $prestige-blue;
 }
 
 
-h1 {
-  font-size: 4rem;
-  text-align: center;
-}
-
+h1 { font-size: 4rem; }
 h2 { font-size: 2.5em; }
-
-h3 {
-  font-size: 1.4em;
-  color: $grisaille;
-}
+h3 { font-size: 1.4em; }
