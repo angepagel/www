@@ -41,6 +41,11 @@ class Navigation extends Component {
                                 </NavLink>
                             </NavItem>
                             <NavItem>
+                                <NavLink to='/about' tag={ReactNavLink} activeClassName='active'>
+                                    À propos
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
                                 <NavLink to='/resume' tag={ReactNavLink} activeClassName='active'>
                                     Curriculum Vitæ
                                 </NavLink>
