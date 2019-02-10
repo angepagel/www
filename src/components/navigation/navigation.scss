@@ -1,1 +1,28 @@
 @import '../../App.scss';
+
+nav {
+
+    .nav-item {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .nav-link {
+        color: $inner-peace;
+        border-bottom-width: 2px;
+        border-bottom-style: outset;
+        border-bottom-color: transparent;
+        padding-left: 0;
+        padding-right: 0;
+        transition: all 0.3s;
+    }
+
+    .nav-link:hover, .active {
+        color: $white;
+        border-bottom-width: 2px;
+        border-bottom-style: outset;
+        border-bottom-color: #7b59ff;
+        transition: all 0.3s;
+    }
+
+}
