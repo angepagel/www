@@ -3,6 +3,7 @@ import { NavLink as ReactNavLink } from 'react-router-dom';
 import { 
     Container,
     Navbar, 
+    NavbarBrand, 
     NavbarToggler, 
     Collapse, 
     Nav, 
@@ -32,6 +33,11 @@ class Navigation extends Component {
         return (
             <Navbar dark expand='md'>
                 <Container>
+                    <NavbarBrand>
+                        <NavLink exact to='/' tag={ReactNavLink} activeClassName='active'>
+                            Ange Pagel
+                        </NavLink>
+                    </NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className='ml-auto' navbar>
