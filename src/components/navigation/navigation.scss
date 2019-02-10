@@ -21,7 +21,12 @@ nav {
         color: $white;
         border-bottom-width: 2px;
         border-bottom-style: outset;
-        border-bottom-color: #7b59ff;
+        border-bottom-color: $purple-crown;
+        transition: all 0.3s;
+    }
+
+    .active .material-icons {
+        color: $purple-crown;
         transition: all 0.3s;
     }
 
