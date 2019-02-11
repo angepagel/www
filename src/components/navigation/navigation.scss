@@ -1,4 +1,16 @@
-@import '../../App.scss';
+@import '../../scss/colors.scss';
+
+%underline-hidden {
+    border-bottom-width: 2px;
+    border-bottom-style: outset;
+    border-bottom-color: transparent;
+}
+
+ %underline-visible {
+    border-bottom-width: 2px;
+    border-bottom-style: outset;
+    border-bottom-color: $purple-crown;
+}
 
 nav {
 
@@ -8,26 +20,35 @@ nav {
     }
 
     .nav-link {
-        color: $inner-peace;
-        border-bottom-width: 2px;
-        border-bottom-style: outset;
-        border-bottom-color: transparent;
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
         transition: all 0.3s;
     }
 
-    .nav-link:hover, .active {
-        color: $white;
-        border-bottom-width: 2px;
-        border-bottom-style: outset;
-        border-bottom-color: $purple-crown;
-        transition: all 0.3s;
+    .navbar-brand {
+        .nav-link { color: $white !important; }
+        .nav-link:hover { color: $purple-crown !important; }
     }
 
-    .active .material-icons {
-        color: $purple-crown;
-        transition: all 0.3s;
+    .navbar-nav {
+
+        .nav-link { 
+            @extend %underline-hidden;
+            color: $inner-peace !important;
+            span, i.material-icons { transition: all 0.3s; }
+        }
+
+        .nav-link:hover { 
+            @extend %underline-visible;
+            color: $white !important;
+        }
+        
+        .active {
+            @extend %underline-visible;
+            span { color: $white; }
+            i.material-icons { color: $purple-crown; }
+        }
+
     }
 
 }
