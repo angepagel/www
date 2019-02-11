@@ -1,1 +1,10 @@
-@import '../../App.scss';
+@import '../../scss/colors.scss';
+
+footer {
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+}
