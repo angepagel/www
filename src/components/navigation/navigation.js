@@ -43,22 +43,22 @@ class Navigation extends Component {
                         <Nav className='ml-auto' navbar>
                             <NavItem>
                                 <NavLink exact to='/' tag={ReactNavLink} activeClassName='active'>
-                                    Accueil
+                                    <span>Accueil</span>
                                 </NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink to='/about' tag={ReactNavLink} activeClassName='active'>
-                                    <i className='material-icons'>person</i> À propos
+                                    <i className='material-icons'>person</i> <span>À propos</span>
                                 </NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink to='/resume' tag={ReactNavLink} activeClassName='active'>
-                                    <i className='material-icons'>notes</i> Curriculum Vitæ
+                                    <i className='material-icons'>notes</i> <span>Curriculum Vitæ</span>
                                 </NavLink>
                             </NavItem>                 
                             <NavItem>
                                 <NavLink to='/projects' tag={ReactNavLink} activeClassName='active'>
-                                    <i className='material-icons'>whatshot</i> Projets
+                                    <i className='material-icons'>whatshot</i> <span>Projets</span>
                                 </NavLink>
                             </NavItem>
                         </Nav>
