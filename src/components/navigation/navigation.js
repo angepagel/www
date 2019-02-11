@@ -42,11 +42,6 @@ class Navigation extends Component {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className='ml-auto' navbar>
                             <NavItem>
-                                <NavLink exact to='/' tag={ReactNavLink} activeClassName='active'>
-                                    <span>Accueil</span>
-                                </NavLink>
-                            </NavItem>
-                            <NavItem>
                                 <NavLink to='/about' tag={ReactNavLink} activeClassName='active'>
                                     <i className='material-icons'>person</i> <span>À propos</span>
                                 </NavLink>
