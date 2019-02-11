@@ -56,6 +56,11 @@ class Navigation extends Component {
                                     <i className='material-icons'>whatshot</i> <span>Projets</span>
                                 </NavLink>
                             </NavItem>
+                            <NavItem>
+                                <NavLink to='/blog' tag={ReactNavLink} activeClassName='active'>
+                                    <i className='material-icons'>edit</i> <span>Blog</span>
+                                </NavLink>
+                            </NavItem>
                         </Nav>
                     </Collapse>
                 </Container>
