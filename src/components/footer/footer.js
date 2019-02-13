@@ -38,6 +38,7 @@ class Footer extends Component {
             </Col>
           </Row>
         </Container>
+        <div id="mentions">Imaginé et développé par Ange Pagel</div>
       </footer>
     );
   }
