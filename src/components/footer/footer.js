@@ -7,29 +7,29 @@ class Footer extends Component {
     return (
       <footer>
         <Container>
-          <Row>
-            <Col xs="12" sm="6" lg="3">
+          <Row id='links'>
+            <Col xs='12' sm='6' lg='3'>
               <h5>Ange Pagel</h5>
               <hr/>
               <ul>
                 <li>Lorem Ipsum</li>
               </ul>
             </Col>
-            <Col xs="12" sm="6" lg="3">
+            <Col xs='12' sm='6' lg='3'>
               <h5>Explorer</h5>
               <hr/>
               <ul>
                 <li>Lorem Ipsum</li>
               </ul>
             </Col>
-            <Col xs="12" sm="6" lg="3">
+            <Col xs='12' sm='6' lg='3'>
               <h5>Projets</h5>
               <hr/>
               <ul>
                 <li>Lorem Ipsum</li>
               </ul>
             </Col>
-            <Col xs="12" sm="6" lg="3">
+            <Col xs='12' sm='6' lg='3'>
               <h5>Réseaux</h5>
               <hr/>
               <ul>
@@ -38,7 +38,7 @@ class Footer extends Component {
             </Col>
           </Row>
         </Container>
-        <div id="mentions">Imaginé et développé par Ange Pagel</div>
+        <div id='mentions'>Imaginé et développé par Ange Pagel</div>
       </footer>
     );
   }
