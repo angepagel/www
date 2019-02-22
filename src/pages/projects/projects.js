@@ -12,28 +12,30 @@ class Projects extends Component {
 
               <article>
                   <Row className="project">
-                    <Col xs='12' xl='6' className="project-image">
+                    <Col xs='12' md='6' className="project-image">
                       { /* Image */ }
                     </Col>
-                    <Col xs='12' xl='6' className="project-description">
+                    <Col xs='12' md='6' className="project-description">
                       <h2>Projet 1</h2>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices venenatis eros quis porta. Maecenas eget elit nec velit egestas rhoncus. Suspendisse sem lacus, convallis eget malesuada at, viverra eget nisi. Donec finibus ac erat eu molestie.
                       </p>
+                      <a href="#">Lien →</a>
                     </Col>
                   </Row>
               </article>
               
               <article>
                   <Row className="project">
-                    <Col xs='12' xl='6' className="project-image">
+                    <Col xs='12' md='6' className="project-image">
                       { /* Image */ }
                     </Col>
-                    <Col xs='12' xl='6' className="project-description">
+                    <Col xs='12' md='6' className="project-description">
                       <h2>Projet 2</h2>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices venenatis eros quis porta. Maecenas eget elit nec velit egestas rhoncus. Suspendisse sem lacus, convallis eget malesuada at, viverra eget nisi. Donec finibus ac erat eu molestie.
                       </p>
+                      <a href="#">Lien →</a>
                     </Col>
                   </Row>
               </article>
