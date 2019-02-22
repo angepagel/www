@@ -23,4 +23,11 @@ p {
   color: $mantra;
 }
 
-a:hover { text-decoration: none; }
+a {
+  transition: all 0.3s;
+}
+
+a:hover {
+  text-decoration: none;
+  transition: all 0.3s;
+}
