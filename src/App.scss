@@ -34,3 +34,17 @@ a:hover {
   text-decoration: none;
   transition: all 0.2s;
 }
+
+a.main, button.btn {
+  background-color: transparent;
+  color: $blue-link;
+  border: 1px solid $blue-link;
+  border-radius: 0px;
+  padding: 7px 10px 7px 10px;
+}
+
+a.main:hover, button.btn:hover {
+  background-color: $blue-link;
+  color: $white;
+  border: 1px solid $blue-link;
+}
