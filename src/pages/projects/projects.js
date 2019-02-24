@@ -20,7 +20,7 @@ class Projects extends Component {
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices venenatis eros quis porta. Maecenas eget elit nec velit egestas rhoncus. Suspendisse sem lacus, convallis eget malesuada at, viverra eget nisi. Donec finibus ac erat eu molestie.
                       </p>
-                      <a href="#">Lien →</a>
+                      <a className="main" href="#">Lien →</a>
                     </Col>
                   </Row>
               </article>
@@ -35,7 +35,7 @@ class Projects extends Component {
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices venenatis eros quis porta. Maecenas eget elit nec velit egestas rhoncus. Suspendisse sem lacus, convallis eget malesuada at, viverra eget nisi. Donec finibus ac erat eu molestie.
                       </p>
-                      <a href="#">Lien →</a>
+                      <a className="main" href="#">Lien →</a>
                     </Col>
                   </Row>
               </article>
