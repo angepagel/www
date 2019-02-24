@@ -24,10 +24,13 @@ p {
 }
 
 a {
-  transition: all 0.3s;
+  color: $blue-link;
+  outline: 0;
+  transition: all 0.2s;
 }
 
 a:hover {
+  color: $red-strenght;
   text-decoration: none;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
