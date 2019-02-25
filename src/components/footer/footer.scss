@@ -2,19 +2,24 @@
 
 footer {
 
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    .col-sm-6 {
-        margin-top: 21px;
-        margin-bottom: 21px;
-    }
-
     #links {
-        margin-top: 42px;
+        margin-top: 84px;
         margin-bottom: 42px;
+
+        .col-sm-6 {
+            margin-top: 21px;
+            margin-bottom: 21px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+
+            a { color: $mantra; }
+            a:hover { color: $red-strenght; }
+            
+        }
+
     }
 
     #mentions {
