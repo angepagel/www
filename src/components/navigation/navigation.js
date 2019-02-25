@@ -33,7 +33,7 @@ class Navigation extends Component {
         return (
             <Navbar dark expand='md'>
                 <Container>
-                    <NavbarBrand>
+                    <NavbarBrand tag="span">
                         <NavLink exact to='/' tag={ReactNavLink} activeClassName='active'>
                             Ange Pagel
                         </NavLink>
