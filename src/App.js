@@ -12,6 +12,7 @@ import Resume from './pages/resume/resume';
 import Projects from './pages/projects/projects';
 import Blog from './pages/blog/blog';
 import Login from './pages/login/login';
+import NotFound from './pages/notFound/notFound';
 
 class App extends Component {
   render() {
@@ -26,6 +27,7 @@ class App extends Component {
               <Route exact path="/projects" component={ Projects } />
               <Route exact path="/blog" component={ Blog } />
               <Route exact path="/login" component={ Login } />
+              <Route component={ NotFound } />
             </Switch>
           <Footer/>
         </div>
