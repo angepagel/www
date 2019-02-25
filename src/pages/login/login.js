@@ -20,11 +20,11 @@ class Login extends Component {
                 <Col className="mx-auto" lg='6'>
                   <Form>
                     <FormGroup>
-                      <Label for="username"><i class="material-icons">person</i> Nom d'utilisateur</Label>
+                      <Label for="username"><i className="material-icons">person</i> Nom d'utilisateur</Label>
                       <Input type="text" name="username" id="login_username"></Input>
                     </FormGroup>
                     <FormGroup>
-                      <Label for="password"><i class="material-icons">security</i> Mot de passe</Label>
+                      <Label for="password"><i className="material-icons">security</i> Mot de passe</Label>
                       <Input type="password" name="password" id="login_password" />
                     </FormGroup>
                     <Button>Connexion</Button>
