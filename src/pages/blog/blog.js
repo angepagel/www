@@ -12,7 +12,7 @@ class Blog extends Component {
   }
 
   componentDidMount() {
-    fetch('/api/posts')
+    fetch(`${process.env.REACT_APP_PROXY}/api/posts`)
     .then(res => res.json())
     .then(json => {
       this.setState({
