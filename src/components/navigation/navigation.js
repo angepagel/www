@@ -38,7 +38,9 @@ class Navigation extends Component {
                             Ange Pagel
                         </NavLink>
                     </NavbarBrand>
-                    <NavbarToggler onClick={this.toggle} />
+                    <NavbarToggler onClick={this.toggle}>
+                        <i class="material-icons">menu</i>
+                    </NavbarToggler>
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className='ml-auto' navbar>
                             <NavItem>

@@ -30,6 +30,19 @@ nav {
         .nav-link:hover { color: $purple-crown !important; }
     }
 
+    .navbar-toggler {
+        outline: 0;
+        border-radius: 20px;
+        border-width: 2px;
+        transition: all 0.3s;
+    }
+
+    .navbar-toggler:hover {
+        color: $white;
+        border-color: $purple-crown;
+        transition: all 0.3s;
+    }
+
     .navbar-nav {
 
         .nav-link { 
