@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
 import './blog.scss';
 
@@ -13,15 +14,15 @@ class Blog extends Component {
 
   componentDidMount() {
     fetch(`${process.env.REACT_APP_PROXY}/api/posts`)
-    .then(res => res.json())
-    .then(json => {
-      this.setState({
-        posts: json.data
+      .then(res => res.json())
+      .then(json => {
+        this.setState({
+          posts: json.data
+        })
       })
-    })
-    .catch(error => {
-      console.error(error)
-    });
+      .catch(error => {
+        console.error(error)
+      });
   }
 
   render() {
@@ -42,10 +43,10 @@ class Blog extends Component {
                       <h2>{post.title}</h2>
                       <div className="infos">
                         <span className="category">{post.category}</span>
-                        <span className="publication-date">Publié le {post.date}</span>
+                        <span className="date">Publié le {post.date}</span>
                       </div>
                       <p>{post.body}</p>
-                      <a className="main" href="#">Lire la suite</a>
+                      <NavLink className="main" to='/blog'>Lire la suite</NavLink>
                     </Col>
                   </Row>
                 </article>
