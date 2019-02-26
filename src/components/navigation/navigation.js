@@ -39,7 +39,7 @@ class Navigation extends Component {
                         </NavLink>
                     </NavbarBrand>
                     <NavbarToggler onClick={this.toggle}>
-                        <i class="material-icons">menu</i>
+                        <i className="material-icons">menu</i>
                     </NavbarToggler>
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className='ml-auto' navbar>
