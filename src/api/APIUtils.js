@@ -15,3 +15,7 @@ export async function getPosts() {
 
   return posts;
 }
+
+export function saveToken(token) {
+  localStorage.setItem('token', token);
+}
