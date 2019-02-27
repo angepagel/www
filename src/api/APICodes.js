@@ -1,5 +1,6 @@
 const APICodes = {
-
+  successful_login: "Connexion réussie.",
+  bad_credentials: "Identifiants incorrects."
 };
   
 export default new Proxy(APICodes, {
