@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
+import * as API from '../../api/APIUtils';
 import './blog.scss';
 
 class Blog extends Component {
@@ -12,17 +13,15 @@ class Blog extends Component {
     }
   }
 
-  componentDidMount() {
-    fetch(`${process.env.REACT_APP_PROXY}/api/posts`)
-      .then(res => res.json())
-      .then(json => {
-        this.setState({
-          posts: json.data
-        })
+  async componentDidMount() {
+    try {
+      this.setState({
+        posts: await API.getPosts()
       })
-      .catch(error => {
-        console.error(error)
-      });
+    }
+    catch(error) {
+      console.error(error);
+    }
   }
 
   render() {
