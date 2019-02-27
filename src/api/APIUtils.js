@@ -24,3 +24,7 @@ export function getToken() {
   return localStorage.getItem('token');
 }
 
+export function isAuth() {
+  return (getToken() !== null);
+}
+
