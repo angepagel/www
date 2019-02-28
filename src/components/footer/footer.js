@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import './footer.scss';
+import * as API from '../../api/APIUtils';
 
 class Footer extends Component {
   render() {
+
+    let signedin = (
+      <div id="signedin">
+        Vous êtes connecté <i className="material-icons">check</i>
+      </div>
+    );
+
     return (
       <footer>
         <Container>
@@ -38,6 +46,7 @@ class Footer extends Component {
             </Col>
           </Row>
         </Container>
+        {API.isAuth() ? signedin : ''}
         <div id='mentions'>Imaginé et développé par Ange Pagel</div>
       </footer>
     );
