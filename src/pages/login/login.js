@@ -7,8 +7,11 @@ import {
   FormGroup,
   Label,
   Input,
+  Alert,
   Button
 } from 'reactstrap';
+import * as API from '../../api/APIUtils';
+import APICodes from '../../api/APICodes';
 
 class Login extends Component {
 
@@ -17,6 +20,7 @@ class Login extends Component {
     this.state= {
       username: '',
       password: '',
+      apicode: ''
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -24,25 +28,29 @@ class Login extends Component {
 
   handleChange(event) {
     const { name, value } = event.target;
-    console.log(value);
-    console.log(name);
     this.setState({
       [name]: value
     });
   }
 
-  handleSubmit(event) {
+  async handleSubmit(event) {
     event.preventDefault();
 
-    fetch(`${process.env.REACT_APP_PROXY}/api/authenticate`, {
-      method: 'post',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(this.state)
-    })
-      .catch((error) => {
-        console.error(error);
+    try {
+      const apicode = await API.login(
+        this.state.username,
+        this.state.password
+      );
+      this.setState({
+        apicode: apicode
       })
-    
+    }
+
+    catch(error) {
+      this.setState({
+        apicode: error
+      })
+    }
   }
 
   render() {
@@ -52,16 +60,23 @@ class Login extends Component {
             <Container>
               <Row>
                 <Col className="mx-auto" lg='6'>
+
+                  <Alert className="mb-4"
+                    color={this.state.apicode === 'successful_login' ? 'success' : 'danger'}
+                    isOpen={this.state.apicode !== ''}>
+                    {APICodes[this.state.apicode]}
+                  </Alert>
+                  
                   <Form onSubmit={this.handleSubmit}>
                     <FormGroup>
                       <Label for="username"><i className="material-icons">person</i> Nom d'utilisateur</Label>
-                      <Input type="text" name="username" onChange={this.handleChange} />
+                      <Input required type="text" name="username" onChange={this.handleChange} />
                     </FormGroup>
                     <FormGroup>
                       <Label for="password"><i className="material-icons">security</i> Mot de passe</Label>
-                      <Input type="password" name="password" onChange={this.handleChange} />
+                      <Input required type="password" name="password" onChange={this.handleChange} />
                     </FormGroup>
-                    <Button type='submit'>Connexion</Button>
+                    <Button className="mt-3" type='submit'>Connexion</Button>
                   </Form>
                 </Col>
               </Row>
