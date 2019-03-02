@@ -36,12 +36,11 @@ class Post extends Component {
     else {
       return (
         <div id="post">
-          <h1 className="page-title">Blog</h1>
           <Container>
-            <Row className="post-detail">
+            <Row className="post">
               <Col xl='12' className="post-image" style={{backgroundImage: `url(${post.image})`}} />
               <Col xl='10' className="post-description mx-auto">
-                <h2>{post.title}</h2>
+                <h1 className="post-title">{post.title}</h1>
                 <div className="infos">
                     <span className="category">{post.category}</span>
                     <span className="date">Publié le {post.date}</span>
