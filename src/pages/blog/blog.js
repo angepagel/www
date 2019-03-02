@@ -34,22 +34,29 @@ class Blog extends Component {
           <section>
             <Container>
               {
-                posts.map(post => (
-                <article key={post.id}>
-                  <Row className="post">
-                    <Col xs='12' md='6' className="post-image" style={{backgroundImage: `url(${post.image})`}} />
-                    <Col xs='12' md='6' className="post-description">
-                      <h2>{post.title}</h2>
-                      <div className="infos">
-                        <span className="category">{post.category}</span>
-                        <span className="date">Publié le {post.date}</span>
-                      </div>
-                      <p>{post.body}</p>
-                      <NavLink className="main" to={`/blog/${post.id}`}>Lire la suite</NavLink>
-                    </Col>
-                  </Row>
-                </article>
-              ))}
+                posts.map(post => {
+                  const preview = post.body.length > 252 ? `${post.body.substring(0,252)}...` : post.body;
+                  const background = `url(${post.image})`;
+                  const link = `/blog/${post.id}`;
+
+                  return (
+                    <article key={ post.id }>
+                      <Row className="post">
+                        <Col xs='12' md='6' className="post-image" style={ {backgroundImage: background} } />
+                        <Col xs='12' md='6' className="post-description">
+                          <h2>{ post.title }</h2>
+                          <div className="infos">
+                            <span className="category">{ post.category }</span>
+                            <span className="date">Publié le { post.date }</span>
+                          </div>
+                          <p>{ preview }</p>
+                          <NavLink className="main" to={ link }>Lire la suite</NavLink>
+                        </Col>
+                      </Row>
+                    </article>
+                  )}
+                )
+              }
             </Container>
           </section>
         </div>
