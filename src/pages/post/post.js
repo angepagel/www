@@ -25,7 +25,6 @@ class Post extends Component {
     }
   }
 
-
   render() {
     const { post } = this.state;
 
@@ -51,9 +50,8 @@ class Post extends Component {
             </Row>
           </Container>
         </div>
-    );
+      );
     }
-
   }
 }
 
