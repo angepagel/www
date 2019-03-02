@@ -85,7 +85,7 @@ export async function login(username, password) {
     )
     .then(
       json => {
-        saveToken(json.token);
+        if (json.token != null) saveToken(json.token); 
         return json.apicode;
       }
     )  
