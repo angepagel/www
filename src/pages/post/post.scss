@@ -1,0 +1,12 @@
+@import '../blog/blog.scss';
+
+#post {
+
+    @extend #blog;
+    
+    .post-detail {
+        @extend .post;
+        background-color: $white;
+    }
+
+}

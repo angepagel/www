@@ -45,7 +45,7 @@ class Blog extends Component {
                         <span className="date">Publié le {post.date}</span>
                       </div>
                       <p>{post.body}</p>
-                      <NavLink className="main" to='/blog'>Lire la suite</NavLink>
+                      <NavLink className="main" to={`/blog/${post.id}`}>Lire la suite</NavLink>
                     </Col>
                   </Row>
                 </article>
