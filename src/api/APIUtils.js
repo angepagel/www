@@ -16,6 +16,23 @@ export async function getPosts() {
   return posts;
 }
 
+export async function getPost(id) {
+  let post = null;
+
+  post = await fetch(`${process.env.REACT_APP_PROXY}/api/posts/${id}`)
+    .then(
+      res => res.json()
+    )
+    .then(
+      json => json.data
+    )
+    .catch(
+      error => console.error(error)
+    );
+
+  return post;
+}
+
 export function saveToken(token) {
   localStorage.setItem('token', token);
 }
