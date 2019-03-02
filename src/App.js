@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import * as API from './api/APIUtils';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './App.scss';
@@ -14,6 +15,7 @@ import Blog from './pages/blog/blog';
 import Login from './pages/login/login';
 import NotFound from './pages/notFound/notFound';
 import Post from './pages/post/post';
+import Dashboard from './pages/dashboard/dashboard';
 
 class App extends Component {
   render() {
@@ -29,6 +31,11 @@ class App extends Component {
               <Route exact path="/blog" component={ Blog } />
               <Route exact path="/blog/:id" component={ Post } />
               <Route exact path="/login" component={ Login } />
+
+              <Route exact path="/dashboard" render={() => (
+                API.isAuth() ? <Dashboard /> : <Redirect to="/login" />
+              )} />
+
               <Route component={ NotFound } />
             </Switch>
           <Footer/>
