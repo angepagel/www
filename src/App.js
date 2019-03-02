@@ -16,6 +16,7 @@ import Login from './pages/login/login';
 import NotFound from './pages/notFound/notFound';
 import Post from './pages/post/post';
 import Dashboard from './pages/dashboard/dashboard';
+import Editor from './pages/editor/editor';
 
 class App extends Component {
   render() {
@@ -34,6 +35,10 @@ class App extends Component {
 
               <Route exact path="/dashboard" render={() => (
                 API.isAuth() ? <Dashboard /> : <Redirect to="/login" />
+              )} />
+
+              <Route exact path="/dashboard/editor" render={() => (
+                API.isAuth() ? <Editor /> : <Redirect to="/login" />
               )} />
 
               <Route component={ NotFound } />
