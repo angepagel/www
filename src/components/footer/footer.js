@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
 import './footer.scss';
 import * as API from '../../api/APIUtils';
@@ -8,7 +9,7 @@ class Footer extends Component {
 
     let signedin = (
       <div id="signedin">
-        Vous êtes connecté <i className="material-icons">check</i>
+        Vous êtes connecté. <NavLink className="main ml-1" onClick={API.logout} to="/login">Déconnexion</NavLink>
       </div>
     );
 
