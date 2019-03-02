@@ -10,7 +10,7 @@ export async function getPosts() {
       json => json.data
     )
     .catch(
-      error => console.error(error)
+      error => error
     );
 
   return posts;
@@ -27,7 +27,7 @@ export async function getPost(id) {
       json => json.data
     )
     .catch(
-      error => console.error(error)
+      error => error
     );
 
   return post;
@@ -39,7 +39,9 @@ export function createPost(post) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(post)
   })
-  .catch(error => console.error(error));
+    .catch(
+      error => error
+    );
 }
 
 export function updatePost(postID, post) {
@@ -48,7 +50,9 @@ export function updatePost(postID, post) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(post)
   })
-  .catch(error => console.error(error));
+    .catch(
+      error => error
+    );
 }
 
 export function saveToken(token) {
