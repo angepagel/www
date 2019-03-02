@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
 import {
   Container,
   Row,
@@ -81,6 +82,7 @@ class Login extends Component {
                 </Col>
               </Row>
             </Container>
+            {API.isAuth() ? <Redirect to="/dashboard" /> : ''}
         </div>
     );
   }
