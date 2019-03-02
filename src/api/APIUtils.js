@@ -42,6 +42,15 @@ export function createPost(post) {
   .catch(error => console.error(error));
 }
 
+export function updatePost(postID, post) {
+  fetch(`${process.env.REACT_APP_PROXY}/api/posts/${postID}`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(post)
+  })
+  .catch(error => console.error(error));
+}
+
 export function saveToken(token) {
   localStorage.setItem('token', token);
 }
