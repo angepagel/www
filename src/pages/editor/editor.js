@@ -31,7 +31,8 @@ class Editor extends Component {
     })
   }
 
-  handleSubmit() {
+  handleSubmit(event) {
+    event.preventDefault();
     const post = this.state;
     API.createPost(post);
   }
