@@ -55,6 +55,17 @@ export function updatePost(postID, post) {
     );
 }
 
+export function deletePost(postID) {
+  fetch(`${process.env.REACT_APP_PROXY}/api/posts/${postID}`, {
+    method: 'DELETE',
+    headers: { 'Content-Type': 'text/plain' },
+    body: postID
+  })
+    .catch(
+      error => error
+    );
+}
+
 export function saveToken(token) {
   localStorage.setItem('token', token);
 }
