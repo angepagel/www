@@ -9,6 +9,17 @@ class Dashboard extends Component {
         <div id="dashboard">
           <h1 className="page-title">Tableau de bord</h1>
           <Container>
+
+            <section>
+              <Row>
+                <Col>
+                  <h2>Gestion des ressources</h2>
+                  <hr/>
+                  <NavLink className="main" to="/dashboard/upload"><i className="material-icons">add</i> Mettre en ligne</NavLink>
+                </Col>
+              </Row>
+            </section>
+
             <section>
               <Row>
                 <Col>
@@ -18,6 +29,7 @@ class Dashboard extends Component {
                 </Col>
               </Row>
             </section>
+
           </Container>
         </div>
     );
