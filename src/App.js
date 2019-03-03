@@ -17,6 +17,7 @@ import NotFound from './pages/notFound/notFound';
 import Post from './pages/post/post';
 import Dashboard from './pages/dashboard/dashboard';
 import Editor from './pages/editor/editor';
+import Upload from './pages/upload/upload';
 
 class App extends Component {
   render() {
@@ -39,6 +40,10 @@ class App extends Component {
 
               <Route exact path="/dashboard/editor" render={() => (
                 API.isAuth() ? <Editor /> : <Redirect to="/login" />
+              )} />
+
+              <Route exact path="/dashboard/upload" render={() => (
+                API.isAuth() ? <Upload /> : <Redirect to="/login" />
               )} />
 
               <Route component={ NotFound } />
