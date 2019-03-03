@@ -106,3 +106,21 @@ export async function login(username, password) {
 
   return message;
 }
+
+export async function upload(form) {
+  const message = await fetch(`${process.env.REACT_APP_PROXY}/api/upload`, {
+    method: 'post',
+    body: new FormData(form)
+  })
+    .then(
+      res => res.json()
+    )
+    .then(
+      json => json.apicode
+    )
+    .catch(
+      error => error
+    )
+
+  return message;
+}
