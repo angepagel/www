@@ -1,0 +1,29 @@
+@import '../../scss/colors.scss';
+
+#resume {
+
+  hr { margin: 42px 0 42px 0; }
+
+  #education, #experience {
+
+    h2 { margin-bottom: 21px;}
+
+    div.line { 
+      margin: 42px 0 42px 0;
+
+      div.infos {
+        margin: 8px 0 10px 0;
+        color: $mantra;
+        .material-icons { font-size: 1.4em; }
+      }
+
+      p.description {
+        font-style: italic;
+        margin-bottom: 0;
+      }
+    }
+    div.line:first-child { margin: 0 0 42px 0; }
+    div.line:last-child { margin: 42px 0 0 0; }
+  }
+
+}
