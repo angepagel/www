@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import { Redirect } from 'react-router-dom';
 import {
   Container,
@@ -57,6 +58,11 @@ class Login extends Component {
   render() {
     return (
         <div id="login">
+
+          <Helmet>
+            <title>Connexion</title>
+          </Helmet>
+
           <h1 className="page-title">Connexion</h1>
             <Container>
               <Row>

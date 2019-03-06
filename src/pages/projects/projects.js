@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import { Container, Row, Col } from 'reactstrap';
 import './projects.scss';
 
@@ -6,6 +7,11 @@ class Projects extends Component {
   render() {
     return (
         <div id="projects">
+        
+          <Helmet>
+            <title>Ange Pagel – Projets</title>
+          </Helmet>
+
           <h1 className="page-title">Projets</h1>
           <section>
             <Container>

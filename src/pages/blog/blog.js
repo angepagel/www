@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import { NavLink } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
 import * as API from '../../api/APIUtils';
@@ -30,6 +31,11 @@ class Blog extends Component {
 
     return (
         <div id="blog">
+        
+          <Helmet>
+            <title>Ange Pagel – Blog</title>
+          </Helmet>
+
           <h1 className="page-title">Blog</h1>
           <section>
             <Container>

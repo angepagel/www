@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import { Container, Row, Col } from 'reactstrap';
 import './resume.scss';
 
@@ -6,6 +7,11 @@ class Resume extends Component {
   render() {
     return (
         <div id="resume">
+
+          <Helmet>
+            <title>Ange Pagel – Curriculum Vitæ</title>
+          </Helmet>
+          
           <h1 className="page-title">Curriculum Vitæ</h1>
           
           <Container>

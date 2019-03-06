@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import { NavLink } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
 import './dashboard.scss';
@@ -7,7 +8,13 @@ class Dashboard extends Component {
   render() {
     return (
         <div id="dashboard">
+
+          <Helmet>
+            <title>Tableau de bord</title>
+          </Helmet>
+
           <h1 className="page-title">Tableau de bord</h1>
+
           <Container>
 
             <section>
