@@ -21,28 +21,33 @@ class Footer extends Component {
               <h5>Ange Pagel</h5>
               <hr/>
               <ul>
-                <li>Lorem Ipsum</li>
+                <li><NavLink to="/about">À propos</NavLink></li>
+                <li><a href="mailto:angepagel@gmail.com">angepagel@gmail.com</a></li>
+                <li><a href="tel:+33651705341">06 51 70 53 41</a></li>
               </ul>
             </Col>
             <Col xs='12' sm='6' lg='3'>
               <h5>Explorer</h5>
               <hr/>
               <ul>
-                <li>Lorem Ipsum</li>
+                <li><NavLink to="/resume">Curriculum Vitæ</NavLink></li>
+                <li><NavLink to="/projects">Projets</NavLink></li>
+                <li><NavLink to="/blog">Blog</NavLink></li>
               </ul>
             </Col>
             <Col xs='12' sm='6' lg='3'>
               <h5>Projets</h5>
               <hr/>
               <ul>
-                <li>Lorem Ipsum</li>
+                <li><a href="/">À venir</a></li>
               </ul>
             </Col>
             <Col xs='12' sm='6' lg='3'>
               <h5>Réseaux</h5>
               <hr/>
               <ul>
-                <li>Lorem Ipsum</li>
+                <li><a rel="noopener noreferrer" href="https://github.com/angepagel" target="_blank">GitHub</a></li>
+                <li><a rel="noopener noreferrer" href="https://www.linkedin.com/in/angepagel/" target="_blank">LinkedIn</a></li>
               </ul>
             </Col>
           </Row>
