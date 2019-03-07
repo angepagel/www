@@ -4,6 +4,26 @@
 
   hr { margin: 42px 0 42px 0; }
 
+  #download {
+    margin-bottom: 42px;
+    
+    .col-md-12 { margin-bottom: 42px; }
+
+    a {
+      color: #1dd1a1;
+      background-color: $grey-matter;
+      border-radius: 20px;
+      padding: 10px 16px 10px 16px;
+      span.language { font-weight: bold; }
+    }
+
+    a:hover {
+      color: $grey-matter;
+      background-color: #1dd1a1;
+      box-shadow: 0 0 11px rgba(#1dd1a1, 0.42);
+    }
+  }
+
   #education, #experience {
 
     h2 { margin-bottom: 21px;}
@@ -17,10 +37,7 @@
         .material-icons { font-size: 1.4em; }
       }
 
-      p.description {
-        font-style: italic;
-        margin-bottom: 0;
-      }
+      p.description { margin-bottom: 0; }
     }
     div.line:first-child { margin: 0 0 42px 0; }
     div.line:last-child { margin: 42px 0 0 0; }

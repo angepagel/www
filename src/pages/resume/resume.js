@@ -17,6 +17,18 @@ class Resume extends Component {
           <Container>
             <Row>
               <Col className="mx-auto" md="12" lg="8">
+
+                <section id="download">
+                  <Row className="text-center">
+                    <Col md="12" lg="6">
+                      <a href="/"><i className="material-icons">cloud_download</i> Télécharger (PDF, <span className="language">Français</span>)</a>
+                    </Col>
+                    <Col md="12" lg="6">
+                      <a href="/"><i className="material-icons">cloud_download</i> Télécharger (PDF, <span className="language">Anglais</span>)</a>
+                    </Col>
+                  </Row>
+                </section>
+
                 <section>
                   <h2>Projet d'étude</h2>
                   <p>
