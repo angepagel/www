@@ -10,7 +10,7 @@
     .col-md-12 { margin-bottom: 42px; }
 
     a {
-      color: #1dd1a1;
+      color: $green-pulse;
       background-color: $grey-matter;
       border-radius: 20px;
       padding: 10px 16px 10px 16px;
@@ -19,8 +19,8 @@
 
     a:hover {
       color: $grey-matter;
-      background-color: #1dd1a1;
-      box-shadow: 0 0 11px rgba(#1dd1a1, 0.42);
+      background-color: $green-pulse;
+      box-shadow: 0 0 11px rgba($green-pulse, 0.42);
     }
   }
 
