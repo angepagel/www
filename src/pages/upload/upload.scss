@@ -1,0 +1,19 @@
+@import '../../scss/colors.scss';
+
+#upload {
+
+    section { margin: 42px 0 42px 0; }
+    section:first-child { margin: 0 0 42px 0; }
+    section:last-child { margin: 42px 0 0 0; }
+    section:only-child { margin: 0; }
+
+    .url {
+        margin: 21px 0 21px 0;
+
+        input {
+            background-color: $grey-matter;
+            color: $white;
+            border: none;
+        }
+    }
+}
