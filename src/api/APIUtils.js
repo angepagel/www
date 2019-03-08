@@ -55,15 +55,23 @@ export function updatePost(postID, post) {
     );
 }
 
-export function deletePost(postID) {
-  fetch(`${process.env.REACT_APP_PROXY}/api/posts/${postID}`, {
+export async function deletePost(postID) {
+  const message = fetch(`${process.env.REACT_APP_PROXY}/api/posts/${postID}`, {
     method: 'DELETE',
     headers: { 'Content-Type': 'text/plain' },
     body: postID
   })
+    .then(
+      res => res.json()
+    )
+    .then(
+      json => json.apicode
+    )  
     .catch(
       error => error
     );
+
+    return message;
 }
 
 export function saveToken(token) {
