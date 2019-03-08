@@ -21,6 +21,10 @@
         td {
           vertical-align: sub;
         }
+
+        td:first-child::before {
+          content: '#'
+        }
       }
 
       tr:hover {
