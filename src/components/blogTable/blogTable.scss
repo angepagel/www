@@ -1,0 +1,20 @@
+@import '../../scss/colors.scss';
+
+#blogTable {
+
+  button.delete-icon, button.edit-icon {
+    color: $grey-matter;
+    border: none;
+  }
+
+  button.delete-icon:hover {
+    color: $red-strenght;
+    background-color: transparent;
+  }
+
+  button.edit-icon:hover {
+    color: $blue-link;
+    background-color: transparent;
+  }
+
+}
