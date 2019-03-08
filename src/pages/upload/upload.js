@@ -13,6 +13,7 @@ import {
 } from 'reactstrap';
 import * as API from '../../api/APIUtils';
 import APICodes from '../../api/APICodes';
+import './upload.scss';
 
 class Upload extends Component {
 
