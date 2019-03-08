@@ -2,6 +2,35 @@
 
 #blogTable {
 
+  padding: 21px 0 21px 0;
+
+  table {
+
+    thead {
+      background-color: $grey-matter;
+      color: $mind-white-open;
+    }
+
+    tbody {
+      font-family: 'Roboto Mono';
+      font-size: 0.8em;
+
+      tr {
+        transition: all 0.3s;
+
+        td {
+          vertical-align: sub;
+        }
+      }
+
+      tr:hover {
+        background-color: rgba($mantra, 0.21);
+        transition: all 0.3s;
+      }
+    }
+
+  }
+
   button.delete-icon, button.edit-icon {
     color: $grey-matter;
     border: none;
