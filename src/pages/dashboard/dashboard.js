@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import { NavLink } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
+import BlogTable from '../../components/blogTable/blogTable';
 import './dashboard.scss';
 
 class Dashboard extends Component {
@@ -33,6 +34,7 @@ class Dashboard extends Component {
                   <h2>Gestion du Blog</h2>
                   <hr/>
                   <NavLink className="main" to="/dashboard/editor"><i className="material-icons">add</i> Publier</NavLink>
+                  <BlogTable />
                 </Col>
               </Row>
             </section>
