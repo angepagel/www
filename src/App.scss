@@ -35,7 +35,7 @@ a:hover {
   transition: all 0.2s;
 }
 
-a.main, button.btn {
+a.main{
   display: inline-block;
   background-color: transparent;
   color: $blue-link;
@@ -44,8 +44,32 @@ a.main, button.btn {
   padding: 5px 10px 5px 10px;
 }
 
-a.main:hover, button.btn:hover {
+a.main:hover {
   background-color: $blue-link;
   color: $white;
   border: 1px solid $blue-link;
+}
+
+button.btn { @extend a.main; }
+
+button.delete {
+  color: $red-strenght;
+  border-color: $red-strenght;
+}
+
+button.cancel {
+  color: $mantra;
+  border-color: $mantra;
+}
+
+button.btn:hover { @extend a.main:hover; }
+
+button.delete:hover {
+  background-color: $red-strenght;
+  border-color: $red-strenght;
+}
+
+button.cancel:hover {
+  background-color: $mantra;
+  border-color: $mantra;
 }
