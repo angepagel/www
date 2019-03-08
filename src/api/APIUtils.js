@@ -123,9 +123,6 @@ export async function upload(form) {
     .then(
       res => res.json()
     )
-    .then(
-      json => json.apicode
-    )
     .catch(
       error => error
     )
