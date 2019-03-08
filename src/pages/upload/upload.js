@@ -6,6 +6,7 @@ import {
   Form,
   FormGroup,
   Label,
+  InputGroup,
   Input,
   Alert,
   Button
@@ -19,6 +20,7 @@ class Upload extends Component {
     super(props);
     this.state = {
       files: [],
+      urls: [],
       apicode: ''
     }
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -28,9 +30,10 @@ class Upload extends Component {
     event.preventDefault();
     
     try {
-      const apicode = await API.upload(event.target);
+      const result = await API.upload(event.target);
       this.setState({
-        apicode: apicode
+        urls: result.urls,
+        apicode: result.apicode
       });
     }
     catch(error) {
@@ -41,6 +44,8 @@ class Upload extends Component {
   }
 
   render() {
+    let { urls } = this.state;
+
     return (
       <div id="upload">
         <h1 className="page-title">Upload</h1>
@@ -48,19 +53,41 @@ class Upload extends Component {
           <Row>
             <Col className="mx-auto" lg='6'>
 
-              <Alert className="mb-4"
-                color={this.state.apicode === 'files_uploaded' ? 'success' : 'danger'}
-                isOpen={this.state.apicode !== ''}>
-                {APICodes[this.state.apicode]}
-              </Alert>
+              {
+                this.state.urls.length > 0 ? (
+                  <section>
+                    <h2>Liens générés</h2>
+                    <hr/>
+                    {
+                      urls.map((url, index) => {
+                        return (
+                          <InputGroup className="url" key={index}>
+                            <Input readOnly value={url} />
+                          </InputGroup>
+                        )
+                      })
+                    }
+                  </section>
+                ) : ('')
+              }
 
-              <Form onSubmit={this.handleSubmit}>
-                <FormGroup>
-                  <Label for="files"><i className="material-icons">insert_drive_file</i> Fichiers</Label>
-                  <Input type="file" multiple name="files" onChange={this.handleChange} />
-                </FormGroup>
-                <Button type="submit">Envoyer</Button>
-              </Form>
+              <section>
+                <h2>Mettre en ligne</h2>
+                <hr/>
+                <Alert className="mb-4"
+                  color={this.state.apicode === 'files_uploaded' ? 'success' : 'danger'}
+                  isOpen={this.state.apicode !== ''}>
+                  {APICodes[this.state.apicode]}
+                </Alert>
+
+                <Form onSubmit={this.handleSubmit}>
+                  <FormGroup>
+                    <Label for="files"><i className="material-icons">insert_drive_file</i> Fichiers</Label>
+                    <Input type="file" multiple name="files" onChange={this.handleChange} />
+                  </FormGroup>
+                  <Button type="submit">Envoyer</Button>
+                </Form>
+              </section>
 
             </Col>
           </Row>
