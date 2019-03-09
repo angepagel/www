@@ -7,6 +7,7 @@ import {
   FormGroup,
   Label,
   InputGroup,
+  InputGroupAddon,
   Input,
   Alert,
   Button
@@ -24,9 +25,22 @@ class Upload extends Component {
       urls: [],
       apicode: ''
     }
+    this.copyToClipboard = this.copyToClipboard.bind(this);
+    this.openInNewTab = this.openInNewTab.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  copyToClipboard(id) {
+    const copyUrl = document.getElementById(id);
+    copyUrl.select();
+    document.execCommand('copy');
+  }
+
+  openInNewTab(url) {
+    const win = window.open(url, '_blank');
+    win.focus();
+  }
+  
   async handleSubmit(event) {
     event.preventDefault();
     
@@ -52,7 +66,7 @@ class Upload extends Component {
         <h1 className="page-title">Upload</h1>
         <Container>
           <Row>
-            <Col className="mx-auto" lg='6'>
+            <Col className="mx-auto" lg='8'>
 
               {
                 this.state.urls.length > 0 ? (
@@ -61,9 +75,14 @@ class Upload extends Component {
                     <hr/>
                     {
                       urls.map((url, index) => {
+                        const id = `url_${index}`;
                         return (
                           <InputGroup className="url" key={index}>
-                            <Input readOnly value={url} />
+                            <Input readOnly value={url}  id={id} />
+                            <InputGroupAddon addonType="append">
+                              <Button onClick={() => this.copyToClipboard(id)}><i className="material-icons">file_copy</i></Button>
+                              <Button onClick={() => this.openInNewTab(url)}><i className="material-icons">open_in_new</i></Button>
+                            </InputGroupAddon>
                           </InputGroup>
                         )
                       })

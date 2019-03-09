@@ -10,6 +10,20 @@
     .url {
         margin: 21px 0 21px 0;
 
+        button {
+            background-color: $grey-matter;
+            color: $green-pulse;
+            border: none;
+        }
+
+        button:last-child { border-radius: 0 5px 5px 0; }
+
+        button:hover {
+            background-color: $green-pulse;
+            color: $grey-matter;
+            box-shadow: 0 0 11px rgba($green-pulse, 0.42);
+        }
+
         input {
             background-color: $grey-matter;
             color: $white;
