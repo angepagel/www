@@ -18,36 +18,31 @@
       tr {
         transition: all 0.3s;
 
-        td {
-          vertical-align: sub;
-        }
+        td { vertical-align: middle; }
+        td:first-child::before { content: '#'; }
 
-        td:first-child::before {
-          content: '#'
+        td.actions {
+          
+          button, a {
+            color: $grey-matter;
+            border: none;
+            vertical-align: middle;
+          }
+        
+          button:hover, a:hover { background-color: transparent; }
+        
+          .edit-icon:hover { color: $purple-crown; }
+          .delete-icon:hover { color: $red-strenght; }
+          .openinnew-icon:hover { color: $green-pulse; }
         }
       }
 
       tr:hover {
-        background-color: rgba($mantra, 0.21);
+        background-color: rgba($inner-peace, 0.12);
         transition: all 0.3s;
       }
     }
 
-  }
-
-  button.delete-icon, button.edit-icon {
-    color: $grey-matter;
-    border: none;
-  }
-
-  button.delete-icon:hover {
-    color: $red-strenght;
-    background-color: transparent;
-  }
-
-  button.edit-icon:hover {
-    color: $blue-link;
-    background-color: transparent;
   }
 
 }

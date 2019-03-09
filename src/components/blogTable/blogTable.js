@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import {
   Table,
   Alert,
@@ -22,8 +23,14 @@ class BlogTable extends Component {
       deletingPost: '',
       apicode: ''
     }
+    this.openInNewTab = this.openInNewTab.bind(this);
     this.showDeleteModal = this.showDeleteModal.bind(this);
     this.closeModals = this.closeModals.bind(this);
+  }
+
+  openInNewTab(url) {
+    const win = window.open(url, '_blank');
+    win.focus();
   }
 
   showDeleteModal(post) {
@@ -98,8 +105,10 @@ class BlogTable extends Component {
                   <td>{post.title}</td>
                   <td>{post.category}</td>
                   <td>{post.date}</td>
-                  <td>
+                  <td className="actions">
+                    <Button className="edit-icon"><i className="material-icons">edit</i></Button>
                     <Button className="delete-icon" onClick={() => this.showDeleteModal(post)}><i className="material-icons">delete_forever</i></Button>
+                    <NavLink className="main openinnew-icon" to={`blog/${post.id}`} target="_blank"><i className="material-icons">open_in_new</i></NavLink>
                   </td>
                 </tr>
               ))
