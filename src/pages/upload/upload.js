@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import {
   Container,
   Row,
@@ -63,7 +64,13 @@ class Upload extends Component {
 
     return (
       <div id="upload">
+
+        <Helmet>
+          <title>Upload</title>
+        </Helmet>
+
         <h1 className="page-title">Upload</h1>
+
         <Container>
           <Row>
             <Col className="mx-auto" lg='8'>
