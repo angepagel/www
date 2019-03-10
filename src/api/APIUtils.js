@@ -33,30 +33,46 @@ export async function getPost(id) {
   return post;
 }
 
-export function createPost(post) {
-  fetch(`${process.env.REACT_APP_PROXY}/api/posts`, {
+export async function createPost(post) {
+  const apicode = await fetch(`${process.env.REACT_APP_PROXY}/api/posts`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(post)
   })
+    .then(
+      res => res.json()
+    )
+    .then(
+      json => json.apicode
+    )  
     .catch(
       error => error
     );
+
+  return apicode;
 }
 
-export function updatePost(postID, post) {
-  fetch(`${process.env.REACT_APP_PROXY}/api/posts/${postID}`, {
+export async function updatePost(postID, post) {
+  const apicode = await fetch(`${process.env.REACT_APP_PROXY}/api/posts/${postID}`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(post)
   })
+    .then(
+      res => res.json()
+    )
+    .then(
+      json => json.apicode
+    )  
     .catch(
       error => error
     );
+
+  return apicode;
 }
 
 export async function deletePost(postID) {
-  const message = fetch(`${process.env.REACT_APP_PROXY}/api/posts/${postID}`, {
+  const apicode = await fetch(`${process.env.REACT_APP_PROXY}/api/posts/${postID}`, {
     method: 'DELETE',
     headers: { 'Content-Type': 'text/plain' },
     body: postID
@@ -71,7 +87,7 @@ export async function deletePost(postID) {
       error => error
     );
 
-    return message;
+    return apicode;
 }
 
 export function saveToken(token) {
@@ -91,7 +107,7 @@ export function logout() {
 }
 
 export async function login(username, password) {
-  const message = await fetch(`${process.env.REACT_APP_PROXY}/api/login`, {
+  const apicode = await fetch(`${process.env.REACT_APP_PROXY}/api/login`, {
     method: 'post',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
@@ -112,11 +128,11 @@ export async function login(username, password) {
       error => error
     );
 
-  return message;
+  return apicode;
 }
 
 export async function upload(form) {
-  const message = await fetch(`${process.env.REACT_APP_PROXY}/api/upload`, {
+  const apicode = await fetch(`${process.env.REACT_APP_PROXY}/api/upload`, {
     method: 'post',
     body: new FormData(form)
   })
@@ -127,5 +143,5 @@ export async function upload(form) {
       error => error
     )
 
-  return message;
+  return apicode;
 }
