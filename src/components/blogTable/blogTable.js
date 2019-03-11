@@ -106,7 +106,7 @@ class BlogTable extends Component {
                   <td>{post.category}</td>
                   <td>{post.date}</td>
                   <td className="actions">
-                    <NavLink className="main openinnew-icon" to={`/dashboard/editor/${post.id}`}><i className="material-icons">edit</i></NavLink>
+                    <NavLink className="main edit-icon" to={`/dashboard/editor/${post.id}`}><i className="material-icons">edit</i></NavLink>
                     <Button className="delete-icon" onClick={() => this.showDeleteModal(post)}><i className="material-icons">delete_forever</i></Button>
                     <NavLink className="main openinnew-icon" to={`blog/${post.id}`} target="_blank"><i className="material-icons">open_in_new</i></NavLink>
                   </td>
