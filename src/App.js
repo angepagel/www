@@ -42,6 +42,10 @@ class App extends Component {
                 API.isAuth() ? <Editor /> : <Redirect to="/login" />
               )} />
 
+              <Route exact path="/dashboard/editor/:id" render={(props) => (
+                API.isAuth() ? <Editor {...props} /> : <Redirect to="/login" />
+              )} />
+
               <Route exact path="/dashboard/upload" render={() => (
                 API.isAuth() ? <Upload /> : <Redirect to="/login" />
               )} />
