@@ -46,17 +46,17 @@ class Blog extends Component {
                   const link = `/blog/${post.id}`;
 
                   return (
-                    <article key={ post.id }>
+                    <article key={post.id}>
                       <Row className="post">
-                        <Col xs='12' md='6' className="post-image" style={ {backgroundImage: background} } />
+                        <Col xs='12' md='6' className="post-image" style={{backgroundImage: background}} />
                         <Col xs='12' md='6' className="post-description">
                           <h2>{ post.title }</h2>
                           <div className="infos">
-                            <span className="category">{ post.category }</span>
-                            <span className="date">Publié le { post.date }</span>
+                            <span className="category">{post.category}</span>
+                            <span className="date">Publié le {post.date}</span>
                           </div>
-                          <p>{ preview }</p>
-                          <NavLink className="main" to={ link }>Lire la suite</NavLink>
+                          <p>{preview}</p>
+                          <NavLink className="main" to={link}>Lire la suite</NavLink>
                         </Col>
                       </Row>
                     </article>
