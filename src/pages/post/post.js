@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import { Container, Row, Col } from 'reactstrap';
 import * as API from '../../api/APIUtils';
 import './post.scss';
@@ -35,6 +36,11 @@ class Post extends Component {
     else {
       return (
         <div id="post">
+
+          <Helmet>
+            <title>{post.title}</title>
+          </Helmet>
+
           <Container>
             <Row className="post">
               <Col xl='12' className="post-image" style={{backgroundImage: `url(${post.image})`}} />
