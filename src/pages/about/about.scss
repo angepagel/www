@@ -1,0 +1,19 @@
+@import '../../scss/colors.scss';
+
+#about {
+
+  hr { margin: 42px 0 42px 0; }
+
+  #interests {
+    .row {
+      text-align: center;
+
+      img {
+        max-height: 133px;
+        border-radius: 100%;
+        margin: 21px 0 21px 0;
+      }
+    }
+  }
+
+}
