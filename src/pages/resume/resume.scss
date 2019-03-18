@@ -41,6 +41,22 @@
     }
     div.line:first-child { margin: 0 0 42px 0; }
     div.line:last-child { margin: 42px 0 0 0; }
+
+    button.toggler {
+      color: $mantra;
+      border: none;
+      vertical-align: top;
+      padding: 0;
+    }
+    
+    button.toggler:hover {
+      color: $purple-crown;
+      background-color: transparent;
+    }
+
+    .collapse, .collapsing {
+      margin-top: 13px;
+    }
   }
 
 }

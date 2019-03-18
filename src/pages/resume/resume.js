@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
-import { Container, Row, Col } from 'reactstrap';
+import {
+  Container,
+  Row,
+  Col,
+  UncontrolledCollapse,
+  Button
+} from 'reactstrap';
 import './resume.scss';
 
 class Resume extends Component {
@@ -93,8 +99,16 @@ class Resume extends Component {
                           <span><i className="material-icons">location_on</i> <a rel="noopener noreferrer" target="_blank" href="https://www.google.fr/maps/place/BU-CROCCS/@14.0401609,100.6081118,17z/data=!4m5!3m4!1s0x30e2801accd02c07:0xdb5174318f1046b0!8m2!3d14.0401174!4d100.6102877">Bangkok University CROCCS</a></span>
                         </div>
                         <p className="description">
-                          Projet « <strong>A2T</strong> ».
+                          Projet « <strong>A2T</strong> ». <Button className="toggler" id="toggler_BU"><i className="material-icons">expand_more</i></Button>
                         </p>
+                        <UncontrolledCollapse toggler="#toggler_BU">
+                          <p>
+                            « <strong>Ambulance-to-traffic light</strong> », communication entre les véhicules prioritaires et les feux de circulation dans le but d'améliorer le déroulement des missions de secours.
+                          </p>
+                          <p>
+                            Simulation d'une topologie routière à l'aide du simulateur de réseau routier <strong>Veins</strong>, basé sur les technologies <strong>SUMO</strong> et <strong>OMNeT++</strong>. Étude des performances du système avec différents temps de cycle des feux de circulation et analyse de la distance d'avertissement optimale par rapport à l'ambulance.
+                          </p>
+                        </UncontrolledCollapse>
                       </div>
 
                       <div className="line">
