@@ -142,6 +142,9 @@ class Resume extends Component {
                           <br/>
                           <span><i className="material-icons">location_on</i> <a rel="noopener noreferrer" target="_blank" href="https://www.google.fr/maps/place/Carrefour/@47.3100896,5.1035361,19z/data=!3m1!5s0x47f29fb3e4010877:0x39863082cf29a708!4m12!1m6!3m5!1s0x47f29fb13699cf83:0x8738089414c52113!2sCentre+commercial+Carrefour+Grand+Qu%C3%A9tigny!8m2!3d47.3109037!4d5.1041273!3m4!1s0x0:0x316aa9b6fae2bc9f!8m2!3d47.3097853!4d5.1038562">Carrefour Grand Quétigny</a></span>
                         </div>
+                        <p className="description">
+                          Préparation et livraison des commandes en ligne, mise à jour en magasin des articles enregistrés dans le système informatique. 
+                        </p>
                       </div>
 
                       <div className="line">
