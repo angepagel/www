@@ -104,7 +104,7 @@ class BlogTable extends Component {
                   <td>{post.id}</td>
                   <td>{post.title}</td>
                   <td>{post.category}</td>
-                  <td>{post.date}</td>
+                  <td>{post.datestr}</td>
                   <td className="actions">
                     <NavLink className="main edit-icon" to={`/dashboard/editor/${post.id}`}><i className="material-icons">edit</i></NavLink>
                     <Button className="delete-icon" onClick={() => this.showDeleteModal(post)}><i className="material-icons">delete_forever</i></Button>

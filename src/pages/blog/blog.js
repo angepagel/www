@@ -53,7 +53,7 @@ class Blog extends Component {
                           <h2>{ post.title }</h2>
                           <div className="infos">
                             <span className="category">{post.category}</span>
-                            <span className="date">Publié le {post.date}</span>
+                            <span className="date">Publié le {post.datestr}</span>
                           </div>
                           <p>{preview}</p>
                           <NavLink className="main" to={link}>Lire la suite</NavLink>

@@ -48,7 +48,7 @@ class Post extends Component {
                 <h1 className="post-title">{post.title}</h1>
                 <div className="infos">
                     <span className="category">{post.category}</span>
-                    <span className="date">Publié le {post.date}</span>
+                    <span className="date">Publié le {post.datestr}</span>
                 </div>
                 <hr/>
                 <p>{post.body}</p>
