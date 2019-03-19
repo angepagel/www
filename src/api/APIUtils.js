@@ -33,6 +33,23 @@ export async function getPost(id) {
   return post;
 }
 
+export async function getLatestPost() {
+  let post = null;
+
+  post = await fetch(`${process.env.REACT_APP_PROXY}/api/latestpost`)
+    .then(
+      res => res.json()
+    )
+    .then(
+      json => json.data
+    )
+    .catch(
+      error => error
+    );
+
+  return post;
+}
+
 export async function createPost(post) {
   const apicode = await fetch(`${process.env.REACT_APP_PROXY}/api/posts`, {
     method: 'POST',
