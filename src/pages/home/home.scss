@@ -1,0 +1,21 @@
+@import '../blog/blog.scss';
+
+#home {
+
+  hr { margin: 42px 0 42px 0; }
+
+  @extend #blog;
+
+  #latestPost {
+
+    .latest-post {
+      @extend .post;
+      margin: 21px 0 21px 0;
+  
+      .lp-image { @extend .post-image; }
+      .lp-description { @extend .post-description; }
+      div.infos { @extend .infos; }
+    }
+
+  }
+}
