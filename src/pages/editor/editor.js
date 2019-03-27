@@ -35,7 +35,8 @@ class Editor extends Component {
       category: post.category,
       title: post.title,
       image: post.image,
-      body: post.body
+      body: post.body,
+      img_credit: post.img_credit
     });
   }
 
@@ -104,6 +105,12 @@ class Editor extends Component {
                     <FormGroup>
                       <Label for="image"><i className="material-icons">photo</i> Image d'en-tête</Label>
                       <Input required type="text" name="image" onChange={this.handleChange} value={this.state.image} />
+                    </FormGroup>
+                  </Col>
+                  <Col>
+                    <FormGroup>
+                      <Label for="img_credit"><i className="material-icons">portrait</i> Crédit photo</Label>
+                      <Input type="text" name="img_credit" onChange={this.handleChange} value={this.state.img_credit} />
                     </FormGroup>
                   </Col>
                 </Row>
