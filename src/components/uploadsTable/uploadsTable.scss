@@ -1,0 +1,13 @@
+@import '../blogTable/blogTable.scss';
+
+#uploadsTable {
+  @extend #blogTable;
+
+  table {
+    tbody {
+      tr {
+        td:first-child::before { content: ''; }
+      }
+    }
+  }
+}
