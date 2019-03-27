@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { NavLink } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
 import BlogTable from '../../components/blogTable/blogTable';
+import UploadsTable from '../../components/uploadsTable/uploadsTable';
 import './dashboard.scss';
 
 class Dashboard extends Component {
@@ -24,6 +25,7 @@ class Dashboard extends Component {
                   <h2>Gestion des ressources</h2>
                   <hr/>
                   <NavLink className="main" to="/dashboard/upload"><i className="material-icons">add</i> Mettre en ligne</NavLink>
+                  <UploadsTable />
                 </Col>
               </Row>
             </section>
