@@ -34,19 +34,19 @@ class Projects extends Component {
               </article>
               <Row>
                 <Col xs='12' md='6'>
-                  <article>
+                  <article id="project-durandal">
                     <Row className="project">
-                      <Col xl='12' className="project-image" />
+                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/durandal.png')})`}} />
                       <Col xl='12' className="project-description">
-                        <h2>Projet 2</h2>
+                        <h2>Durandal</h2>
                         <div className="infos">
-                          <span className="category">Catégorie</span>
+                          <span className="category">Bot Discord</span>
                           <span className="date">Date</span>
                         </div>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices venenatis eros quis porta. Maecenas eget elit nec velit egestas rhoncus. Suspendisse sem lacus, convallis eget malesuada at, viverra eget nisi. Donec finibus ac erat eu molestie.
+                          Durandal est un bot Discord développé en Python. Il est capable d'effectuer des actions basiques et de répondre à diverses commandes.
                         </p>
-                        <a className="main" href="/">Voir sur GitHub</a>
+                        <a className="main" rel="noopener noreferrer" href="https://github.com/angepagel/Durandal" target="_blank">Voir sur GitHub</a>
                       </Col>
                     </Row>
                   </article>
