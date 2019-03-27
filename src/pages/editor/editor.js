@@ -12,6 +12,7 @@ import {
 } from 'reactstrap';
 import * as API from '../../api/APIUtils';
 import APICodes from '../../api/APICodes';
+import './editor.scss';
 
 class Editor extends Component {
 
@@ -103,7 +104,7 @@ class Editor extends Component {
                 <Row>
                   <Col>
                     <FormGroup>
-                      <Label for="image"><i className="material-icons">photo</i> Image d'en-tête</Label>
+                      <Label for="image"><i className="material-icons">photo</i> Image d'en-tête<span className="required">*</span></Label>
                       <Input required type="text" name="image" onChange={this.handleChange} value={this.state.image} />
                     </FormGroup>
                   </Col>
@@ -118,13 +119,13 @@ class Editor extends Component {
                 <Row>
                   <Col>
                     <FormGroup>
-                      <Label for="title"><i className="material-icons">short_text</i> Titre</Label>
+                      <Label for="title"><i className="material-icons">short_text</i> Titre<span className="required">*</span></Label>
                       <Input required type="text" name="title" onChange={this.handleChange} value={this.state.title} />
                     </FormGroup>
                   </Col>
                   <Col>
                     <FormGroup>
-                      <Label for="category"><i className="material-icons">bookmark</i> Catégorie</Label>
+                      <Label for="category"><i className="material-icons">bookmark</i> Catégorie<span className="required">*</span></Label>
                       <Input required type="text" name="category" onChange={this.handleChange} value={this.state.category} />
                     </FormGroup>
                   </Col>
@@ -133,15 +134,19 @@ class Editor extends Component {
                 <Row>
                   <Col>
                     <FormGroup>
-                      <Label for="body"><i className="material-icons">chat</i> Corps</Label>
+                      <Label for="body"><i className="material-icons">chat</i> Corps<span className="required">*</span></Label>
                       <Input required type="textarea" name="body" onChange={this.handleChange} value={this.state.body} />
                     </FormGroup>
                   </Col>
                 </Row>
 
-                <Button type="submit">{this.state.edit ? 'Mettre à jour' : 'Publier'}</Button>
+                <Button type="submit">{this.state.edit ? 'Modifier' : 'Publier'}</Button>
 
               </Form>
+
+              <div className="required">
+                <span className="required">*</span> Champs requis
+              </div>
 
             </Col>
           </Row>

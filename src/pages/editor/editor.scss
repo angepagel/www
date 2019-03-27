@@ -2,4 +2,13 @@
 
 #postEditor {
 
+    div.required {
+        color: $mantra;
+        text-align: right;
+    }
+
+    span.required {
+        color: $red-strenght;
+    }
+
 }
