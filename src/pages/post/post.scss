@@ -2,5 +2,16 @@
 
 #post {
   @extend #blog;
-  .post-title { font-size: 2.4em; }
+  
+  h1.post-title { font-size: 2.4em; }
+
+  span.credits {
+    color: $white;
+    background-color: $grey-matter;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px 14px 5px 14px;
+  }
+
 }

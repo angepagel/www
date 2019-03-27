@@ -43,7 +43,9 @@ class Post extends Component {
 
           <Container>
             <Row className="post">
-              <Col xl='12' className="post-image" style={{backgroundImage: `url(${post.image})`}} />
+              <Col xl='12' className="post-image" style={{backgroundImage: `url(${post.image})`}}>
+                <span className="credits">Photo par <strong>Auteur</strong></span>
+              </Col>
               <Col xl='10' className="post-description mx-auto">
                 <h1 className="post-title">{post.title}</h1>
                 <div className="infos">
