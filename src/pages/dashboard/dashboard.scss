@@ -4,4 +4,16 @@
 
   section { margin: 42px 0 42px 0; }
 
+  button.toggler {
+    color: $mantra;
+    border: none;
+    vertical-align: middle;
+    padding: 0;
+  }
+  
+  button.toggler:hover {
+    color: $purple-crown;
+    background-color: transparent;
+  }
+  
 }
