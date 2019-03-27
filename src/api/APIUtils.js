@@ -162,3 +162,18 @@ export async function upload(form) {
 
   return apicode;
 }
+
+export async function getUploads() {
+  const uploads = await fetch(`${process.env.REACT_APP_PROXY}/api/uploads`)
+    .then(
+      res => res.json()
+    )
+    .then(
+      json => json.data
+    )  
+    .catch(
+      error => error
+    );
+
+  return uploads;
+}
