@@ -177,3 +177,24 @@ export async function getUploads() {
 
   return uploads;
 }
+
+export async function deleteUpload(fileName) {
+  const apicode = await fetch(`${process.env.REACT_APP_PROXY}/api/deleteUpload`, {
+    method: 'post',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      fileName: fileName
+    })
+  })
+    .then(
+      res => res.json()
+    )
+    .then(
+      json => json.apicode
+    )  
+    .catch(
+      error => error
+    );
+
+  return apicode;
+}
