@@ -155,7 +155,7 @@ class Resume extends Component {
                           <span><i className="material-icons">location_on</i> <a rel="noopener noreferrer" target="_blank" href="https://www.google.fr/maps/place/IUT+Dijon/@47.3110124,5.0663128,17z/data=!3m2!4b1!5s0x47f29e6eeec3b081:0xe3076a48a9fe61f1!4m5!3m4!1s0x47f29e6edc000023:0xc034427f4d6a0b09!8m2!3d47.3110124!4d5.0685015">IUT de Dijon</a></span>
                         </div>
                         <p className="description">
-                          Convention d'anime, participation bénévole à l'événement.
+                          Convention d'anime, contribution bénévole à l'événement (animation, encadrement du public).
                         </p>
                       </div>
                     </Col>
