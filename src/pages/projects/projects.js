@@ -41,7 +41,7 @@ class Projects extends Component {
                         <h2>Durandal</h2>
                         <div className="infos">
                           <span className="category">Bot Discord</span>
-                          <span className="date">Date</span>
+                          <span className="date">Novembre 2018</span>
                         </div>
                         <p>
                           Durandal est un bot Discord développé en Python. Il est capable d'effectuer des actions basiques et de répondre à diverses commandes.
@@ -102,7 +102,6 @@ class Projects extends Component {
                         <p>
                           Spaceships est un jeu vidéo type « Asteroids » développé en Python à l'aide de la bibliothèque Pygame. Il propose différents modes de jeux, un éditeur de niveaux et une personnalisation avancée du vaisseau dont il est possible de changer la forme, la couleur et l'arme équipée.
                         </p>
-                        <a className="main" href="/">Voir sur GitHub</a>
                       </Col>
                     </Row>
                   </article>
