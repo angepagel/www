@@ -92,15 +92,15 @@ class Projects extends Component {
                 <Col xs='12' md='6'>
                   <article>
                     <Row className="project">
-                      <Col xl='12' className="project-image" />
+                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/spaceships.png')})`}} />
                       <Col xl='12' className="project-description">
-                        <h2>Projet 5</h2>
+                        <h2>Spaceships</h2>
                         <div className="infos">
-                          <span className="category">Catégorie</span>
-                          <span className="date">Date</span>
+                          <span className="category">Jeu vidéo</span>
+                          <span className="date">Avril - Juin 2017</span>
                         </div>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices venenatis eros quis porta. Maecenas eget elit nec velit egestas rhoncus. Suspendisse sem lacus, convallis eget malesuada at, viverra eget nisi. Donec finibus ac erat eu molestie.
+                          Spaceships est un jeu vidéo type « Asteroids » développé en Python à l'aide de la bibliothèque Pygame. Il propose différents modes de jeux, un éditeur de niveaux et une personnalisation avancée du vaisseau dont il est possible de changer la forme, la couleur et l'arme équipée.
                         </p>
                         <a className="main" href="/">Voir sur GitHub</a>
                       </Col>
