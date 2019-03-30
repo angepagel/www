@@ -53,7 +53,7 @@ class Footer extends Component {
           </Row>
         </Container>
         {API.isAuth() ? signedin : ''}
-        <div id='mentions'>Imaginé et développé par Ange Pagel</div>
+        <div id='mentions'>Développé avec <span role="img" aria-label="coeur">❤️</span> par Ange Pagel</div>
       </footer>
     );
   }
