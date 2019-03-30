@@ -39,7 +39,8 @@ class Footer extends Component {
               <h5>Projets</h5>
               <hr/>
               <ul>
-                <li><a href="/">À venir</a></li>
+                <li><a rel="noopener noreferrer" href="https://github.com/angepagel/Durandal" target="_blank">Durandal</a></li>
+                <li><a rel="noopener noreferrer" href="https://github.com/angepagel/Civilization-Zero-Lamaths-UE" target="_blank">Civilization Zero</a></li>
               </ul>
             </Col>
             <Col xs='12' sm='6' lg='3'>
