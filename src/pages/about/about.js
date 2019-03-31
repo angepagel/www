@@ -55,6 +55,27 @@ class About extends Component {
               </Row>
             </section>
 
+            <section>
+              <Row>
+                <Col sm="12" md="6">
+                  <section>
+                    <h2>Le numérique est notre avenir</h2>
+                    <p>
+                      J'évolue depuis mon plus jeune âge dans un monde transcendé par le numérique. Smartphones, réalité virtuelle et augmentée, intelligence artificielle, véhicules autonomes, etc. Ces progrès me fascinent et sont le moteur de mon ambitition. Aujourd'hui, mon voeu est de participer au développement des technologies de demain.
+                    </p>
+                  </section>
+                </Col>
+                <Col sm="12" md="6">
+                <section>
+                  <h2>Science, éthique et société</h2>
+                  <p>
+                    Je suis conscient des questions éthiques et sociétales induites par les progrès dans le domaine du numérique ; les débats autour de l'intelligence aritifcielle et de la robotique m'intéressent particulièrement. J'aspire à concevoir des solutions innovantes et pensées pour répondre à ces problématiques.
+                  </p>
+                </section>
+                </Col>
+              </Row>
+            </section>
+
             <section id="interests">
               <h2>Centres d'intérêt</h2>
               <Row>
