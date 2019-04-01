@@ -61,13 +61,19 @@ class Home extends Component {
 
             <section id="presentation">
               <Row>
-                <Col xs='12' md='6' className="emojis">
+                <Col sm='12' md='6' className="emojis">
                   <span role="img" aria-label="wizard">🧙</span>
                   <span role="img" aria-label="magic">✨</span>
                   <span role="img" aria-label="laptop">💻</span>
                 </Col>
-                <Col xs='12' md='6'>
-                  <NavLink className="main" to={'/about'}>À propos</NavLink>
+                <Col sm='12' md='6'>
+                  <h2>Je m'apppelle <span className="name">Ange Pagel</span></h2>
+                  <span className="magic">Je conçois tous types de programmes informatiques avec un peu de code, de maths et de magie. Je ne suis ni plus ni moins qu'un futur <strong>ingénieur</strong>.</span>
+                  <br/>
+                  <br/>
+                  <span>
+                    <span className="finger" role="img" aria-label="finger">👉🏻</span> <NavLink className="main" to={'/about'}>À propos</NavLink> <span className="finger" role="img" aria-label="finger">👈🏻</span>
+                  </span>
                 </Col>
               </Row>
             </section>

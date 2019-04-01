@@ -6,10 +6,16 @@
   section { margin: 33px 0 33px 0; }
 
   #presentation {
-    .emojis {
-      text-align: center;
-      font-size: 99px;
+    text-align: center;
+
+    h2 {
+      font-size: 21px;
+      .name { font-size: 42px; }
     }
+
+    .emojis { font-size: 99px; }
+    .magic { color: $mantra; }
+    .finger { font-size: 21px; }
   }
 
   @extend #blog;
