@@ -58,22 +58,37 @@ class Home extends Component {
           </h1>
 
           <Container>
-                <section id="latestPost">
-                  <h2>Dernier article de blog</h2>
 
-                  <Row className="latest-post">
-                    <Col xs='12' md='6' className="post-image" style={{backgroundImage: background}} />
-                    <Col xs='12' md='6' className="post-description">
-                      <h2>{latestPost.title}</h2>
-                      <div className="infos">
-                        <span className="category">{latestPost.category}</span>
-                        <span className="date">Publié le {latestPost.datestr}</span>
-                      </div>
-                      <p>{preview}</p>
-                      <NavLink className="main" to={link}>Lire la suite</NavLink>
-                    </Col>
-                  </Row>
-                </section>
+            <section id="presentation">
+              <Row>
+                <Col xs='12' md='6' className="emojis">
+                  <span role="img" aria-label="wizard">🧙</span>
+                  <span role="img" aria-label="magic">✨</span>
+                  <span role="img" aria-label="laptop">💻</span>
+                </Col>
+                <Col xs='12' md='6'>
+                  <NavLink className="main" to={'/about'}>À propos</NavLink>
+                </Col>
+              </Row>
+            </section>
+
+
+            <section id="latestPost">
+              <h2>Dernier article de blog</h2>
+
+              <Row className="latest-post">
+                <Col xs='12' md='6' className="post-image" style={{backgroundImage: background}} />
+                <Col xs='12' md='6' className="post-description">
+                  <h2>{latestPost.title}</h2>
+                  <div className="infos">
+                    <span className="category">{latestPost.category}</span>
+                    <span className="date">Publié le {latestPost.datestr}</span>
+                  </div>
+                  <p>{preview}</p>
+                  <NavLink className="main" to={link}>Lire la suite</NavLink>
+                </Col>
+              </Row>
+            </section>
           </Container>
 
         </div>
