@@ -26,11 +26,11 @@ class Resume extends Component {
 
                 <section id="download">
                   <Row className="text-center">
-                    <Col md="12" lg="6">
-                      <a href="/"><i className="material-icons">cloud_download</i> Télécharger (PDF, <span className="language">Français</span>)</a>
+                    <Col xs="12" sm="6">
+                      <a className="main" href="/"><i className="material-icons">cloud_download</i> Télécharger (<span className="language">Français</span>)</a>
                     </Col>
-                    <Col md="12" lg="6">
-                      <a href="/"><i className="material-icons">cloud_download</i> Télécharger (PDF, <span className="language">Anglais</span>)</a>
+                    <Col xs="12" sm="6">
+                      <a className="main" href="/"><i className="material-icons">cloud_download</i> Télécharger (<span className="language">Anglais</span>)</a>
                     </Col>
                   </Row>
                 </section>

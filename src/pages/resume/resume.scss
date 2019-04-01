@@ -5,23 +5,8 @@
   hr { margin: 42px 0 42px 0; }
 
   #download {
-    margin-bottom: 42px;
-    
-    .col-md-12 { margin-bottom: 42px; }
-
-    a {
-      color: $green-pulse;
-      background-color: $grey-matter;
-      border-radius: 20px;
-      padding: 10px 16px 10px 16px;
-      span.language { font-weight: bold; }
-    }
-
-    a:hover {
-      color: $grey-matter;
-      background-color: $green-pulse;
-      box-shadow: 0 0 11px rgba($green-pulse, 0.42);
-    }
+    margin-bottom: 21px;
+    .col-12 { margin-bottom: 21px; }
   }
 
   #education, #experience {
