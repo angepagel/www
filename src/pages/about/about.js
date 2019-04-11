@@ -39,13 +39,12 @@ class About extends Component {
                       <Row>
                         <Col>
                           <span>
-                            <br/>
-                            Prénom : Ange <br/>
-                            Nom : Pagel <br/>
-                            Âge : 19 <br/>
-                            Localisation : Dijon <br/>
-                            Email : <a href="mailto:angepagel@gmail.com">angepagel@gmail.com</a> <br/>
-                            Téléphone : <a href="tel:+33651705341">06 51 70 53 41</a> <br/>
+                            <Typed
+                              strings={['<br/>Prénom : Ange <br/>Nom : Pagel <br/>Âge : 19 <br/>Localisation : Dijon <br/>Email : <a href="mailto:angepagel@gmail.com">angepagel@gmail.com</a><br>Téléphone : <a href="tel:+33651705341">06 51 70 53 41</a> <br/><br/>']}
+                              cursorChar={''}
+                              typeSpeed={10}
+                              startDelay={1500}
+                              />
                           </span>
                         </Col>
                       </Row>
