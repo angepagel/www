@@ -17,18 +17,18 @@ class Projects extends Component {
             <Container>
               <article>
                 <Row className="project">
-                    <Col xl='12' className="project-image" />
+                    <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/www.png')})`}} />
                     <Col xl='12' className="project-description">
-                      <h2>Projet 1</h2>
+                      <h2>www.angepagel.fr</h2>
                       <div className="infos">
-                        <span className="category">Catégorie</span>
-                        <span className="date">Date</span>
-
+                        <span className="category">Site internet</span>
+                        <span className="date">Février - Mars 2019</span>
                       </div>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices venenatis eros quis porta. Maecenas eget elit nec velit egestas rhoncus. Suspendisse sem lacus, convallis eget malesuada at, viverra eget nisi. Donec finibus ac erat eu molestie.
+                        Mon site internet personnel, conçu à l'aide de Node.js et des frameworks React (front-end) et Express (back-end, REST API). Son développement s'appuie sur une multitude de technologies web (Bootstrap, JSON Web Tokens, Sass, React Router, etc.) qui me permettent de présenter mon profil professionnel de manière soignée et originale tout en mettant à ma disposition un support d'expression personnel.
                       </p>
-                      <a className="main" href="/">Voir sur GitHub</a>
+                      <a className="main mr-4" rel="noopener noreferrer" href="https://github.com/angepagel/www-front" target="_blank">Front-end (GitHub)</a>
+                      <a className="main mt-2" rel="noopener noreferrer" href="https://github.com/angepagel/www-back" target="_blank">Back-end (GitHub)</a>
                     </Col>
                 </Row>
               </article>
