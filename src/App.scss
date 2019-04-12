@@ -42,12 +42,19 @@ a.main{
   border: 1px solid $blue-link;
   border-radius: 0px;
   padding: 5px 10px 5px 10px;
+  svg {
+    fill: $blue-link;
+    max-height: 1.1em;
+    vertical-align: sub;
+    transition: all 0.2s;
+  }
 }
 
 a.main:hover {
   background-color: $blue-link;
   color: $white;
   border: 1px solid $blue-link;
+  svg { fill: $white; }
 }
 
 button.btn { @extend a.main; }
