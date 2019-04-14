@@ -44,7 +44,7 @@ class Projects extends Component {
                           <span className="date">Novembre 2018</span>
                         </div>
                         <p>
-                          Durandal est un bot Discord développé en Python. Il est capable d'effectuer des actions basiques et de répondre à diverses commandes.
+                          Durandal est un bot <a rel="noopener noreferrer" href="https://discordapp.com/" target="_blank">Discord</a> développé en Python. Il est capable d'effectuer des actions basiques et de répondre à diverses commandes.
                         </p>
                         <a className="main" rel="noopener noreferrer" href="https://github.com/angepagel/Durandal" target="_blank">Voir sur GitHub</a>
                       </Col>
