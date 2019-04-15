@@ -28,9 +28,13 @@ class Resume extends Component {
                   <Row className="text-center">
                     <Col xs="12" sm="6">
                       <a className="main" href="/"><i className="material-icons">cloud_download</i> Télécharger (<span className="language">Français</span>)</a>
+                      <br/>
+                      <span className="available-soon">Bientôt disponible</span>
                     </Col>
                     <Col xs="12" sm="6">
                       <a className="main" href="/"><i className="material-icons">cloud_download</i> Télécharger (<span className="language">Anglais</span>)</a>
+                      <br/>
+                      <span className="available-soon">Bientôt disponible</span>
                     </Col>
                   </Row>
                 </section>
