@@ -36,6 +36,8 @@
       line-height: 1.2em;
       border-radius: 0 0 3px 3px;
       padding: 7px;
+      a { color: inherit; }
+      a:hover { color: $blue-link; }
     }
   }
 

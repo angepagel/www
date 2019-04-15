@@ -6,6 +6,13 @@ import './about.scss';
 
 class About extends Component {
   render() {
+
+    const prompt = (
+      <div className="prompt">
+        <span style={{color:'#16c60c'}}>user@local</span><span>:</span><span style={{color:'#2668ff'}}>~</span><span>$</span><span>&emsp;</span>
+      </div>
+    );
+
     return (
         <div id="about">
 
@@ -25,27 +32,37 @@ class About extends Component {
                       presentation — bash
                     </div>
                     <div className="terminal-body">
-                    
-                      <span style={{color:'#16c60c'}}>user@local</span>
-                      <span>:</span>
-                      <span style={{color:'#2668ff'}}>~</span>
-                      <span>
-                        $ <Typed
-                            strings={['cat presentation.txt']}
-                            cursorChar={''}
-                            typeSpeed={40} />
-                      </span>
 
+                      <span style={{display: 'inline-flex'}}>
+                        {prompt}
+                        <Typed
+                          strings={['cat presentation.txt']}
+                          showCursor={false}
+                          typeSpeed={40}
+                          onComplete={() => {
+                            const hiddenContent = document.getElementById('terminal-hidden-content');
+                            if (hiddenContent != null) hiddenContent.style.visibility = 'visible';
+                          }} />
+                        </span>
                       <Row>
                         <Col>
-                          <span>
-                            <Typed
-                              strings={['<br/>Prénom : Ange <br/>Nom : Pagel <br/>Âge : 19 <br/>Localisation : Dijon <br/>Email : <a href="mailto:angepagel@gmail.com">angepagel@gmail.com</a><br>Téléphone : <a href="tel:+33651705341">06 51 70 53 41</a> <br/><br/>']}
-                              cursorChar={''}
-                              typeSpeed={10}
-                              startDelay={1500}
-                              />
-                          </span>
+                          <div id="terminal-hidden-content" style={{visibility: 'hidden'}}>
+                            <br/>Prénom : Ange
+                            <br/>Nom : Pagel
+                            <br/>Âge : 19
+                            <br/>Localisation : <a rel="noopener noreferrer" href="https://goo.gl/maps/LnhGruyp2xA2" target="_blank">Dijon</a>
+                            <br/>Email : <a href="mailto:angepagel@gmail.com">angepagel@gmail.com</a>
+                            <br/>Téléphone : <a href="tel:+33651705341">06 51 70 53 41</a>
+                            <br/>
+                            <br/>
+                            <span style={{display: 'inline-flex'}}>
+                              {prompt}
+                              <Typed
+                                strings={['']}
+                                cursorChar={'▋'}
+                                />
+                            </span>
+                          </div>
                         </Col>
                       </Row>
                     </div>
