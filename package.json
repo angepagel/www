@@ -1,19 +1,24 @@
 {
-  "name": "www",
+  "name": "www-front",
   "version": "0.1.0",
   "private": true,
+  "author": "Ange Pagel",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angepagel/www-front"
+  },
   "dependencies": {
     "bootstrap": "^4.3.1",
     "node-sass": "^4.11.0",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^2.1.5",
-    "react-typed": "^1.1.0",
+    "react-scripts": "^2.1.8",
+    "react-typed": "^1.1.2",
     "reactstrap": "^6.5.0",
-    "sass": "^1.17.2"
+    "sass": "^1.18.0"
   },
   "scripts": {
     "start": "react-scripts start",
