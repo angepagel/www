@@ -17,7 +17,7 @@ class Projects extends Component {
             <Container>
               <article>
                 <Row className="project">
-                    <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/www.png')})`}} />
+                    <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/www.png')})`}} />
                     <Col xl='12' className="project-description">
                       <h2>www.angepagel.fr</h2>
                       <div className="infos">
@@ -36,7 +36,7 @@ class Projects extends Component {
                 <Col xs='12' md='6'>
                   <article id="project-durandal">
                     <Row className="project">
-                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/durandal.png')})`}} />
+                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/durandal.png')})`}} />
                       <Col xl='12' className="project-description">
                         <h2>Durandal</h2>
                         <div className="infos">
@@ -74,7 +74,7 @@ class Projects extends Component {
                 <Col xs='12' md='6'>
                   <article id="project-durandal">
                     <Row className="project">
-                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/civilization-zero.png')})`}} />
+                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/civilization-zero.png')})`}} />
                       <Col xl='12' className="project-description">
                         <h2>Civilization Zero</h2>
                         <div className="infos">
@@ -92,7 +92,7 @@ class Projects extends Component {
                 <Col xs='12' md='6'>
                   <article>
                     <Row className="project">
-                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/spaceships.png')})`}} />
+                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/spaceships.png')})`}} />
                       <Col xl='12' className="project-description">
                         <h2>Spaceships</h2>
                         <div className="infos">

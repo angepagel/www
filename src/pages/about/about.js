@@ -96,19 +96,19 @@ class About extends Component {
               <h2>Centres d'intérêt</h2>
               <Row>
                 <Col xs="6" md="3">
-                  <img src={require('../../media/intelligence-artificielle.png')} alt="Intelligence artificielle" />
+                  <img src={require('../../media/interests/intelligence-artificielle.png')} alt="Intelligence artificielle" />
                   <h3>Intelligence Artificielle</h3>
                 </Col>
                 <Col xs="6" md="3">
-                  <img src={require('../../media/philosophie.png')} alt="Philosophie" />
+                  <img src={require('../../media/interests/philosophie.png')} alt="Philosophie" />
                   <h3>Philosophie</h3>
                 </Col>
                 <Col xs="6" md="3">
-                  <img src={require('../../media/architecture.png')} alt="Architecture & Design" />
+                  <img src={require('../../media/interests/architecture.png')} alt="Architecture & Design" />
                   <h3>Architecture & Design</h3>
                 </Col>
                 <Col xs="6" md="3">
-                  <img src={require('../../media/astronomie.png')} alt="Astronomie" />
+                  <img src={require('../../media/interests/astronomie.png')} alt="Astronomie" />
                   <h3>Astronomie</h3>
                 </Col>
               </Row>
