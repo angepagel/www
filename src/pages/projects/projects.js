@@ -33,6 +33,24 @@ class Projects extends Component {
                 </Row>
               </article>
               <Row>
+              <Col xs='12' md='6'>
+                  <article>
+                    <Row className="project">
+                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/lab.png')})`}} />
+                      <Col xl='12' className="project-description">
+                        <h2>ThreeJS Lab</h2>
+                        <div className="infos">
+                          <span className="category">Infographie 3D</span>
+                          <span className="date">Avril 2019</span>
+                        </div>
+                        <p>
+                          Le ThreeJS Lab est un projet expérimental basé sur la bibliothèque JavaScript <a rel="noopener noreferrer" href="https://threejs.org/" target="_blank">three.js</a> qui me permet de développer mes compétences en infographie tridimensionnelle.
+                        </p>
+                        <a className="main" rel="noopener noreferrer" href="https://github.com/angepagel/ThreeJS-Lab" target="_blank">Voir sur GitHub</a>
+                      </Col>
+                    </Row>
+                  </article>
+                </Col>
                 <Col xs='12' md='6'>
                   <article id="project-durandal">
                     <Row className="project">
@@ -47,24 +65,6 @@ class Projects extends Component {
                           Durandal est un bot <a rel="noopener noreferrer" href="https://discordapp.com/" target="_blank">Discord</a> développé en Python. Il est capable d'effectuer des actions basiques et de répondre à diverses commandes.
                         </p>
                         <a className="main" rel="noopener noreferrer" href="https://github.com/angepagel/Durandal" target="_blank">Voir sur GitHub</a>
-                      </Col>
-                    </Row>
-                  </article>
-                </Col>
-                <Col xs='12' md='6'>
-                  <article>
-                    <Row className="project">
-                      <Col xl='12' className="project-image" />
-                      <Col xl='12' className="project-description">
-                        <h2>Projet 3</h2>
-                        <div className="infos">
-                          <span className="category">Catégorie</span>
-                          <span className="date">Date</span>
-                        </div>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices venenatis eros quis porta. Maecenas eget elit nec velit egestas rhoncus. Suspendisse sem lacus, convallis eget malesuada at, viverra eget nisi. Donec finibus ac erat eu molestie.
-                        </p>
-                        <a className="main" href="/">Voir sur GitHub</a>
                       </Col>
                     </Row>
                   </article>
