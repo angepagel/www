@@ -39,6 +39,7 @@ class Footer extends Component {
               <h5>Projets</h5>
               <hr/>
               <ul>
+                <li><a rel="noopener noreferrer" href="https://github.com/angepagel/ThreeJS-Lab" target="_blank">ThreeJS Lab</a></li>
                 <li><a rel="noopener noreferrer" href="https://github.com/angepagel/Durandal" target="_blank">Durandal</a></li>
                 <li><a rel="noopener noreferrer" href="https://github.com/angepagel/Civilization-Zero-Lamaths-UE" target="_blank">Civilization Zero</a></li>
               </ul>
