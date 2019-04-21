@@ -46,7 +46,8 @@ class Projects extends Component {
                         <p>
                           Le ThreeJS Lab est un projet expérimental basé sur la bibliothèque JavaScript <a rel="noopener noreferrer" href="https://threejs.org/" target="_blank">three.js</a> qui me permet de développer mes compétences en infographie tridimensionnelle.
                         </p>
-                        <a className="main" rel="noopener noreferrer" href="https://github.com/angepagel/ThreeJS-Lab" target="_blank">Voir sur GitHub</a>
+                        <a className="main mr-4" rel="noopener noreferrer" href="https://angepagel.github.io/ThreeJS-Lab/" target="_blank">Explorer le Lab</a>
+                        <a className="main mt-2" rel="noopener noreferrer" href="https://github.com/angepagel/ThreeJS-Lab" target="_blank">Voir sur GitHub</a>
                       </Col>
                     </Row>
                   </article>
