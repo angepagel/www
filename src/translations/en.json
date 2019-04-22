@@ -3,5 +3,16 @@
     "Navigation.resume"     : "Resume",
     "Navigation.projects"   : "Projects",
     "Navigation.blog"       : "Blog",
-    "Navigation.dashboard"  : "Dashboard"
+    "Navigation.dashboard"  : "Dashboard",
+
+    "Footer.about.link" : "About",
+    "Footer.explore.header"     : "Explore",
+    "Footer.explore.resume"     : "Resume",
+    "Footer.explore.projects"   : "Projects",
+    "Footer.explore.blog"       : "Blog",
+    "Footer.projects.header" : "Projects",
+    "Footer.networks.header" : "Networks",
+    "Footer.signedin.info"      : "You are connected.",
+    "Footer.signedin.logout"    : "Log Out",
+    "Footer.mentions" : "Developed with ❤️ by Ange Pagel"
 }

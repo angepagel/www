@@ -3,5 +3,16 @@
     "Navigation.resume"     : "Curriculum Vitæ",
     "Navigation.projects"   : "Projets",
     "Navigation.blog"       : "Blog",
-    "Navigation.dashboard"  : "Tableau de bord"
+    "Navigation.dashboard"  : "Tableau de bord",
+
+    "Footer.about.link" : "À propos",
+    "Footer.explore.header"     : "Explorer",
+    "Footer.explore.resume"     : "Curriculum Vitæ",
+    "Footer.explore.projects"   : "Projets",
+    "Footer.explore.blog"       : "Blog",
+    "Footer.projects.header" : "Projets",
+    "Footer.networks.header" : "Réseaux",
+    "Footer.signedin.info"      : "Vous êtes connecté.",
+    "Footer.signedin.logout"    : "Déconnexion",
+    "Footer.mentions" : "Développé avec ❤️ par Ange Pagel"
 }
