@@ -1,3 +1,7 @@
 {
-    
+    "Navigation.about"      : "About",
+    "Navigation.resume"     : "Resume",
+    "Navigation.projects"   : "Projects",
+    "Navigation.blog"       : "Blog",
+    "Navigation.dashboard"  : "Dashboard"
 }

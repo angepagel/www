@@ -1,3 +1,7 @@
 {
-    
+    "Navigation.about"      : "À propos",
+    "Navigation.resume"     : "Curriculum Vitæ",
+    "Navigation.projects"   : "Projets",
+    "Navigation.blog"       : "Blog",
+    "Navigation.dashboard"  : "Tableau de bord"
 }

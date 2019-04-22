@@ -10,6 +10,7 @@ import {
   NavItem, 
   NavLink 
 } from 'reactstrap';
+import { FormattedMessage } from 'react-intl';
 import * as API from '../../api/APIUtils';
 import './navigation.scss';
 
@@ -46,22 +47,22 @@ class Navigation extends Component {
             <Nav className='ml-auto' navbar>
               <NavItem>
                 <NavLink to='/about' tag={ReactNavLink} activeClassName='active'>
-                  <i className='material-icons'>person</i> <span>À propos</span>
+                  <i className='material-icons'>person</i> <span><FormattedMessage id="Navigation.about" /></span>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink to='/resume' tag={ReactNavLink} activeClassName='active'>
-                  <i className='material-icons'>notes</i> <span>Curriculum Vitæ</span>
+                  <i className='material-icons'>notes</i> <span><FormattedMessage id="Navigation.resume" /></span>
                 </NavLink>
               </NavItem>                 
               <NavItem>
                 <NavLink to='/projects' tag={ReactNavLink} activeClassName='active'>
-                  <i className='material-icons'>whatshot</i> <span>Projets</span>
+                  <i className='material-icons'>whatshot</i> <span><FormattedMessage id="Navigation.projects" /></span>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink to='/blog' tag={ReactNavLink} activeClassName='active'>
-                  <i className='material-icons'>edit</i> <span>Blog</span>
+                  <i className='material-icons'>edit</i> <span><FormattedMessage id="Navigation.blog" /></span>
                 </NavLink>
               </NavItem>
 
@@ -69,7 +70,7 @@ class Navigation extends Component {
                 API.isAuth() ? (
                   <NavItem>
                     <NavLink to='/dashboard' tag={ReactNavLink} activeClassName='active'>
-                      <i className='material-icons'>dashboard</i> <span>Dashboard</span>
+                      <i className='material-icons'>dashboard</i> <span><FormattedMessage id="Navigation.dashboard" /></span>
                     </NavLink>
                   </NavItem>
                 ) : ('')
