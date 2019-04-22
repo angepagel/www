@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import { Container, Row, Col } from 'reactstrap';
+import { FormattedMessage } from 'react-intl';
 import Typed from 'react-typed';
 import './about.scss';
 
@@ -20,7 +21,7 @@ class About extends Component {
             <title>Ange Pagel – À propos</title>
           </Helmet>
 
-          <h1 className="page-title">À propos</h1>
+          <h1 className="page-title"><FormattedMessage id="About.title" /></h1>
 
           <Container>
             
@@ -47,12 +48,12 @@ class About extends Component {
                       <Row>
                         <Col>
                           <div id="terminal-hidden-content" style={{visibility: 'hidden'}}>
-                            <br/>Prénom : Ange
-                            <br/>Nom : Pagel
-                            <br/>Âge : 19
-                            <br/>Localisation : <a rel="noopener noreferrer" href="https://goo.gl/maps/LnhGruyp2xA2" target="_blank">Dijon</a>
-                            <br/>Email : <a href="mailto:angepagel@gmail.com">angepagel@gmail.com</a>
-                            <br/>Téléphone : <a href="tel:+33651705341">06 51 70 53 41</a>
+                            <br/><FormattedMessage id="About.terminal.firstName" /> : Ange
+                            <br/><FormattedMessage id="About.terminal.lastName" /> : Pagel
+                            <br/><FormattedMessage id="About.terminal.age" /> : 19
+                            <br/><FormattedMessage id="About.terminal.location" /> : <a rel="noopener noreferrer" href="https://goo.gl/maps/LnhGruyp2xA2" target="_blank">Dijon</a>
+                            <br/><FormattedMessage id="About.terminal.email" /> : <a href="mailto:angepagel@gmail.com">angepagel@gmail.com</a>
+                            <br/><FormattedMessage id="About.terminal.phone" /> : <a href="tel:+33651705341">06 51 70 53 41</a>
                             <br/>
                             <br/>
                             <span style={{display: 'inline-flex'}}>
@@ -75,17 +76,17 @@ class About extends Component {
               <Row>
                 <Col sm="12" md="6">
                   <section>
-                    <h2>Le numérique est notre avenir</h2>
+                    <h2><FormattedMessage id="About.digital.title" /></h2>
                     <p>
-                      J'évolue depuis mon plus jeune âge dans un monde transcendé par le numérique. Smartphones, réalité virtuelle et augmentée, intelligence artificielle, véhicules autonomes, etc. Ces progrès me fascinent et sont le moteur de mon ambitition. Aujourd'hui, mon voeu est de participer au développement des technologies de demain.
+                      <FormattedMessage id="About.digital.body" />
                     </p>
                   </section>
                 </Col>
                 <Col sm="12" md="6">
                 <section>
-                  <h2>Science, éthique et société</h2>
+                  <h2><FormattedMessage id="About.science.title" /></h2>
                   <p>
-                    Je suis conscient des questions éthiques et sociétales induites par les progrès dans le domaine du numérique ; les débats autour de l'intelligence aritifcielle et de la robotique m'intéressent particulièrement. J'aspire à concevoir des solutions innovantes et pensées pour répondre à ces problématiques.
+                    <FormattedMessage id="About.science.body" />
                   </p>
                 </section>
                 </Col>
@@ -93,23 +94,23 @@ class About extends Component {
             </section>
 
             <section id="interests">
-              <h2>Centres d'intérêt</h2>
+              <h2><FormattedMessage id="About.interests.title" /></h2>
               <Row>
                 <Col xs="6" md="3">
                   <img src={require('../../media/interests/intelligence-artificielle.png')} alt="Intelligence artificielle" />
-                  <h3>Intelligence Artificielle</h3>
+                  <h3><FormattedMessage id="About.interests.ai" /></h3>
                 </Col>
                 <Col xs="6" md="3">
                   <img src={require('../../media/interests/philosophie.png')} alt="Philosophie" />
-                  <h3>Philosophie</h3>
+                  <h3><FormattedMessage id="About.interests.philosophy" /></h3>
                 </Col>
                 <Col xs="6" md="3">
                   <img src={require('../../media/interests/architecture.png')} alt="Architecture & Design" />
-                  <h3>Architecture & Design</h3>
+                  <h3><FormattedMessage id="About.interests.design" /></h3>
                 </Col>
                 <Col xs="6" md="3">
                   <img src={require('../../media/interests/astronomie.png')} alt="Astronomie" />
-                  <h3>Astronomie</h3>
+                  <h3><FormattedMessage id="About.interests.astronomy" /></h3>
                 </Col>
               </Row>
             </section>
