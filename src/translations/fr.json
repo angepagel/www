@@ -22,6 +22,12 @@
     "About.interests.design"        : "Architecture & Design",
     "About.interests.astronomy"     : "Astronomie",
 
+    "Dashboard.title"           : "Tableau de bord",
+    "Dashboard.files.title"     : "Gérer les fichiers",
+    "Dashboard.files.upload"    : "Mettre en ligne",
+    "Dashboard.blog.title"      : "Gérer le blog",
+    "Dashboard.blog.new"        : "Publier un article",
+
     "Footer.about.link" : "À propos",
     "Footer.explore.header"     : "Explorer",
     "Footer.explore.resume"     : "Curriculum Vitæ",

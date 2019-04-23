@@ -8,6 +8,7 @@ import {
   UncontrolledCollapse,
   Button
 } from 'reactstrap';
+import { FormattedMessage } from 'react-intl';
 import BlogTable from '../../components/blogTable/blogTable';
 import UploadsTable from '../../components/uploadsTable/uploadsTable';
 import './dashboard.scss';
@@ -18,20 +19,20 @@ class Dashboard extends Component {
         <div id="dashboard">
 
           <Helmet>
-            <title>Tableau de bord</title>
+            <title><FormattedMessage id="Dashboard.title" /></title>
           </Helmet>
 
-          <h1 className="page-title">Tableau de bord</h1>
+          <h1 className="page-title"><FormattedMessage id="Dashboard.title" /></h1>
 
           <Container>
 
             <section>
               <Row>
                 <Col>
-                  <h2>Gestion des ressources <Button className="toggler" id="toggler_uploads"><i className="material-icons">expand_more</i></Button></h2>
+                  <h2><FormattedMessage id="Dashboard.files.title" /> <Button className="toggler" id="toggler_uploads"><i className="material-icons">expand_more</i></Button></h2>
                   <hr/>
                   <UncontrolledCollapse toggler="#toggler_uploads">
-                    <NavLink className="main" to="/dashboard/upload"><i className="material-icons">add</i> Mettre en ligne</NavLink>                  
+                    <NavLink className="main" to="/dashboard/upload"><i className="material-icons">add</i> <FormattedMessage id="Dashboard.files.upload" /></NavLink>                  
                     <UploadsTable />
                   </UncontrolledCollapse>
                 </Col>
@@ -41,10 +42,10 @@ class Dashboard extends Component {
             <section>
               <Row>
                 <Col>
-                  <h2>Gestion du Blog <Button className="toggler" id="toggler_blog"><i className="material-icons">expand_more</i></Button></h2>
+                  <h2><FormattedMessage id="Dashboard.blog.title" /> <Button className="toggler" id="toggler_blog"><i className="material-icons">expand_more</i></Button></h2>
                   <hr/>
                   <UncontrolledCollapse toggler="#toggler_blog">
-                    <NavLink className="main" to="/dashboard/editor"><i className="material-icons">add</i> Publier</NavLink>
+                    <NavLink className="main" to="/dashboard/editor"><i className="material-icons">add</i> <FormattedMessage id="Dashboard.blog.new" /></NavLink>
                     <BlogTable />
                   </UncontrolledCollapse>
                 </Col>

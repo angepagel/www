@@ -22,6 +22,12 @@
     "About.interests.design"        : "Architecture & Design",
     "About.interests.astronomy"     : "Astronomy",
 
+    "Dashboard.title"           : "Dashboard",
+    "Dashboard.files.title"     : "Manage files",
+    "Dashboard.files.upload"    : "Upload",
+    "Dashboard.blog.title"      : "Manage blog",
+    "Dashboard.blog.new"        : "New",
+
     "Footer.about.link" : "About",
     "Footer.explore.header"     : "Explore",
     "Footer.explore.resume"     : "Resume",
