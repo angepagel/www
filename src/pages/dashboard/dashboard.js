@@ -19,7 +19,7 @@ class Dashboard extends Component {
         <div id="dashboard">
 
           <Helmet>
-            <title><FormattedMessage id="Dashboard.title" /></title>
+            <title>Tableau de bord</title>
           </Helmet>
 
           <h1 className="page-title"><FormattedMessage id="Dashboard.title" /></h1>
