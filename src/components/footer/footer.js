@@ -51,6 +51,7 @@ class Footer extends Component {
               <ul>
                 <li><a rel="noopener noreferrer" href="https://github.com/angepagel" target="_blank">GitHub</a></li>
                 <li><a rel="noopener noreferrer" href="https://www.linkedin.com/in/angepagel/" target="_blank">LinkedIn</a></li>
+                <li><a rel="noopener noreferrer" href="https://join.skype.com/invite/iWD9kbbdEubc" target="_blank">Skype</a></li>
               </ul>
             </Col>
           </Row>
