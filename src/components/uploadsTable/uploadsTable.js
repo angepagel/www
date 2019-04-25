@@ -17,7 +17,7 @@ class UploadsTable extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      uploads: [],
+      files: [],
       deleteModal: false,
       deletingUpload: '',
       apicode: ''
@@ -50,7 +50,7 @@ class UploadsTable extends Component {
       const apicode = await API.deleteUpload(fileName);
 
       this.setState({
-        uploads: await API.getUploads(),
+        files: await API.getUploads(),
         apicode: apicode
       })
     }
@@ -66,7 +66,7 @@ class UploadsTable extends Component {
   async componentDidMount() {
     try {
       this.setState({
-        uploads: await API.getUploads()
+        files: await API.getUploads()
       })
     }
     catch(error) {
@@ -75,7 +75,7 @@ class UploadsTable extends Component {
   }
 
   render() {
-    let { uploads } = this.state;
+    let { files } = this.state;
 
     return (
       <div id="uploadsTable">
@@ -90,17 +90,19 @@ class UploadsTable extends Component {
           <thead>
             <tr>
               <th>Nom du fichier</th>
+              <th>Date de mise en ligne</th>
               <th>Action</th>
             </tr>
           </thead>
           <tbody>
             {
-              uploads.map(upload => (
-                <tr key={upload}>
-                  <td>{upload}</td>
+              files.map(upload => (
+                <tr key={upload.fileName}>
+                  <td>{upload.fileName}</td>
+                  <td>{new Date(upload.date).toUTCString()}</td>
                   <td className="actions">
                     <Button className="delete-icon" onClick={() => this.showDeleteModal(upload)}><i className="material-icons">delete_forever</i></Button>
-                    <Button className="openinnew-icon" onClick={() => this.openInNewTab(`${process.env.REACT_APP_PROXY}/uploads/${upload}`)}><i className="material-icons">open_in_new</i></Button>
+                    <Button className="openinnew-icon" onClick={() => this.openInNewTab(`${process.env.REACT_APP_PROXY}/files/${upload}`)}><i className="material-icons">open_in_new</i></Button>
                   </td>
                 </tr>
               ))
