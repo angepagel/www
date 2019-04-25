@@ -102,7 +102,7 @@ class UploadsTable extends Component {
                   <td>{new Date(file.date).toUTCString()}</td>
                   <td className="actions">
                     <Button className="delete-icon" onClick={() => this.showDeleteModal(file.fileName)}><i className="material-icons">delete_forever</i></Button>
-                    <Button className="openinnew-icon" onClick={() => this.openInNewTab(`${process.env.REACT_APP_PROXY}/files/${file}`)}><i className="material-icons">open_in_new</i></Button>
+                    <Button className="openinnew-icon" onClick={() => this.openInNewTab(`${process.env.REACT_APP_PROXY}/uploads/${file.fileName}`)}><i className="material-icons">open_in_new</i></Button>
                   </td>
                 </tr>
               ))
