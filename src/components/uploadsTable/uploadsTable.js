@@ -96,13 +96,13 @@ class UploadsTable extends Component {
           </thead>
           <tbody>
             {
-              files.map(upload => (
-                <tr key={upload.fileName}>
-                  <td>{upload.fileName}</td>
-                  <td>{new Date(upload.date).toUTCString()}</td>
+              files.map(file => (
+                <tr key={file.fileName}>
+                  <td>{file.fileName}</td>
+                  <td>{new Date(file.date).toUTCString()}</td>
                   <td className="actions">
-                    <Button className="delete-icon" onClick={() => this.showDeleteModal(upload)}><i className="material-icons">delete_forever</i></Button>
-                    <Button className="openinnew-icon" onClick={() => this.openInNewTab(`${process.env.REACT_APP_PROXY}/files/${upload}`)}><i className="material-icons">open_in_new</i></Button>
+                    <Button className="delete-icon" onClick={() => this.showDeleteModal(file.fileName)}><i className="material-icons">delete_forever</i></Button>
+                    <Button className="openinnew-icon" onClick={() => this.openInNewTab(`${process.env.REACT_APP_PROXY}/files/${file}`)}><i className="material-icons">open_in_new</i></Button>
                   </td>
                 </tr>
               ))
