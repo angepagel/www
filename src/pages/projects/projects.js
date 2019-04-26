@@ -53,7 +53,7 @@ class Projects extends Component {
                   </article>
                 </Col>
                 <Col xs='12' md='6'>
-                  <article id="project-durandal">
+                  <article>
                     <Row className="project">
                       <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/durandal.png')})`}} />
                       <Col xl='12' className="project-description">
@@ -73,7 +73,7 @@ class Projects extends Component {
               </Row>
               <Row>
                 <Col xs='12' md='6'>
-                  <article id="project-durandal">
+                  <article>
                     <Row className="project">
                       <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/civilization-zero.png')})`}} />
                       <Col xl='12' className="project-description">
@@ -103,6 +103,27 @@ class Projects extends Component {
                         <p>
                           Spaceships est un jeu vidéo type « Asteroids » développé en Python à l'aide de la bibliothèque Pygame. Il propose différents modes de jeux, un éditeur de niveaux et une personnalisation avancée du vaisseau dont il est possible de changer la forme, la couleur et l'arme équipée.
                         </p>
+                      </Col>
+                    </Row>
+                  </article>
+                </Col>
+              </Row>
+              <Row>
+                <Col xs='12' md='6'>
+                  <article>
+                    <Row className="project">
+                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/marathon.png')})`}} />
+                      <Col xl='12' className="project-description">
+                        <h2>Marathon Website</h2>
+                        <div className="infos">
+                          <span className="category">Site internet</span>
+                          <span className="date">Janvier 2017</span>
+                        </div>
+                        <p>
+                          Ce site est inspiré de Marathon, un jeu de tir à la première personne développé par Bungie dont le premier épisode est sorti en 1994. Il s'agit de l'un de mes premiers projets Web.
+                        </p>
+                        <a className="main mr-4" rel="noopener noreferrer" href="https://angepagel.github.io/Marathon-Website/" target="_blank">Découvrir Marathon</a>
+                        <a className="main mt-2" rel="noopener noreferrer" href="https://github.com/angepagel/Marathon-Website" target="_blank">Voir sur GitHub</a>
                       </Col>
                     </Row>
                   </article>
