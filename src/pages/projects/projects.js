@@ -33,7 +33,25 @@ class Projects extends Component {
                 </Row>
               </article>
               <Row>
-              <Col xs='12' md='6'>
+                <Col xs='12' md='6'>
+                  <article>
+                    <Row className="project">
+                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/durandal.png')})`}} />
+                      <Col xl='12' className="project-description">
+                        <h2>Durandal</h2>
+                        <div className="infos">
+                          <span className="category">Bot Discord</span>
+                          <span className="date">Mai 2019</span>
+                        </div>
+                        <p>
+                          Durandal est un bot <a rel="noopener noreferrer" href="https://discordapp.com/" target="_blank">Discord</a> développé en JavaScript (après une <a rel="noopener noreferrer" href="https://github.com/angepagel/DurandalPy" target="_blank">première version en Python</a>). Il est capable d'effectuer des actions basiques et de répondre à diverses commandes.
+                        </p>
+                        <a className="main" rel="noopener noreferrer" href="https://github.com/angepagel/Durandal" target="_blank">Voir sur GitHub</a>
+                      </Col>
+                    </Row>
+                  </article>
+                </Col>
+                <Col xs='12' md='6'>
                   <article>
                     <Row className="project">
                       <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/lab.png')})`}} />
@@ -48,24 +66,6 @@ class Projects extends Component {
                         </p>
                         <a className="main mr-4" rel="noopener noreferrer" href="https://angepagel.github.io/ThreeJS-Lab/" target="_blank">Explorer le Lab</a>
                         <a className="main mt-2" rel="noopener noreferrer" href="https://github.com/angepagel/ThreeJS-Lab" target="_blank">Voir sur GitHub</a>
-                      </Col>
-                    </Row>
-                  </article>
-                </Col>
-                <Col xs='12' md='6'>
-                  <article>
-                    <Row className="project">
-                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/durandal.png')})`}} />
-                      <Col xl='12' className="project-description">
-                        <h2>Durandal</h2>
-                        <div className="infos">
-                          <span className="category">Bot Discord</span>
-                          <span className="date">Novembre 2018</span>
-                        </div>
-                        <p>
-                          Durandal est un bot <a rel="noopener noreferrer" href="https://discordapp.com/" target="_blank">Discord</a> développé en Python. Il est capable d'effectuer des actions basiques et de répondre à diverses commandes.
-                        </p>
-                        <a className="main" rel="noopener noreferrer" href="https://github.com/angepagel/Durandal" target="_blank">Voir sur GitHub</a>
                       </Col>
                     </Row>
                   </article>
