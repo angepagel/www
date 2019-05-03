@@ -120,7 +120,7 @@ class Projects extends Component {
                           <span className="date">Janvier 2017</span>
                         </div>
                         <p>
-                          Ce site est inspiré de Marathon, un jeu de tir à la première personne développé par Bungie dont le premier épisode est sorti en 1994. Il s'agit de l'un de mes premiers projets Web.
+                          Ce site est inspiré de <a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Marathon_(video_game)" target="_blank">Marathon</a>, un jeu de tir à la première personne développé par Bungie dont le premier épisode est sorti en 1994. Il s'agit de l'un de mes premiers projets Web.
                         </p>
                         <a className="main mr-4" rel="noopener noreferrer" href="https://angepagel.github.io/Marathon-Website/" target="_blank">Découvrir Marathon</a>
                         <a className="main mt-2" rel="noopener noreferrer" href="https://github.com/angepagel/Marathon-Website" target="_blank">Voir sur GitHub</a>
