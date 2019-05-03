@@ -44,7 +44,7 @@ class Projects extends Component {
                           <span className="date">Mai 2019</span>
                         </div>
                         <p>
-                          Durandal est un bot <a rel="noopener noreferrer" href="https://discordapp.com/" target="_blank">Discord</a> développé en JavaScript (après une <a rel="noopener noreferrer" href="https://github.com/angepagel/DurandalPy" target="_blank">première version en Python</a>). Il est capable d'effectuer des actions basiques et de répondre à diverses commandes.
+                          Durandal est un bot <a rel="noopener noreferrer" href="https://discordapp.com/" target="_blank">Discord</a> inspiré d'une intelligence artificielle du jeu vidéo <a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Marathon_(video_game)" target="_blank">Marathon</a> et propose aux membres d'un serveur Discord de jouer à un jeu de rôle global se déroulant dans l'univers de science-fiction de Marathon.
                         </p>
                         <a className="main" rel="noopener noreferrer" href="https://github.com/angepagel/Durandal" target="_blank">Voir sur GitHub</a>
                       </Col>
