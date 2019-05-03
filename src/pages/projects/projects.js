@@ -83,7 +83,7 @@ class Projects extends Component {
                           <span className="date">Nov. - Déc. 2017</span>
                         </div>
                         <p>
-                          Civilization Zero est un jeu en ligne de commande développé en Pascal et inspiré de la célèbre série de jeux vidéo Civilization. Le joueur construit et améliore des bâtiments pour produire diverses ressources et se développer. Il doit également se protéger et diriger son armée contre les ennemis qui l'assaillissent.
+                          Civilization Zero est un jeu en ligne de commande développé en Pascal et inspiré de la célèbre série de jeux vidéo <a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Civilization_(video_game)" target="_blank">Civilization</a>. Le joueur construit et améliore des bâtiments pour produire diverses ressources et se développer. Il doit également se protéger et diriger son armée contre les ennemis qui l'assaillissent.
                         </p>
                         <a className="main" rel="noopener noreferrer" href="https://github.com/angepagel/Civilization-Zero-Lamaths-UE" target="_blank">Voir sur GitHub</a>
                       </Col>
