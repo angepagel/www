@@ -57,7 +57,10 @@ a.main:hover {
   svg { fill: $white; }
 }
 
-button.btn { @extend a.main; }
+button.btn {
+  @extend a.main;
+  vertical-align: baseline;
+}
 
 button.delete {
   color: $red-strenght;
