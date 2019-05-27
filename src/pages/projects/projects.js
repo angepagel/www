@@ -36,6 +36,24 @@ class Projects extends Component {
                 <Col xs='12' md='6'>
                   <article>
                     <Row className="project">
+                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/a2t.png')})`}} />
+                      <Col xl='12' className="project-description">
+                        <h2>A2T</h2>
+                        <div className="infos">
+                          <span className="category">Simulation</span>
+                          <span className="date">Avril - Juin 2019</span>
+                        </div>
+                        <p>
+                          A2T (Ambulance-To-Traffic light) est une simulation <a rel="noopener noreferrer" href="https://veins.car2x.org/" target="_blank">Veins</a> visant à améliorer le déroulement des missions de sauvetage grâce à des communications ambulance à feux de circulation utilisant un réseau Ad-Hoc de véhicules (VANet).
+                        </p>
+                        <a className="main" rel="noopener noreferrer" href="https://github.com/angepagel/A2T" target="_blank">Voir sur GitHub</a>
+                      </Col>
+                    </Row>
+                  </article>
+                </Col>
+                <Col xs='12' md='6'>
+                  <article>
+                    <Row className="project">
                       <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/durandal.png')})`}} />
                       <Col xl='12' className="project-description">
                         <h2>Durandal</h2>
@@ -51,6 +69,8 @@ class Projects extends Component {
                     </Row>
                   </article>
                 </Col>
+              </Row>
+              <Row>
                 <Col xs='12' md='6'>
                   <article>
                     <Row className="project">
@@ -70,8 +90,6 @@ class Projects extends Component {
                     </Row>
                   </article>
                 </Col>
-              </Row>
-              <Row>
                 <Col xs='12' md='6'>
                   <article>
                     <Row className="project">
@@ -90,6 +108,8 @@ class Projects extends Component {
                     </Row>
                   </article>
                 </Col>
+              </Row>
+              <Row>
                 <Col xs='12' md='6'>
                   <article>
                     <Row className="project">
@@ -107,8 +127,6 @@ class Projects extends Component {
                     </Row>
                   </article>
                 </Col>
-              </Row>
-              <Row>
                 <Col xs='12' md='6'>
                   <article>
                     <Row className="project">
