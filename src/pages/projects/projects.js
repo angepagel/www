@@ -123,6 +123,26 @@ class Projects extends Component {
                         <p>
                           Spaceships est un jeu vidéo type « Asteroids » développé en Python à l'aide de la bibliothèque Pygame. Il propose différents modes de jeux, un éditeur de niveaux et une personnalisation avancée du vaisseau dont il est possible de changer la forme, la couleur et l'arme équipée.
                         </p>
+                        <UncontrolledCollapse className="project-details" toggler="#toggler_spaceships">
+                          <section>
+                            <h3><i className="material-icons">person_add</i> Coautheur</h3>
+                            <span>Kévin KIBONGUI</span>
+                          </section>
+                          <section>
+                            <h3><i className="material-icons">forum</i> Contexte</h3>
+                            <p>
+                              Projet de fin d'année de la spécialité Informatique et Sciences du Numérique (ISN) de mon Baccalauréat Scientifique.
+                            </p>
+                          </section>
+                          <section>
+                            <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisé(s)</h3>
+                            <ul>
+                              <li><a rel="noopener noreferrer" href="https://www.python.org/" target="_blank">Python</a> (version 3.6)</li>
+                              <li><a rel="noopener noreferrer" href="https://www.pygame.org/wiki/about" target="_blank">Pygame</a></li>
+                            </ul>
+                          </section>
+                        </UncontrolledCollapse>
+                        <Button className="main" id="toggler_spaceships">Informations</Button>
                       </Col>
                     </Row>
                   </article>
