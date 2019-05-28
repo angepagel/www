@@ -52,7 +52,28 @@ class Projects extends Component {
                         <p>
                           A2T (Ambulance-To-Traffic light) est une simulation <a rel="noopener noreferrer" href="https://veins.car2x.org/" target="_blank">Veins</a> visant à améliorer le déroulement des missions de sauvetage grâce à des communications ambulance à feux de circulation utilisant un réseau Ad-Hoc de véhicules (VANet).
                         </p>
-                        <a className="main" rel="noopener noreferrer" href="https://github.com/angepagel/A2T" target="_blank">Voir sur GitHub</a>
+                        <UncontrolledCollapse className="project-details" toggler="#toggler_a2t">
+                          <section>
+                            <h3><i className="material-icons">person_add</i> Tuteur</h3>
+                            <span>Dr. Chakkaphong Suthaputchakun</span>
+                          </section>
+                          <section>
+                            <h3><i className="material-icons">forum</i> Contexte</h3>
+                            <p>
+                              Projet confié par le Dr. Suthaputchakun pendant mon stage au centre de recherche CROCCS de la Bangkok University.
+                            </p>
+                          </section>
+                          <section>
+                          <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisé(s)</h3>
+                            <ul>
+                              <li><a rel="noopener noreferrer" href="https://omnetpp.org/" target="_blank">Objective Modular Network Testbed in C++</a> (OMNeT++)</li>
+                              <li><a rel="noopener noreferrer" href="https://sumo.dlr.de/index.html" target="_blank">Simulation of Urban Mobility</a> (SUMO)</li>
+                              <li><a rel="noopener noreferrer" href="https://veins.car2x.org/" target="_blank">Vehicles in Network Simulation</a> (Veins)</li>
+                            </ul>
+                          </section>
+                        </UncontrolledCollapse>
+                        <Button className="main mr-3" id="toggler_a2t">Informations</Button>
+                        <a className="main mt-2" rel="noopener noreferrer" href="https://github.com/angepagel/A2T" target="_blank">Voir sur GitHub</a>
                       </Col>
                     </Row>
                   </article>
