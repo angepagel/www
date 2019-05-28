@@ -138,10 +138,30 @@ class Projects extends Component {
                           <span className="date">Janvier 2017</span>
                         </div>
                         <p>
-                          Ce site est inspiré de <a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Marathon_(video_game)" target="_blank">Marathon</a>, un jeu de tir à la première personne développé par Bungie dont le premier épisode est sorti en 1994. Il s'agit de l'un de mes premiers projets Web.
+                          Ce site est inspiré de <a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Marathon_(video_game)" target="_blank">Marathon</a>, un jeu de tir à la première personne développé par Bungie dont le premier épisode est sorti en 1994. Il s'agit de l'un de mes premiers projets web.
                         </p>
-                        <a className="main mr-4" rel="noopener noreferrer" href="https://angepagel.github.io/Marathon-Website/" target="_blank">Découvrir Marathon</a>
-                        <a className="main mt-2" rel="noopener noreferrer" href="https://github.com/angepagel/Marathon-Website" target="_blank">Voir sur GitHub</a>
+                        <UncontrolledCollapse className="project-details" toggler="#toggler_marathon">
+                          <section>
+                            <h3><i className="material-icons">person_add</i> Coautheur</h3>
+                            <span>Kévin KIBONGUI</span>
+                          </section>
+                          <section>
+                            <h3><i className="material-icons">forum</i> Contexte</h3>
+                            <p>
+                              Projet web de la spécialité Informatique et Sciences du Numérique (ISN) de mon Baccalauréat Scientifique.
+                            </p>
+                          </section>
+                          <section>
+                            <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisé(s)</h3>
+                            <ul>
+                              <li>HTML</li>
+                              <li>CSS</li>
+                            </ul>
+                          </section>
+                        </UncontrolledCollapse>
+                        <Button className="main mr-3" id="toggler_marathon">Informations</Button>
+                        <a className="main mr-3" rel="noopener noreferrer" href="https://github.com/angepagel/Marathon-Website" target="_blank">Voir sur GitHub</a>
+                        <a className="main mt-2" rel="noopener noreferrer" href="https://angepagel.github.io/Marathon-Website/" target="_blank">Découvrir Marathon</a>
                       </Col>
                     </Row>
                   </article>
