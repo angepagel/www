@@ -84,8 +84,24 @@ class Projects extends Component {
                         <p>
                           Le ThreeJS Lab est un projet expérimental basé sur la bibliothèque JavaScript <a rel="noopener noreferrer" href="https://threejs.org/" target="_blank">three.js</a> qui me permet de développer mes compétences en infographie tridimensionnelle.
                         </p>
-                        <a className="main mr-4" rel="noopener noreferrer" href="https://angepagel.github.io/ThreeJS-Lab/" target="_blank">Explorer le Lab</a>
-                        <a className="main mt-2" rel="noopener noreferrer" href="https://github.com/angepagel/ThreeJS-Lab" target="_blank">Voir sur GitHub</a>
+                        <UncontrolledCollapse className="project-details" toggler="#toggler_threejslab">
+                          <section>
+                            <h3><i className="material-icons">forum</i> Contexte</h3>
+                            <p>
+                              Projet personnel visant à approfondir les notions d'infographie tridimensionnelle vues au cours du module de programmation web de mon DUT Informatique.
+                            </p>
+                          </section>
+                          <section>
+                            <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisé(s)</h3>
+                            <ul>
+                              <li>JavaScript</li>
+                              <li><a rel="noopener noreferrer" href="https://threejs.org/" target="_blank">Three.js</a></li>
+                            </ul>
+                          </section>
+                        </UncontrolledCollapse>
+                        <Button className="main mr-3" id="toggler_threejslab">Informations</Button>
+                        <a className="main mr-3" rel="noopener noreferrer" href="https://github.com/angepagel/ThreeJS-Lab" target="_blank">Voir sur GitHub</a>
+                        <a className="main mt-2" rel="noopener noreferrer" href="https://angepagel.github.io/ThreeJS-Lab/" target="_blank">Explorer le Lab</a>
                       </Col>
                     </Row>
                   </article>
