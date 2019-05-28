@@ -64,7 +64,7 @@ class Projects extends Component {
                             </p>
                           </section>
                           <section>
-                          <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisé(s)</h3>
+                          <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
                             <ul>
                               <li><a rel="noopener noreferrer" href="https://omnetpp.org/" target="_blank">Objective Modular Network Testbed in C++</a> (OMNeT++)</li>
                               <li><a rel="noopener noreferrer" href="https://sumo.dlr.de/index.html" target="_blank">Simulation of Urban Mobility</a> (SUMO)</li>
@@ -119,7 +119,7 @@ class Projects extends Component {
                             </p>
                           </section>
                           <section>
-                            <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisé(s)</h3>
+                            <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
                             <ul>
                               <li>JavaScript</li>
                               <li><a rel="noopener noreferrer" href="https://threejs.org/" target="_blank">Three.js</a></li>
@@ -178,7 +178,7 @@ class Projects extends Component {
                             </p>
                           </section>
                           <section>
-                            <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisé(s)</h3>
+                            <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
                             <ul>
                               <li><a rel="noopener noreferrer" href="https://www.python.org/" target="_blank">Python</a> (version 3.6)</li>
                               <li><a rel="noopener noreferrer" href="https://www.pygame.org/wiki/about" target="_blank">Pygame</a></li>
@@ -215,7 +215,7 @@ class Projects extends Component {
                             </p>
                           </section>
                           <section>
-                            <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisé(s)</h3>
+                            <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
                             <ul>
                               <li>HTML</li>
                               <li>CSS</li>
