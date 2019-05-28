@@ -91,7 +91,24 @@ class Projects extends Component {
                         <p>
                           Durandal est un bot <a rel="noopener noreferrer" href="https://discordapp.com/" target="_blank">Discord</a> inspiré d'une intelligence artificielle du jeu vidéo <a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Marathon_(video_game)" target="_blank">Marathon</a> et propose aux membres d'un serveur Discord de jouer à un jeu de rôle global se déroulant dans l'univers de science-fiction de Marathon.
                         </p>
-                        <a className="main" rel="noopener noreferrer" href="https://github.com/angepagel/Durandal" target="_blank">Voir sur GitHub</a>
+                        <UncontrolledCollapse className="project-details" toggler="#toggler_durandal">
+                          <section>
+                            <h3><i className="material-icons">forum</i> Contexte</h3>
+                            <p>
+                              Projet personnel né d'une utilisation régulière du logiciel gratuit de VoIP <a rel="noopener noreferrer" href="https://discordapp.com/" target="_blank">Discord</a> et de mon intérêt pour la science fiction et les jeux de rôle.
+                            </p>
+                          </section>
+                          <section>
+                          <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
+                            <ul>
+                              <li>JavaScript</li>
+                              <li><a rel="noopener noreferrer" href="https://nodejs.org/" target="_blank">Node.js</a></li>
+                              <li><a rel="noopener noreferrer" href="https://discord.js.org/#/" target="_blank">Discord.js</a></li>
+                            </ul>
+                          </section>
+                        </UncontrolledCollapse>
+                        <Button className="main mr-3" id="toggler_durandal">Informations</Button>
+                        <a className="main mt-2" rel="noopener noreferrer" href="https://github.com/angepagel/Durandal" target="_blank">Voir sur GitHub</a>
                       </Col>
                     </Row>
                   </article>
