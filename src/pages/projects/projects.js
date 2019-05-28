@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
-import { Container, Row, Col } from 'reactstrap';
+import {
+  Container,
+  Row,
+  Col,
+  UncontrolledCollapse,
+  Button
+ } from 'reactstrap';
 import './projects.scss';
 
 class Projects extends Component {
