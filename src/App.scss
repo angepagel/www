@@ -57,6 +57,10 @@ a.main:hover {
   svg { fill: $white; }
 }
 
+a.main:focus {
+  box-shadow: none;
+}
+
 button.btn {
   @extend a.main;
   vertical-align: baseline;
@@ -83,3 +87,5 @@ button.cancel:hover {
   background-color: $mantra;
   border-color: $mantra;
 }
+
+button.btn:focus { @extend a.main:focus; }
