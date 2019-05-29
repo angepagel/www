@@ -109,7 +109,7 @@ class Resume extends Component {
                           <span><i className="material-icons">location_on</i> <a rel="noopener noreferrer" target="_blank" href="https://www.google.com/maps/place/E.S.I.R.E.M./@47.3121099,5.0725104,16.75z/data=!4m5!3m4!1s0x47f29e6bd4c577f3:0xb2198f3923ab0998!8m2!3d47.3121732!4d5.0739723">École d'ingénieurs ESIREM</a></span>
                         </div>
                         <p className="description">
-                          Équipe classée <strong>3e sur 11</strong>.
+                          Création en 24 heures d'un site internet (fictif) de réservation de voyages spatiaux et temporels.<br/>Équipe classée <strong>3e sur 11</strong>.
                         </p>
                       </div>
 
@@ -121,7 +121,7 @@ class Resume extends Component {
                           <span><i className="material-icons">location_on</i> <a rel="noopener noreferrer" target="_blank" href="https://www.google.fr/maps/place/Campus+Universitaire+d'Auxerre+(IUT,+UFR,+Le2i)/@47.7892,3.5920305,18z/data=!4m8!1m2!2m1!1sIUT+Auxerre!3m4!1s0x0:0x54e46eb902a3559!8m2!3d47.7886641!4d3.592537">IUT d'Auxerre</a></span>
                         </div>
                         <p className="description">
-                          Équipe classée <strong>8e sur 9</strong>.
+                          Création en 48 heures d'un site internet (fictif) de réservation d'espaces de co-working.<br/>Équipe classée <strong>8e sur 9</strong>.
                         </p>
                       </div>
 
@@ -145,7 +145,7 @@ class Resume extends Component {
                           <span><i className="material-icons">location_on</i> <a rel="noopener noreferrer" target="_blank" href="https://www.google.fr/maps/place/IUT+Dijon/@47.3110124,5.0663128,17z/data=!3m2!4b1!5s0x47f29e6eeec3b081:0xe3076a48a9fe61f1!4m5!3m4!1s0x47f29e6edc000023:0xc034427f4d6a0b09!8m2!3d47.3110124!4d5.0685015">IUT de Dijon</a></span>
                         </div>
                         <p className="description">
-                          Convention d'anime, contribution bénévole à l'événement (animation, encadrement du public).
+                          Convention d'anime, contribution bénévole à l'événement (animations et encadrement du public).
                         </p>
                       </div>
                     </Col>
