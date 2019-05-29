@@ -72,7 +72,7 @@ class Projects extends Component {
                             </ul>
                           </section>
                         </UncontrolledCollapse>
-                        <Button className="main mr-3" id="toggler_a2t">Informations</Button>
+                        <Button className="main mt-2 mr-3" id="toggler_a2t">Informations</Button>
                         <a className="main mt-2" rel="noopener noreferrer" href="https://github.com/angepagel/A2T" target="_blank">Voir sur GitHub</a>
                       </Col>
                     </Row>
@@ -107,7 +107,7 @@ class Projects extends Component {
                             </ul>
                           </section>
                         </UncontrolledCollapse>
-                        <Button className="main mr-3" id="toggler_durandal">Informations</Button>
+                        <Button className="main mt-2 mr-3" id="toggler_durandal">Informations</Button>
                         <a className="main mt-2" rel="noopener noreferrer" href="https://github.com/angepagel/Durandal" target="_blank">Voir sur GitHub</a>
                       </Col>
                     </Row>
@@ -143,8 +143,8 @@ class Projects extends Component {
                             </ul>
                           </section>
                         </UncontrolledCollapse>
-                        <Button className="main mr-3" id="toggler_threejslab">Informations</Button>
-                        <a className="main mr-3" rel="noopener noreferrer" href="https://github.com/angepagel/ThreeJS-Lab" target="_blank">Voir sur GitHub</a>
+                        <Button className="main mt-2 mr-3" id="toggler_threejslab">Informations</Button>
+                        <a className="main mt-2 mr-3" rel="noopener noreferrer" href="https://github.com/angepagel/ThreeJS-Lab" target="_blank">Voir sur GitHub</a>
                         <a className="main mt-2" rel="noopener noreferrer" href="https://angepagel.github.io/ThreeJS-Lab/" target="_blank">Explorer le Lab</a>
                       </Col>
                     </Row>
@@ -239,8 +239,8 @@ class Projects extends Component {
                             </ul>
                           </section>
                         </UncontrolledCollapse>
-                        <Button className="main mr-3" id="toggler_marathon">Informations</Button>
-                        <a className="main mr-3" rel="noopener noreferrer" href="https://github.com/angepagel/Marathon-Website" target="_blank">Voir sur GitHub</a>
+                        <Button className="main mt-2 mr-3" id="toggler_marathon">Informations</Button>
+                        <a className="main mt-2 mr-3" rel="noopener noreferrer" href="https://github.com/angepagel/Marathon-Website" target="_blank">Voir sur GitHub</a>
                         <a className="main mt-2" rel="noopener noreferrer" href="https://angepagel.github.io/Marathon-Website/" target="_blank">Découvrir Marathon</a>
                       </Col>
                     </Row>
