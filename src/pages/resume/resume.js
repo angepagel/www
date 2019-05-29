@@ -92,7 +92,7 @@ class Resume extends Component {
                       <div className="line">
                         <h3>Stage en Centre de Recherche</h3>
                         <div className="infos">
-                          <span><i className="material-icons">event_note</i> Avril - Juillet 2019</span>
+                          <span><i className="material-icons">event_note</i> 8 Avril - 4 Juillet 2019</span>
                           <br/>
                           <span><i className="material-icons">location_on</i> <a rel="noopener noreferrer" target="_blank" href="https://www.google.fr/maps/place/BU-CROCCS/@14.0401609,100.6081118,17z/data=!4m5!3m4!1s0x30e2801accd02c07:0xdb5174318f1046b0!8m2!3d14.0401174!4d100.6102877">Bangkok University CROCCS</a></span>
                         </div>
