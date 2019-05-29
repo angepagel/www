@@ -33,7 +33,50 @@ class Projects extends Component {
                       <p>
                         Mon site internet personnel, conçu à l'aide de <a rel="noopener noreferrer" href="https://nodejs.org" target="_blank">Node.js</a> et des frameworks <a rel="noopener noreferrer" href="https://reactjs.org/" target="_blank">React</a> (front-end) et <a rel="noopener noreferrer" href="https://expressjs.com/" target="_blank">Express</a> (back-end, REST API). Son développement s'appuie sur une multitude de technologies web (<a rel="noopener noreferrer" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>, <a rel="noopener noreferrer" href="https://jwt.io/" target="_blank">JWT</a>, <a rel="noopener noreferrer" href="https://sass-lang.com/" target="_blank">Sass</a>, <a rel="noopener noreferrer" href="https://reacttraining.com/react-router/" target="_blank">React Router</a>, etc.) qui me permettent de présenter mon profil professionnel de manière soignée et originale tout en mettant à ma disposition un support d'expression personnel.
                       </p>
-                      <a className="main mr-4" rel="noopener noreferrer" href="https://github.com/angepagel/www-front" target="_blank">Front-end (GitHub)</a>
+                      <UncontrolledCollapse className="project-details" toggler="#toggler_www">
+                        <Row>
+                          <Col sm='12' md='4'>
+                            <h3>Front-end</h3>
+                            <hr/>
+                            <section>
+                              <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
+                              <ul>
+                                <li><a rel="noopener noreferrer" href="https://reactjs.org/" target="_blank">React.js</a></li>
+                                <li><a rel="noopener noreferrer" href="https://reacttraining.com/react-router/" target="_blank">React Router</a></li>
+                                <li><a rel="noopener noreferrer" href="https://getbootstrap.com/" target="_blank">Bootstrap</a> et composants <a rel="noopener noreferrer" href="https://reactstrap.github.io/" target="_blank">Reactstrap</a></li>
+                                <li><a rel="noopener noreferrer" href="https://sass-lang.com/" target="_blank">Sass</a></li>
+                              </ul>
+                            </section>
+                          </Col>
+                          <Col sm='12' md='4'>
+                            <h3>Back-end</h3>
+                            <hr/>
+                            <section>
+                              <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
+                              <ul>
+                                <li><a rel="noopener noreferrer" href="https://expressjs.com/" target="_blank">Express</a> + middlewares</li>
+                                <li><a rel="noopener noreferrer" href="https://jwt.io/" target="_blank">JSON Web Tokens</a></li>
+                                <li><a rel="noopener noreferrer" href="https://github.com/motdotla/dotenv" target="_blank">Dotenv</a></li>
+                              </ul>
+                            </section>
+                          </Col>
+                          <Col sm='12' md='4'>
+                            <h3>Hébergement et BD</h3>
+                            <hr/>
+                            <section>
+                              <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
+                              <ul>
+                                <li>VPS sous Linux (<a rel="noopener noreferrer" href="https://www.debian.org/" target="_blank">Debian 9</a>)</li>
+                                <li>Serveur web <a rel="noopener noreferrer" href="https://www.nginx.com/" target="_blank">NGINX</a></li>
+                                <li>Certificat SSL (HTTPS) avec <a rel="noopener noreferrer" href="https://certbot.eff.org/" target="_blank">Certbot</a></li>
+                                <li>SGBDR <a rel="noopener noreferrer" href="https://www.postgresql.org/" target="_blank">PostgreSQL</a></li>
+                              </ul>
+                            </section>
+                          </Col>
+                        </Row>
+                      </UncontrolledCollapse>
+                      <Button className="main mt-2 mr-3" id="toggler_www">Informations</Button>
+                      <a className="main mt-2 mr-3" rel="noopener noreferrer" href="https://github.com/angepagel/www-front" target="_blank">Front-end (GitHub)</a>
                       <a className="main mt-2" rel="noopener noreferrer" href="https://github.com/angepagel/www-back" target="_blank">Back-end (GitHub)</a>
                     </Col>
                 </Row>
