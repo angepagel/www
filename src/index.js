@@ -17,7 +17,13 @@ const translations = {
     'fr': translation_fr,
     'en': translation_en
 }
-const language = navigator.language.split(/[-_]/)[0]; // Language without region code
+let language = navigator.language.split(/[-_]/)[0]; // Language without region code
+
+// Unsupported language
+if (!Object.keys(translations).includes(language)){
+    console.log(`Unsupported language: ${language}. Display configured in English.`);
+    language = 'en';
+}
 
 ReactDOM.render(
     <IntlProvider locale={language} messages={translations[language]}>
