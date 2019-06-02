@@ -74,6 +74,8 @@ class Resume extends Component {
                           <span><i className="material-icons">location_on</i> <a rel="noopener noreferrer" target="_blank" href="https://www.google.com/maps/place/Lyc%C3%A9e+G%C3%A9n%C3%A9ral+Jean-Marc+Boivin/@47.3031215,5.1254075,17z/data=!3m1!4b1!4m5!3m4!1s0x47f29f845f30838f:0x62034e02e5c87c61!8m2!3d47.3031215!4d5.1275962">Lycée Général Jean-Marc Boivin</a></span>
                         </div>
                         <p className="description">
+                          Spécialité <strong>Sciences de la Vie et de la Terre</strong> (SVT).<br/>
+                          Option <strong>Informatique et Sciences du Numérique</strong> (ISN).<br/>
                           Diplôme obtenu avec <strong>mention Très Bien</strong>, section européenne espagnol.
                         </p>
                       </div>
