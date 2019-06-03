@@ -99,7 +99,7 @@ class Resume extends Component {
                           <span><i className="material-icons">location_on</i> <a rel="noopener noreferrer" target="_blank" href="https://www.google.fr/maps/place/BU-CROCCS/@14.0401609,100.6081118,17z/data=!4m5!3m4!1s0x30e2801accd02c07:0xdb5174318f1046b0!8m2!3d14.0401174!4d100.6102877">Bangkok University CROCCS</a></span>
                         </div>
                         <p className="description">
-                          Réalisation du projet A2T.
+                          Stage de fin d'études (DUT Informatique), réalisation du projet <strong>A2T</strong> confié par le <a rel="noopener noreferrer" href="http://bucroccs.bu.ac.th/showPeople.php?ID=8" target="_blank">Dr. Suthaputchakun</a>.
                         </p>
                       </div>
 
