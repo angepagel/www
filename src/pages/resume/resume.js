@@ -21,9 +21,7 @@ class Resume extends Component {
                 <section id="download">
                   <Row className="text-center">
                     <Col xs="12" sm="6">
-                      <a className="main" href="/"><i className="material-icons">cloud_download</i> Télécharger (<span className="language">Français</span>)</a>
-                      <br/>
-                      <span className="available-soon">Bientôt disponible</span>
+                      <a rel="noopener noreferrer" className="main" href="https://www.angepagel.fr/uploads/CV_Ange_PAGEL_FR.pdf" target="_blank"><i className="material-icons">cloud_download</i> Télécharger (<span className="language">Français</span>)</a>
                     </Col>
                     <Col xs="12" sm="6">
                       <a className="main" href="/"><i className="material-icons">cloud_download</i> Télécharger (<span className="language">Anglais</span>)</a>
