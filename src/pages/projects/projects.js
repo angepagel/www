@@ -270,7 +270,16 @@ class Projects extends Component {
                             </ul>
                           </section>
                         </UncontrolledCollapse>
-                        <Button className="main mt-2" id="toggler_bienvenue_en_info">Informations</Button>
+                        <UncontrolledCollapse className="project-details" toggler="#toggler_bienvenue_en_info_gameplay">
+                          <section>
+                            <h3><i className="material-icons">movie</i> Vidéo de gameplay</h3>
+                            <div className="video-container mt-2">
+                              <iframe title="Bienvenue en Info Gameplay" width="560" height="315" src="https://www.youtube.com/embed/f3vtvaIqiw8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                          </section>
+                        </UncontrolledCollapse>
+                        <Button className="main mt-2 mr-3" id="toggler_bienvenue_en_info">Informations</Button>
+                        <Button className="main mt-2" id="toggler_bienvenue_en_info_gameplay">Vidéo de gameplay</Button>
                       </Col>
                     </Row>
                   </article>
@@ -296,7 +305,7 @@ class Projects extends Component {
                             </p>
                           </section>
                           <section>
-                          <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
+                            <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
                             <ul>
                               <li>Pascal</li>
                             </ul>
