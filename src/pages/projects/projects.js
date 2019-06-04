@@ -195,6 +195,42 @@ class Projects extends Component {
                 </Col>
                 <Col xs='12' md='6'>
                   <article>
+                    <Row className="project" id="monopoly">
+                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/monopoly.png')})`}} />
+                      <Col xl='12' className="project-description">
+                        <h2>Monopoly Génétique</h2>
+                        <div className="infos">
+                          <span className="category">Jeu vidéo</span>
+                          <span className="date">Nov. 2018 - Janvier 2019</span>
+                        </div>
+                        <p>
+                          Le Monopoly Génétique est un projet visant à recréer le célèbre jeu de société en Java pour ensuite entraîner une intelligence artificielle basée sur un algorithme génétique.
+                        </p>
+                      </Col>
+                    </Row>
+                  </article>
+                </Col>
+              </Row>
+              <Row>
+                <Col xs='12' md='6'>
+                  <article>
+                    <Row className="project" id="morpion_csharp">
+                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/morpion-csharp.png')})`}} />
+                      <Col xl='12' className="project-description">
+                        <h2>Morpion C#</h2>
+                        <div className="infos">
+                          <span className="category">Jeu vidéo</span>
+                          <span className="date">Nov. - Déc. 2018</span>
+                        </div>
+                        <p>
+                          Adaptation en C# du célèbre jeu de réflexion, proposant une intelligence artificielle avec différents niveaux de difficulté ainsi qu'un mode deux joueurs.
+                        </p>
+                      </Col>
+                    </Row>
+                  </article>
+                </Col>
+                <Col xs='12' md='6'>
+                  <article>
                     <Row className="project" id="wwwv1">
                       <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/wwwv1.png')})`}} />
                       <Col xl='12' className="project-description">
