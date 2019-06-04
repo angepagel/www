@@ -263,6 +263,12 @@ class Projects extends Component {
                             </p>
                           </section>
                           <section>
+                            <h3><i className="material-icons">group</i> Organisation</h3>
+                            <p>
+                              Équipe de 4 étudiants, rôle de chef de projet.
+                            </p>
+                          </section>
+                          <section>
                             <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
                             <ul>
                               <li><a rel="noopener noreferrer" href="https://www.python.org/" target="_blank">Python</a></li>
@@ -302,6 +308,12 @@ class Projects extends Component {
                             <h3><i className="material-icons">forum</i> Contexte</h3>
                             <p>
                               Projet final du module d'algorithmique du 1<sup>er</sup> semestre de mon DUT Informatique.
+                            </p>
+                          </section>
+                          <section>
+                            <h3><i className="material-icons">group</i> Organisation</h3>
+                            <p>
+                              Équipe de 4 étudiants, rôle de chef de projet.
                             </p>
                           </section>
                           <section>
