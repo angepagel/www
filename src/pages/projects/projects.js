@@ -195,6 +195,88 @@ class Projects extends Component {
                 </Col>
                 <Col xs='12' md='6'>
                   <article>
+                    <Row className="project" id="wwwv1">
+                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/wwwv1.png')})`}} />
+                      <Col xl='12' className="project-description">
+                        <h2>www (v1)</h2>
+                        <div className="infos">
+                          <span className="category">Site internet</span>
+                          <span className="date">Juin - Août 2018</span>
+                        </div>
+                        <p>
+                          Une première version en PHP de mon site internet personnel visant à présenter mon parcours, mes projets et mes aspirations tout en développant mes compétences en développement web.
+                        </p>
+                        <UncontrolledCollapse className="project-details" toggler="#toggler_wwwv1">
+                          <section>
+                            <h3><i className="material-icons">forum</i> Contexte</h3>
+                            <p>
+                              Projet personnel réalisé afin d'acquérir de nouvelles connaissances en développement full stack tout produisant un support de communication efficace qui me permet d'anticiper ma recherche de stage pour la fin de mon DUT Informatique.
+                            </p>
+                          </section>
+                          <h3>Front-end</h3>
+                          <hr/>
+                          <section>
+                            <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisé(s)</h3>
+                            <ul>
+                              <li>PHP</li>
+                              <li>JavaScript</li>
+                              <li>HTML</li>
+                              <li>CSS</li>
+                            </ul>
+                          </section>
+                          <h3>Hébergement et BD</h3>
+                          <hr/>
+                          <section>
+                            <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisé(s)</h3>
+                            <ul>
+                              <li>VPS sous Linux (<a rel="noopener noreferrer" href="https://www.debian.org/" target="_blank">Debian 9</a>)</li>
+                              <li>Serveur web <a rel="noopener noreferrer" href="https://www.nginx.com/" target="_blank">NGINX</a></li>
+                              <li>SGBDR <a rel="noopener noreferrer" href="https://www.mysql.com/" target="_blank">MySQL</a></li>
+                            </ul>
+                          </section>
+                        </UncontrolledCollapse>
+                        <Button className="main mt-2" id="toggler_wwwv1">Informations</Button>
+                      </Col>
+                    </Row>
+                  </article>
+                </Col>
+              </Row>
+              <Row>
+                <Col xs='12' md='6'>
+                  <article>
+                    <Row className="project" id="bienvinfo">
+                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/bienvenue-en-info.png')})`}} />
+                      <Col xl='12' className="project-description">
+                        <h2>Bienvenue en Info</h2>
+                        <div className="infos">
+                          <span className="category">Jeu vidéo</span>
+                          <span className="date">Nov. 2017 - Janvier 2018</span>
+                        </div>
+                        <p>
+                          Bienvenue en Info est un petit jeu de plateforme développé en Python présentant les modules d'enseignement du DUT Informatique à travers plusieurs niveaux. Le joueur découvre les différentes matières et peut répondre à un QCM faisant office d'évaluation de fin de semestre.
+                        </p>
+                        <UncontrolledCollapse className="project-details" toggler="#toggler_bienvenue_en_info">
+                          <section>
+                            <h3><i className="material-icons">forum</i> Contexte</h3>
+                            <p>
+                              Projet tutoré du 1<sup>er</sup> semestre de mon DUT Informatique. Il s'agit d'un projet centré autour de la communication et destiné aux personnes souhaitant se renseigner sur la formation.
+                            </p>
+                          </section>
+                          <section>
+                            <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
+                            <ul>
+                              <li><a rel="noopener noreferrer" href="https://www.python.org/" target="_blank">Python</a></li>
+                              <li><a rel="noopener noreferrer" href="https://www.pygame.org/wiki/about" target="_blank">Pygame</a></li>
+                            </ul>
+                          </section>
+                        </UncontrolledCollapse>
+                        <Button className="main mt-2" id="toggler_bienvenue_en_info">Informations</Button>
+                      </Col>
+                    </Row>
+                  </article>
+                </Col>
+                <Col xs='12' md='6'>
+                  <article>
                     <Row className="project" id="civilization">
                       <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/civilization-zero.png')})`}} />
                       <Col xl='12' className="project-description">
