@@ -249,18 +249,27 @@ class Projects extends Component {
                           <section>
                             <h3><i className="material-icons">forum</i> Contexte</h3>
                             <p>
-                              Projet de fin d'année de la spécialité Informatique et Sciences du Numérique (ISN) de mon Baccalauréat Scientifique.
+                              Projet de fin d'année de la spécialité Informatique et Sciences du Numérique (ISN) de mon Baccalauréat Scientifique. L'idée de Spaceships est née d'une passion commune pour la science fiction et les jeux vidéo rétro.
                             </p>
                           </section>
                           <section>
                             <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
                             <ul>
-                              <li><a rel="noopener noreferrer" href="https://www.python.org/" target="_blank">Python</a> (version 3.6)</li>
+                              <li><a rel="noopener noreferrer" href="https://www.python.org/" target="_blank">Python</a></li>
                               <li><a rel="noopener noreferrer" href="https://www.pygame.org/wiki/about" target="_blank">Pygame</a></li>
                             </ul>
                           </section>
                         </UncontrolledCollapse>
-                        <Button className="main" id="toggler_spaceships">Informations</Button>
+                        <UncontrolledCollapse className="project-details" toggler="#toggler_spaceships_gameplay">
+                          <section>
+                            <h3><i className="material-icons">movie</i> Vidéo de gameplay</h3>
+                            <div className="video-container mt-2">
+                              <iframe title="Spaceships Gameplay" width="560" height="315" src="https://www.youtube.com/embed/j3SzNZpQTNQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                          </section>
+                        </UncontrolledCollapse>
+                        <Button className="main mt-2 mr-3" id="toggler_spaceships">Informations</Button>
+                        <Button className="main mt-2" id="toggler_spaceships_gameplay">Vidéo de gameplay</Button>
                       </Col>
                     </Row>
                   </article>
