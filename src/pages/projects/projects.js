@@ -206,6 +206,29 @@ class Projects extends Component {
                         <p>
                           Le Monopoly Génétique est un projet visant à recréer le célèbre jeu de société en Java pour ensuite entraîner une intelligence artificielle basée sur un algorithme génétique.
                         </p>
+                        <UncontrolledCollapse className="project-details" toggler="#toggler_monopoly">
+                          <section>
+                            <h3><i className="material-icons">forum</i> Contexte</h3>
+                            <p>
+                              Projet tutoré du 3<sup>ème</sup> semestre de mon DUT Informatique.
+                            </p>
+                          </section>
+                          <section>
+                            <h3><i className="material-icons">group</i> Organisation</h3>
+                            <p>
+                              Équipe de 6 étudiants, rôle de chef de projet.<br/>
+                            </p>
+                          </section>
+                          <section>
+                            <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
+                            <ul>
+                              <li>Java</li>
+                              <li>Bibliothèque UI <a rel="noopener noreferrer" href="https://openjfx.io/" target="_blank">JavaFX</a></li>
+                            </ul>
+                          </section>
+                        </UncontrolledCollapse>
+                        <Button className="main mt-2 mr-3" id="toggler_monopoly">Informations</Button>
+                        <a className="main mt-2" rel="noopener noreferrer" href="https://github.com/angepagel/Genetic-Monopoly-Project" target="_blank">Voir sur GitHub</a>
                       </Col>
                     </Row>
                   </article>
