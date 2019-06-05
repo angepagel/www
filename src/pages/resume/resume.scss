@@ -61,6 +61,27 @@
         }
       }
     }
+
+    section {
+      margin-top: 21px;
+      margin-bottom: 33px;
+    }
+
+    #java .progress-bar { background-color: #e5322b; }
+    #js .progress-bar { background-color: #F7DF1E; }
+    #python .progress-bar { background-color: #3776AB; }
+    #ts .progress-bar { background-color: #007ACC; }
+
+    #html .progress-bar { background-color: #E34F26; }
+    #css .progress-bar { background-color: #1572B6; }
+    #php .progress-bar { background-color: #777BB4; }
+    #sql .progress-bar { background-color: #4479A1; }
+
+    #csharp .progress-bar { background-color: #9b4f97; }
+    #cpp .progress-bar { background-color: #659bd3; }
+    #c .progress-bar { background-color: #00599C; }
+    #brainfuck .progress-bar { background-color: #222222; }
+    
   }
 
 }

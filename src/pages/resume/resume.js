@@ -119,6 +119,66 @@ class Resume extends Component {
                       </Col>
                     </Row>
                   </section>
+       
+                  <section>
+                    <h3>Langages</h3>
+                    <Row>
+                      <Col>
+                        <div className="skill">
+                          <span>Java</span>
+                          <Progress id="java" value="80"/>
+                        </div>
+                        <div className="skill">
+                          <span>Python</span>
+                          <Progress id="python" value="70"/>
+                        </div>
+                        <div className="skill">
+                          <span>JavaScript</span>
+                          <Progress id="js" value="60"/>
+                        </div>
+                        <div className="skill">
+                          <span>TypeScript</span>
+                          <Progress id="ts" value="55"/>
+                        </div>
+                      </Col>
+                      <Col>
+                        <div className="skill">
+                          <span>HTML</span>
+                          <Progress id="html" value="75"/>
+                        </div>
+                        <div className="skill">
+                          <span>CSS</span>
+                          <Progress id="css" value="70"/>
+                        </div>
+                        <div className="skill">
+                          <span>PHP</span>
+                          <Progress id="php" value="60"/>
+                        </div>
+                        <div className="skill">
+                          <span>PL/SQL</span>
+                          <Progress id="sql" value="50"/>
+                        </div>
+                      </Col>
+                      <Col>
+                        <div className="skill">
+                          <span>C#</span>
+                          <Progress id="csharp" value="55"/>
+                        </div>
+                        <div className="skill">
+                          <span>C++</span>
+                          <Progress id="cpp" value="45"/>
+                        </div>
+                        <div className="skill">
+                          <span>C</span>
+                          <Progress id="c" value="20"/>
+                        </div>
+                        <div className="skill">
+                          <span>Brainfuck</span>
+                          <Progress id="brainfuck" value="3"/>
+                        </div>
+                      </Col>
+                    </Row>
+                  </section>
                 </section>
 
                 <hr/>
