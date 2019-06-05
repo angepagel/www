@@ -56,15 +56,8 @@
         background-color: rgba($mantra, 0.1);
         margin-top: 6px;
         height: 9px;
-        .progress-bar {
-          background-color: $blue-link;
-        }
+        .progress-bar { background-color: $blue-link; }
       }
-    }
-
-    section {
-      margin-top: 21px;
-      margin-bottom: 33px;
     }
 
     #java .progress-bar { background-color: #e5322b; }

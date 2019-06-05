@@ -86,99 +86,93 @@ class Resume extends Component {
                 <section id="skills">
                   <h2 className="mb-3">Compétences</h2>
 
-                  <section>
-                    <h3>Général</h3>
-                    <Row>
-                      <Col>
-                        <div className="skill">
-                          <span>Développement logiciel</span>
-                          <Progress value="80"/>
-                        </div>
-                        <div className="skill">
-                          <span>Développement web</span>
-                          <Progress value="75"/>
-                        </div>
-                        <div className="skill">
-                          <span>Gestion de projet</span>
-                          <Progress value="65"/>
-                        </div>
-                      </Col>
-                      <Col>
-                        <div className="skill">
-                          <span>Base de données</span>
-                          <Progress value="60"/>
-                        </div>
-                        <div className="skill">
-                          <span>Réseau</span>
-                          <Progress value="50"/>
-                        </div>
-                        <div className="skill">
-                          <span>IoT & Systèmes embarqués</span>
-                          <Progress value="40"/>
-                        </div>
-                      </Col>
-                    </Row>
-                  </section>
-       
-                  <section>
-                    <h3>Langages</h3>
-                    <Row>
-                      <Col>
-                        <div className="skill">
-                          <span>Java</span>
-                          <Progress id="java" value="80"/>
-                        </div>
-                        <div className="skill">
-                          <span>Python</span>
-                          <Progress id="python" value="70"/>
-                        </div>
-                        <div className="skill">
-                          <span>JavaScript</span>
-                          <Progress id="js" value="60"/>
-                        </div>
-                        <div className="skill">
-                          <span>TypeScript</span>
-                          <Progress id="ts" value="55"/>
-                        </div>
-                      </Col>
-                      <Col>
-                        <div className="skill">
-                          <span>HTML</span>
-                          <Progress id="html" value="75"/>
-                        </div>
-                        <div className="skill">
-                          <span>CSS</span>
-                          <Progress id="css" value="70"/>
-                        </div>
-                        <div className="skill">
-                          <span>PHP</span>
-                          <Progress id="php" value="60"/>
-                        </div>
-                        <div className="skill">
-                          <span>PL/SQL</span>
-                          <Progress id="sql" value="50"/>
-                        </div>
-                      </Col>
-                      <Col>
-                        <div className="skill">
-                          <span>C#</span>
-                          <Progress id="csharp" value="55"/>
-                        </div>
-                        <div className="skill">
-                          <span>C++</span>
-                          <Progress id="cpp" value="45"/>
-                        </div>
-                        <div className="skill">
-                          <span>C</span>
-                          <Progress id="c" value="20"/>
-                        </div>
-                        <div className="skill">
-                          <span>Brainfuck</span>
-                          <Progress id="brainfuck" value="3"/>
-                        </div>
-                      </Col>
-                    </Row>
-                  </section>
+                  <Row>
+                    <Col xs='12' md='6'>
+                      <div className="skill">
+                        <span>Développement logiciel</span>
+                        <Progress value="80"/>
+                      </div>
+                      <div className="skill">
+                        <span>Développement web</span>
+                        <Progress value="75"/>
+                      </div>
+                      <div className="skill">
+                        <span>Gestion de projet</span>
+                        <Progress value="65"/>
+                      </div>
+                    </Col>
+                    <Col xs='12' md='6'>
+                      <div className="skill">
+                        <span>Base de données</span>
+                        <Progress value="60"/>
+                      </div>
+                      <div className="skill">
+                        <span>Réseau</span>
+                        <Progress value="50"/>
+                      </div>
+                      <div className="skill">
+                        <span>IoT & Systèmes embarqués</span>
+                        <Progress value="40"/>
+                      </div>
+                    </Col>
+                  </Row>
+      
+                  <Row>
+                    <Col xs='12' md='4'>
+                      <div className="skill">
+                        <span>Java</span>
+                        <Progress id="java" value="80"/>
+                      </div>
+                      <div className="skill">
+                        <span>Python</span>
+                        <Progress id="python" value="70"/>
+                      </div>
+                      <div className="skill">
+                        <span>JavaScript</span>
+                        <Progress id="js" value="60"/>
+                      </div>
+                      <div className="skill">
+                        <span>TypeScript</span>
+                        <Progress id="ts" value="55"/>
+                      </div>
+                    </Col>
+                    <Col xs='12' md='4'>
+                      <div className="skill">
+                        <span>HTML</span>
+                        <Progress id="html" value="75"/>
+                      </div>
+                      <div className="skill">
+                        <span>CSS</span>
+                        <Progress id="css" value="70"/>
+                      </div>
+                      <div className="skill">
+                        <span>PHP</span>
+                        <Progress id="php" value="60"/>
+                      </div>
+                      <div className="skill">
+                        <span>PL/SQL</span>
+                        <Progress id="sql" value="50"/>
+                      </div>
+                    </Col>
+                    <Col xs='12' md='4'>
+                      <div className="skill">
+                        <span>C#</span>
+                        <Progress id="csharp" value="55"/>
+                      </div>
+                      <div className="skill">
+                        <span>C++</span>
+                        <Progress id="cpp" value="45"/>
+                      </div>
+                      <div className="skill">
+                        <span>C</span>
+                        <Progress id="c" value="20"/>
+                      </div>
+                      <div className="skill">
+                        <span>Brainfuck</span>
+                        <Progress id="brainfuck" value="3"/>
+                      </div>
+                    </Col>
+                  </Row>
                 </section>
 
                 <hr/>
