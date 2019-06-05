@@ -109,7 +109,7 @@ class Projects extends Component {
                           <section>
                             <h3><i className="material-icons">forum</i> Contexte</h3>
                             <p>
-                              Projet confié par le Dr. Suthaputchakun pendant mon stage au centre de recherche CROCCS de la Bangkok University.
+                              Projet confié par le <a rel="noopener noreferrer" href="http://bucroccs.bu.ac.th/showPeople.php?ID=8" target="_blank">Dr. Chakkaphong Suthaputchakun</a> pendant mon stage au centre de recherche CROCCS de la Bangkok University.
                             </p>
                           </section>
                           <section>
