@@ -37,7 +37,7 @@ class Projects extends Component {
                         <section>
                           <h3><i className="material-icons">forum</i> Contexte</h3>
                           <p>
-                            Projet tutoré du 4<sup>ème</sup> semestre de mon DUT Informatique.
+                            Projet tutoré du 4<sup>ème</sup> semestre de mon DUT Informatique (choix libre du sujet). Ce projet fait suite à une première version de mon site internet personnel, que j'ai décidé de mettre à jour à l'aide de technologies web modernes.
                           </p>
                         </section>
                         <Row>
