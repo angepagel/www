@@ -225,6 +225,25 @@ class Projects extends Component {
                         <p>
                           Adaptation en C# du célèbre jeu de réflexion, proposant une intelligence artificielle avec différents niveaux de difficulté ainsi qu'un mode deux joueurs.
                         </p>
+                        <UncontrolledCollapse className="project-details" toggler="#toggler_morpion_csharp">
+                          <section>
+                            <h3><i className="material-icons">person_add</i> Coautheur</h3>
+                            <span>Kévin KIBONGUI</span>
+                          </section>
+                          <section>
+                            <h3><i className="material-icons">forum</i> Contexte</h3>
+                            <span>Projet final du module de conception et de programmation objet du 3<sup>ème</sup> semestre de mon DUT Informatique.</span>
+                          </section>
+                          <section>
+                            <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
+                            <ul>
+                              <li>C#</li>
+                              <li>Framework UI Windows Presentation Foundation (WPF)</li>
+                            </ul>
+                          </section>
+                        </UncontrolledCollapse>
+                        <Button className="main mt-2 mr-3" id="toggler_morpion_csharp">Informations</Button>
+                        <a className="main mt-2" rel="noopener noreferrer" href="https://github.com/angepagel/Morpion-Csharp" target="_blank">Voir sur GitHub</a>
                       </Col>
                     </Row>
                   </article>
