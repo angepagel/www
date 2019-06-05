@@ -34,6 +34,12 @@ class Projects extends Component {
                         Mon site internet personnel, conçu à l'aide de <a rel="noopener noreferrer" href="https://nodejs.org" target="_blank">Node.js</a> et des frameworks <a rel="noopener noreferrer" href="https://reactjs.org/" target="_blank">React</a> (front-end) et <a rel="noopener noreferrer" href="https://expressjs.com/" target="_blank">Express</a> (back-end, REST API). Son développement s'appuie sur une multitude de technologies web (<a rel="noopener noreferrer" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>, <a rel="noopener noreferrer" href="https://jwt.io/" target="_blank">JWT</a>, <a rel="noopener noreferrer" href="https://sass-lang.com/" target="_blank">Sass</a>, <a rel="noopener noreferrer" href="https://reacttraining.com/react-router/" target="_blank">React Router</a>, etc.) qui me permettent de présenter mon profil professionnel de manière soignée et originale tout en mettant à ma disposition un support d'expression personnel.
                       </p>
                       <UncontrolledCollapse className="project-details" toggler="#toggler_www">
+                        <section>
+                          <h3><i className="material-icons">forum</i> Contexte</h3>
+                          <p>
+                            Projet tutoré du 4<sup>ème</sup> semestre de mon DUT Informatique.
+                          </p>
+                        </section>
                         <Row>
                           <Col sm='12' md='4'>
                             <h3>Front-end</h3>
