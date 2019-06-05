@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Progress } from 'reactstrap';
 import './resume.scss';
 
 class Resume extends Component {
@@ -79,6 +79,46 @@ class Resume extends Component {
                       </div>
                     </Col>
                   </Row>
+                </section>
+
+                <hr/>
+
+                <section id="skills">
+                  <h2 className="mb-3">Compétences</h2>
+
+                  <section>
+                    <h3>Général</h3>
+                    <Row>
+                      <Col>
+                        <div className="skill">
+                          <span>Développement logiciel</span>
+                          <Progress value="80"/>
+                        </div>
+                        <div className="skill">
+                          <span>Développement web</span>
+                          <Progress value="75"/>
+                        </div>
+                        <div className="skill">
+                          <span>Gestion de projet</span>
+                          <Progress value="65"/>
+                        </div>
+                      </Col>
+                      <Col>
+                        <div className="skill">
+                          <span>Base de données</span>
+                          <Progress value="60"/>
+                        </div>
+                        <div className="skill">
+                          <span>Réseau</span>
+                          <Progress value="50"/>
+                        </div>
+                        <div className="skill">
+                          <span>IoT & Systèmes embarqués</span>
+                          <Progress value="40"/>
+                        </div>
+                      </Col>
+                    </Row>
+                  </section>
                 </section>
 
                 <hr/>

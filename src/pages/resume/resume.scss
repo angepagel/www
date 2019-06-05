@@ -45,4 +45,22 @@
     }
   }
 
+  #skills {
+    .skill {
+      text-align: center;
+      padding: 0 20px 0 20px;
+      margin: 20px 0 12px 0;
+
+      span { color: $grey-matter; }
+      .progress {
+        background-color: rgba($mantra, 0.1);
+        margin-top: 6px;
+        height: 9px;
+        .progress-bar {
+          background-color: $blue-link;
+        }
+      }
+    }
+  }
+
 }
