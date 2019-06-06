@@ -103,3 +103,19 @@ button.btn:focus { @extend a.main:focus; }
     height: 100%;
   }
 }
+
+blockquote {
+  color: $mantra;
+  border-left: 4px solid $blue-link;
+  padding-left: 20px;
+
+  p {
+    &::before, &::after { font-family: Georgia, 'Times New Roman', Times, serif; }
+    &::before { content: "“ "; }
+    &::after { content: " ”"; }
+  }
+  footer {
+    text-align: right;
+    &::before { content: "— "; }
+  }
+}
