@@ -67,7 +67,7 @@ class Home extends Component {
                   <span role="img" aria-label="laptop">💻</span>
                 </Col>
                 <Col sm='12' md='6'>
-                  <h2>Je m'apppelle <span className="name">Ange Pagel</span></h2>
+                  <h2>Je m'appelle <span className="name">Ange Pagel</span></h2>
                   <span className="magic">Je conçois tous types de programmes informatiques avec un peu de code, de maths et de magie. Je ne suis ni plus ni moins qu'un futur <strong>ingénieur</strong>.</span>
                   <br/>
                   <br/>
