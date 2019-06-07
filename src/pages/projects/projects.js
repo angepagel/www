@@ -99,7 +99,7 @@ class Projects extends Component {
                           <span className="date">Avril - Juin 2019</span>
                         </div>
                         <p>
-                          A2T (Ambulance-To-Traffic light) est une simulation <a rel="noopener noreferrer" href="https://veins.car2x.org/" target="_blank">Veins</a> visant à améliorer le déroulement des missions de sauvetage grâce à des communications ambulance à feux de circulation utilisant un réseau Ad-Hoc de véhicules (VANet).
+                          A2T (Ambulance-To-Traffic light) est une simulation <a rel="noopener noreferrer" href="https://veins.car2x.org/" target="_blank">Veins</a> visant à améliorer le déroulement des missions de sauvetage grâce à des communications ambulance - feux de circulation utilisant un réseau Ad-Hoc de véhicules (VANet).
                         </p>
                         <UncontrolledCollapse className="project-details" toggler="#toggler_a2t">
                           <section>
@@ -385,7 +385,7 @@ class Projects extends Component {
                           <span className="date">Nov. - Déc. 2017</span>
                         </div>
                         <p>
-                          Civilization Zero est un jeu en ligne de commande développé en Pascal et inspiré de la célèbre série de jeux vidéo <a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Civilization_(video_game)" target="_blank">Civilization</a>. Le joueur construit et améliore des bâtiments pour produire diverses ressources et se développer. Il doit également se protéger et diriger son armée contre les ennemis qui l'assaillissent.
+                          Civilization Zero est un jeu en ligne de commande développé en Pascal et inspiré de la célèbre série de jeux vidéo <a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Civilization_(video_game)" target="_blank">Civilization</a>. Le joueur construit et améliore des bâtiments pour produire diverses ressources et se développer. Il doit également se protéger et diriger son armée contre les ennemis qui l'assaillent.
                         </p>
                         <UncontrolledCollapse className="project-details" toggler="#toggler_civilization">
                           <section>
