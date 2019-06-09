@@ -40,8 +40,8 @@ class Footer extends Component {
               <h5><FormattedMessage id="Footer.projects.header" /></h5>
               <hr/>
               <ul>
+                <li><a rel="noopener noreferrer" href="https://github.com/angepagel/A2T" target="_blank">A2T</a></li>
                 <li><a rel="noopener noreferrer" href="https://github.com/angepagel/ThreeJS-Lab" target="_blank">ThreeJS Lab</a></li>
-                <li><a rel="noopener noreferrer" href="https://github.com/angepagel/Durandal" target="_blank">Durandal</a></li>
                 <li><a rel="noopener noreferrer" href="https://github.com/angepagel/Civilization-Zero-Lamaths-UE" target="_blank">Civilization Zero</a></li>
               </ul>
             </Col>
