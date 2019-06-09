@@ -5,6 +5,11 @@
     "Navigation.blog"       : "Blog",
     "Navigation.dashboard"  : "Tableau de bord",
 
+    "Home.recommendation.title"             : "Travaillons ensemble !",
+    "Home.recommendation.suthaputchakun"    : "Ange a une pensée logique et systématique. Il travaille d'une manière très organisée et vise la perfection. D'après ses performances, il est l'un des meilleurs élèves que j'ai pu voir jusqu'à présent sous ma supervision.",
+    "Home.recommendation.letter"            : "Lettre de recommandation",
+    "Home.latestPost.title" : "Dernier article de blog",
+
     "About.title" : "À propos",
     "About.terminal.firstName"  : "Prénom",
     "About.terminal.lastName"   : "Nom",

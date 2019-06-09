@@ -5,6 +5,11 @@
     "Navigation.blog"       : "Blog",
     "Navigation.dashboard"  : "Dashboard",
 
+    "Home.recommendation.title"             : "Let's work together !",
+    "Home.recommendation.suthaputchakun"    : "Ange is a logical and systematic thinker. He works in a very organized way and aims to perfection. According to his performance, he is one of the outstanding students under my supervision so far.",
+    "Home.recommendation.letter"            : "Recommendation letter",
+    "Home.latestPost.title" : "Latest blog post",
+
     "About.title" : "About",
     "About.terminal.firstName"  : "First Name",
     "About.terminal.lastName"   : "Last Name",

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import { NavLink } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
+import { FormattedMessage } from 'react-intl';
 import Typed from 'react-typed';
 import * as API from '../../api/APIUtils';
 import './home.scss';
@@ -79,24 +80,24 @@ class Home extends Component {
             </section>
 
             <section id="recommendations">
-            <h2>Travaillons ensemble !</h2>
+            <h2><FormattedMessage id="Home.recommendation.title" /></h2>
               <Row className="mt-5">
                 <Col className="mx-auto" md="12" lg='8'>
                   <blockquote>
                     <p>
-                      Ange a une pensée logique et systématique. Il travaille d'une manière très organisée et vise la perfection. D'après ses performances, il est l'un des meilleurs élèves que j'ai pu voir jusqu'à présent sous ma supervision.
+                      <FormattedMessage id="Home.recommendation.suthaputchakun" />
                     </p>
                     <footer>
                       <a rel="noopener noreferrer" href="http://bucroccs.bu.ac.th/showPeople.php?ID=8" target="_blank">Dr. Chakkaphong Suthaputchakun</a>
                       </footer>
                   </blockquote>
-                  <a className="main mt-2" rel="noopener noreferrer" href={require("../../media/recommendations/Recommendation_Suthaputchakun.pdf")} target="_blank">Lettre de recommandation</a>
+                  <a className="main mt-2" rel="noopener noreferrer" href={require("../../media/recommendations/Recommendation_Suthaputchakun.pdf")} target="_blank"><FormattedMessage id="Home.recommendation.letter" /></a>
                 </Col>
               </Row>
             </section>
 
             <section id="latestPost">
-              <h2>Dernier article de blog</h2>
+              <h2><FormattedMessage id="Home.latestPost.title" /></h2>
 
               <Row className="latest-post">
                 <Col xs='12' md='6' className="post-image" style={{backgroundImage: background}} />
