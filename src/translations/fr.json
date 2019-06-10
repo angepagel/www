@@ -5,6 +5,9 @@
     "Navigation.blog"       : "Blog",
     "Navigation.dashboard"  : "Tableau de bord",
 
+    "Home.about.title"          : "Je m'appelle",
+    "Home.about.description"    : "Je conçois tous types de programmes informatiques avec un peu de code, de maths et de magie. Je ne suis ni plus ni moins qu'un futur ingénieur !",
+    "Home.about.link"           : "À propos",
     "Home.recommendation.title"             : "Travaillons ensemble !",
     "Home.recommendation.suthaputchakun"    : "Ange a une pensée logique et systématique. Il travaille d'une manière très organisée et vise la perfection. D'après ses performances, il est l'un des meilleurs élèves que j'ai pu voir jusqu'à présent sous ma supervision.",
     "Home.recommendation.letter"            : "Lettre de recommandation",

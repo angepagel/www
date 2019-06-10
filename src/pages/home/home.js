@@ -68,24 +68,24 @@ class Home extends Component {
                   <span role="img" aria-label="laptop">💻</span>
                 </Col>
                 <Col sm='12' md='6'>
-                  <h2>Je m'appelle <span className="name">Ange Pagel</span></h2>
-                  <span className="magic">Je conçois tous types de programmes informatiques avec un peu de code, de maths et de magie. Je ne suis ni plus ni moins qu'un futur <strong>ingénieur</strong>.</span>
+                  <h2><FormattedMessage id="Home.about.title"/> <span className="name">Ange Pagel</span></h2>
+                  <span className="magic"><FormattedMessage id="Home.about.description"/></span>
                   <br/>
                   <br/>
                   <span>
-                    <span className="finger" role="img" aria-label="finger">👉🏻</span> <NavLink className="main" to={'/about'}>À propos</NavLink> <span className="finger" role="img" aria-label="finger">👈🏻</span>
+                    <span className="finger" role="img" aria-label="finger">👉🏻</span> <NavLink className="main" to={'/about'}><FormattedMessage id="Home.about.link"/></NavLink> <span className="finger" role="img" aria-label="finger">👈🏻</span>
                   </span>
                 </Col>
               </Row>
             </section>
 
             <section id="recommendations">
-            <h2><FormattedMessage id="Home.recommendation.title" /></h2>
+            <h2><FormattedMessage id="Home.recommendation.title"/></h2>
               <Row className="mt-5">
                 <Col className="mx-auto" md="12" lg='8'>
                   <blockquote>
                     <p>
-                      <FormattedMessage id="Home.recommendation.suthaputchakun" />
+                      <FormattedMessage id="Home.recommendation.suthaputchakun"/>
                     </p>
                     <footer>
                       <a rel="noopener noreferrer" href="http://bucroccs.bu.ac.th/showPeople.php?ID=8" target="_blank">Dr. Chakkaphong Suthaputchakun</a>
@@ -97,7 +97,7 @@ class Home extends Component {
             </section>
 
             <section id="latestPost">
-              <h2><FormattedMessage id="Home.latestPost.title" /></h2>
+              <h2><FormattedMessage id="Home.latestPost.title"/></h2>
 
               <Row className="latest-post">
                 <Col xs='12' md='6' className="post-image" style={{backgroundImage: background}} />

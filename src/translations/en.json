@@ -5,6 +5,9 @@
     "Navigation.blog"       : "Blog",
     "Navigation.dashboard"  : "Dashboard",
 
+    "Home.about.title"          : "My name is",
+    "Home.about.description"    : "I create all types of programs with a little bit of code, math and magic. I hope to become an computer science engineer soon !",
+    "Home.about.link"           : "About me",
     "Home.recommendation.title"             : "Let's work together !",
     "Home.recommendation.suthaputchakun"    : "Ange is a logical and systematic thinker. He works in a very organized way and aims to perfection. According to his performance, he is one of the outstanding students under my supervision so far.",
     "Home.recommendation.letter"            : "Recommendation letter",
