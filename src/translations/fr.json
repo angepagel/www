@@ -30,6 +30,9 @@
     "About.interests.design"        : "Architecture & Design",
     "About.interests.astronomy"     : "Astronomie",
 
+    "Resume.download.fr" : "Télécharger (Français)",
+    "Resume.download.en" : "Télécharger (Anglais)",
+
     "Dashboard.title"           : "Tableau de bord",
     "Dashboard.files.title"     : "Gérer les fichiers",
     "Dashboard.files.upload"    : "Mettre en ligne",

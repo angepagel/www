@@ -30,6 +30,9 @@
     "About.interests.design"        : "Architecture & Design",
     "About.interests.astronomy"     : "Astronomy",
 
+    "Resume.download.fr" : "Download (French)",
+    "Resume.download.en" : "Download (English)",
+
     "Dashboard.title"           : "Dashboard",
     "Dashboard.files.title"     : "Manage files",
     "Dashboard.files.upload"    : "Upload",
