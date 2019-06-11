@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import { Container, Row, Col, Progress } from 'reactstrap';
+import { FormattedMessage } from 'react-intl';
 import './resume.scss';
 
 class Resume extends Component {
@@ -21,12 +22,10 @@ class Resume extends Component {
                 <section id="download">
                   <Row className="text-center">
                     <Col xs="12" sm="6">
-                      <a rel="noopener noreferrer" className="main" href="https://www.angepagel.fr/uploads/CV_Ange_PAGEL_FR.pdf" target="_blank"><i className="material-icons">cloud_download</i> Télécharger (<span className="language">Français</span>)</a>
+                      <a rel="noopener noreferrer" className="main" href="https://www.angepagel.fr/uploads/CV_Ange_PAGEL_FR.pdf" target="_blank"><i className="material-icons">cloud_download</i> <FormattedMessage id="Resume.download.fr" /></a>
                     </Col>
                     <Col xs="12" sm="6">
-                      <a className="main" href="/"><i className="material-icons">cloud_download</i> Télécharger (<span className="language">Anglais</span>)</a>
-                      <br/>
-                      <span className="available-soon">Bientôt disponible</span>
+                      <a rel="noopener noreferrer" className="main" href="https://www.angepagel.fr/uploads/CV_Ange_PAGEL_EN.pdf" target="_blank"><i className="material-icons">cloud_download</i> <FormattedMessage id="Resume.download.en" /></a>
                     </Col>
                   </Row>
                 </section>
