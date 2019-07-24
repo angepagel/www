@@ -1,18 +1,18 @@
 @import '../../scss/colors.scss';
 
 #resume {
-
-  hr { margin: 42px 0 42px 0; }
-
-  #download {
-    margin-bottom: 21px;
-    .col-12 { margin-bottom: 21px; }
-    .available-soon { color: $mantra; }
+  hr {
+    width: 75%;
+    margin: 42px auto 42px auto;
   }
 
-  #education, #experience {
+  #download {
+    margin-bottom: 84px;
+    .col-12 { margin-bottom: 21px; }
+  }
 
-    h2 { margin-bottom: 21px;}
+  #education, #experience, #events {
+    h2 { margin-bottom: 42px; }
 
     div.line { 
       margin: 42px 0 42px 0;
@@ -27,54 +27,5 @@
     }
     div.line:first-child { margin: 0 0 42px 0; }
     div.line:last-child { margin: 42px 0 0 0; }
-
-    button.toggler {
-      color: $mantra;
-      border: none;
-      vertical-align: top;
-      padding: 0;
-    }
-    
-    button.toggler:hover {
-      color: $purple-crown;
-      background-color: transparent;
-    }
-
-    .collapse, .collapsing {
-      margin-top: 13px;
-    }
   }
-
-  #skills {
-    .skill {
-      text-align: center;
-      padding: 0 20px 0 20px;
-      margin: 20px 0 12px 0;
-
-      span { color: $grey-matter; }
-      .progress {
-        background-color: rgba($mantra, 0.1);
-        margin-top: 6px;
-        height: 9px;
-        .progress-bar { background-color: $blue-link; }
-      }
-    }
-
-    #java .progress-bar { background-color: #e5322b; }
-    #js .progress-bar { background-color: #F7DF1E; }
-    #python .progress-bar { background-color: #3776AB; }
-    #ts .progress-bar { background-color: #007ACC; }
-
-    #html .progress-bar { background-color: #E34F26; }
-    #css .progress-bar { background-color: #1572B6; }
-    #php .progress-bar { background-color: #777BB4; }
-    #sql .progress-bar { background-color: #4479A1; }
-
-    #csharp .progress-bar { background-color: #9b4f97; }
-    #cpp .progress-bar { background-color: #659bd3; }
-    #c .progress-bar { background-color: #00599C; }
-    #brainfuck .progress-bar { background-color: #222222; }
-    
-  }
-
 }

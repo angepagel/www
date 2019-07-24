@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
-import { Container, Row, Col, Progress } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import { FormattedMessage } from 'react-intl';
 import './resume.scss';
 
@@ -30,28 +30,22 @@ class Resume extends Component {
                   </Row>
                 </section>
 
-                <section>
-                  <h2>Projet d'étude</h2>
-                  <p>
-                    À l’issue de mon DUT Informatique, je souhaite continuer mes études en école d’ingénieurs et contribuer au développement des technologies de demain.
-                  </p>
-                </section>
-                
-                <hr/>
-
                 <section id="education">
                   <Row>
                     <Col xs="12" sm="5">
-                      <h2>Études</h2>
+                      <h2>Études & Diplômes</h2>
                     </Col>
                     <Col xs="12" sm="7">
                       <div className="line">
-                        <h3>Cisco CCNA Routing & Switching</h3>
+                        <h3>Diplôme d'Ingénieur de l'Institut Polytechnique de Grenoble</h3>
                         <div className="infos">
-                          <span><i className="material-icons">event_note</i> Septembre 2018 - En cours</span>
+                          <span><i className="material-icons">event_note</i> Septembre 2019 - Juin 2022</span>
                           <br/>
-                          <span><i className="material-icons">location_on</i> <a rel="noopener noreferrer" target="_blank" href="https://goo.gl/maps/TPh1YDf2msVgVPYR6">École d'ingénieurs ESIREM</a></span>
+                          <span><i className="material-icons">location_on</i> <a rel="noopener noreferrer" target="_blank" href="https://goo.gl/maps/SyBFEGsFhrW4uZM37">Grenoble INP - Ensimag</a></span>
                         </div>
+                        <p className="description">
+                          Grenoble INP - Ensimag (École Nationale Supérieur d'Informatique et de Mathématiques Appliquées de Grenoble), <strong>filière par apprentissage</strong>.
+                        </p>
                       </div>
 
                       <div className="line">
@@ -71,104 +65,9 @@ class Resume extends Component {
                           <span><i className="material-icons">location_on</i> <a rel="noopener noreferrer" target="_blank" href="https://goo.gl/maps/RK9ojjjpT6Md3dk56">Lycée Général Jean-Marc Boivin</a></span>
                         </div>
                         <p className="description">
-                          Spécialité <strong>Sciences de la Vie et de la Terre</strong> (SVT).<br/>
-                          Option <strong>Informatique et Sciences du Numérique</strong> (ISN).<br/>
-                          Diplôme obtenu avec <strong>mention Très Bien</strong>, section européenne espagnol.
+                          Diplôme obtenu avec <strong>mention Très Bien</strong>, section européenne espagnol.<br/>
+                          Spécialité <strong>Sciences de la Vie et de la Terre</strong> (SVT), Option <strong>Informatique et Sciences du Numérique</strong> (ISN).<br/>
                         </p>
-                      </div>
-                    </Col>
-                  </Row>
-                </section>
-
-                <hr/>
-
-                <section id="skills">
-                  <h2 className="mb-3">Compétences</h2>
-
-                  <Row>
-                    <Col xs='12' md='6'>
-                      <div className="skill">
-                        <span>Développement logiciel</span>
-                        <Progress value="80"/>
-                      </div>
-                      <div className="skill">
-                        <span>Développement web</span>
-                        <Progress value="75"/>
-                      </div>
-                      <div className="skill">
-                        <span>Gestion de projet</span>
-                        <Progress value="65"/>
-                      </div>
-                    </Col>
-                    <Col xs='12' md='6'>
-                      <div className="skill">
-                        <span>Base de données</span>
-                        <Progress value="60"/>
-                      </div>
-                      <div className="skill">
-                        <span>Réseau</span>
-                        <Progress value="50"/>
-                      </div>
-                      <div className="skill">
-                        <span>IoT & Systèmes embarqués</span>
-                        <Progress value="40"/>
-                      </div>
-                    </Col>
-                  </Row>
-      
-                  <Row>
-                    <Col xs='12' md='4'>
-                      <div className="skill">
-                        <span>Java</span>
-                        <Progress id="java" value="80"/>
-                      </div>
-                      <div className="skill">
-                        <span>Python</span>
-                        <Progress id="python" value="70"/>
-                      </div>
-                      <div className="skill">
-                        <span>JavaScript</span>
-                        <Progress id="js" value="60"/>
-                      </div>
-                      <div className="skill">
-                        <span>TypeScript</span>
-                        <Progress id="ts" value="55"/>
-                      </div>
-                    </Col>
-                    <Col xs='12' md='4'>
-                      <div className="skill">
-                        <span>HTML</span>
-                        <Progress id="html" value="75"/>
-                      </div>
-                      <div className="skill">
-                        <span>CSS</span>
-                        <Progress id="css" value="70"/>
-                      </div>
-                      <div className="skill">
-                        <span>PHP</span>
-                        <Progress id="php" value="60"/>
-                      </div>
-                      <div className="skill">
-                        <span>PL/SQL</span>
-                        <Progress id="sql" value="50"/>
-                      </div>
-                    </Col>
-                    <Col xs='12' md='4'>
-                      <div className="skill">
-                        <span>C#</span>
-                        <Progress id="csharp" value="55"/>
-                      </div>
-                      <div className="skill">
-                        <span>C++</span>
-                        <Progress id="cpp" value="45"/>
-                      </div>
-                      <div className="skill">
-                        <span>C</span>
-                        <Progress id="c" value="20"/>
-                      </div>
-                      <div className="skill">
-                        <span>Brainfuck</span>
-                        <Progress id="brainfuck" value="3"/>
                       </div>
                     </Col>
                   </Row>
@@ -179,21 +78,44 @@ class Resume extends Component {
                 <section id="experience">
                   <Row>
                     <Col xs="12" sm="5">
-                      <h2>Expériences</h2>
+                      <h2>Expériences Professionnelles</h2>
                     </Col>
                     <Col xs="12" sm="7">
                       <div className="line">
-                        <h3>Stage en Centre de Recherche</h3>
+                        <h3>Développeur en alternance</h3>
+                        <div className="infos">
+                          <span><i className="material-icons">event_note</i> Septembre 2019 - Août 2022</span>
+                          <br/>
+                          <span><i className="material-icons">location_on</i> <a rel="noopener noreferrer" target="_blank" href="https://goo.gl/maps/svYtwecqZ1TkGBW5A">Bertin Technologies Aix-en-Provence</a></span>
+                        </div>
+                        <p className="description">
+                          Contrat d'apprentissage dans le cadre de ma formation d'ingénieur à l'Institut Polytechnique de Grenoble (Grenoble INP - ENSIMAG).  
+                        </p>
+                      </div>
+
+                      <div className="line">
+                        <h3>Stage en centre de recherche</h3>
                         <div className="infos">
                           <span><i className="material-icons">event_note</i> 8 Avril - 4 Juillet 2019</span>
                           <br/>
                           <span><i className="material-icons">location_on</i> <a rel="noopener noreferrer" target="_blank" href="https://goo.gl/maps/yCfz9tZkP1nJ8BMn6">Bangkok University CROCCS</a></span>
                         </div>
                         <p className="description">
-                          Stage de fin d'études (DUT Informatique), réalisation du projet <strong>A2T</strong> confié par le <a rel="noopener noreferrer" href="http://bucroccs.bu.ac.th/showPeople.php?ID=8" target="_blank">Dr. Suthaputchakun</a>.
+                          Stage de fin d'études de mon DUT Informatique. Réalisation du projet <strong>A2T</strong> confié par le <a rel="noopener noreferrer" href="http://bucroccs.bu.ac.th/showPeople.php?ID=8" target="_blank">Dr. Chakkaphong Suthaputchakun</a>.
                         </p>
                       </div>
+                    </Col>
+                  </Row>
+                </section>
 
+                <hr/>
+
+                <section id="events">
+                  <Row>
+                    <Col xs="12" sm="5">
+                      <h2>Événements</h2>
+                    </Col>
+                    <Col xs="12" sm="7">
                       <div className="line">
                         <h3>Hackathon WebStudentCup</h3>
                         <div className="infos">
@@ -219,18 +141,6 @@ class Resume extends Component {
                       </div>
 
                       <div className="line">
-                        <h3>Préparateur de commandes</h3>
-                        <div className="infos">
-                          <span><i className="material-icons">event_note</i> Août 2018</span>
-                          <br/>
-                          <span><i className="material-icons">location_on</i> <a rel="noopener noreferrer" target="_blank" href="https://goo.gl/maps/QJnY8fGApHesoSqz5">Carrefour Grand Quétigny</a></span>
-                        </div>
-                        <p className="description">
-                          Préparation et livraison des commandes en ligne, mise à jour en magasin des articles enregistrés dans le système informatique. 
-                        </p>
-                      </div>
-
-                      <div className="line">
                         <h3>Staff Dijon Saiten</h3>
                         <div className="infos">
                           <span><i className="material-icons">event_note</i> 14 & 15 Octobre 2017</span>
@@ -238,7 +148,7 @@ class Resume extends Component {
                           <span><i className="material-icons">location_on</i> <a rel="noopener noreferrer" target="_blank" href="https://goo.gl/maps/FtXPq9JNXVm5K1TC7">IUT de Dijon</a></span>
                         </div>
                         <p className="description">
-                          Convention d'anime, contribution bénévole à l'événement (animations et encadrement du public).
+                          Convention d'anime, contribution bénévole à l'événement (animations et encadrement des visiteurs).
                         </p>
                       </div>
                     </Col>
