@@ -24,26 +24,28 @@ p {
 }
 
 a {
-  color: $blue-link;
+  color: $purple-crown;
   outline: 0;
   transition: all 0.2s;
+  border-bottom: 1px solid transparent;
 }
 
 a:hover {
-  color: $red-strenght;
+  color: $purple-crown;
   text-decoration: none;
+  border-bottom: 1px solid $purple-crown;
   transition: all 0.2s;
 }
 
 a.main{
   display: inline-block;
   background-color: transparent;
-  color: $blue-link;
-  border: 1px solid $blue-link;
-  border-radius: 0px;
-  padding: 5px 10px 5px 10px;
+  color: $purple-crown;
+  border: 1px solid $purple-crown;
+  border-radius: 20px;
+  padding: 7px 15px 7px 15px;
   svg {
-    fill: $blue-link;
+    fill: $purple-crown;
     max-height: 1.1em;
     vertical-align: sub;
     transition: all 0.2s;
@@ -51,14 +53,19 @@ a.main{
 }
 
 a.main:hover {
-  background-color: $blue-link;
+  background-color: $purple-crown;
   color: $white;
-  border: 1px solid $blue-link;
+  border: 1px solid $purple-crown;
+  box-shadow: 3px 3px 10px rgba($grey-matter, 0.2);
   svg { fill: $white; }
 }
 
+a.main:active {
+  transform: translateY(3px);
+}
+
 a.main:focus {
-  box-shadow: none;
+  box-shadow: 3px 3px 6px rgba($purple-crown, 0.3);
 }
 
 button.btn {

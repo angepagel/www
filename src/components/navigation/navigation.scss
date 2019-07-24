@@ -26,8 +26,14 @@ nav {
     }
 
     .navbar-brand {
-        .nav-link { color: $white !important; }
-        .nav-link:hover { color: $purple-crown !important; }
+        .nav-link {
+            color: $white !important;
+            border: none;
+        }
+        .nav-link:hover {
+            color: $purple-crown !important;
+            border: none;
+        }
     }
 
     .navbar-toggler {
