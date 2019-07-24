@@ -8,7 +8,10 @@
     @extend .post;
     margin: 42px 0 0px 0;
 
-    .project-image { @extend .post-image; }
+    .project-image {
+      @extend .post-image;
+      border-radius: 40px 40px 0 0;
+    }
     .project-description { @extend .post-description; }
     div.infos { @extend .infos; }
 
