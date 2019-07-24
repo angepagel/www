@@ -15,8 +15,14 @@ footer {
             list-style-type: none;
             padding: 0;
 
-            a { color: $mantra; }
-            a:hover { color: $purple-crown; }
+            a {
+                color: $mantra;
+                border: none;
+            }
+            a:hover {
+                color: $purple-crown;
+                border: none;
+            }
             
         }
 
