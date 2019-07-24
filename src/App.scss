@@ -37,6 +37,13 @@ a:hover {
   transition: all 0.2s;
 }
 
+a:active {
+  color: $grey-matter;
+  border-color: transparent;
+}
+
+a:focus { border-bottom: 1px solid $purple-crown; }
+
 a.main{
   display: inline-block;
   background-color: transparent;
