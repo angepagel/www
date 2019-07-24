@@ -61,6 +61,8 @@ nav {
             @extend %underline-visible;
             color: $white !important;
         }
+
+        .nav-link:focus { border-color: $purple-crown; }
         
         .active {
             @extend %underline-visible;
