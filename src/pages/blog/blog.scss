@@ -4,6 +4,7 @@
 
   .post {
     background-color: $white;
+    border-radius: 40px;
     margin: 84px 0 84px 0;
 
     .post-image {
@@ -14,6 +15,11 @@
       padding: 0;
     }
 
+    .post-image { border-radius: 40px 0 0 40px; }
+    @media (max-width: 767.98px) {
+      .post-image { border-radius: 40px 40px 0 0; }
+    }
+
     .post-description { 
       padding: 20px 30px 30px 30px;
 
@@ -21,15 +27,12 @@
         display: inline-block;
         margin-top: 10px;
 
-        span.category, span.publication-date {
-          font-family: 'Roboto Mono';
-          font-size: 0.8em;
-        }
 
         span.category {
-          color: $red-strenght;
-          border: 1px solid $red-strenght;
-          padding: 5px 8px 5px 8px;
+          color: $mantra;
+          border: 1px solid rgba($purple-crown, 0.6);
+          border-radius: 15px;
+          padding: 5px 14px 5px 14px;
         }
   
         span.date {

@@ -48,8 +48,8 @@ class Blog extends Component {
                   return (
                     <article key={post.id}>
                       <Row className="post">
-                        <Col xs='12' md='6' className="post-image" style={{backgroundImage: background}} />
-                        <Col xs='12' md='6' className="post-description">
+                        <Col sm='12' md='6' className="post-image" style={{backgroundImage: background}} />
+                        <Col sm='12' md='6' className="post-description">
                           <h2>{ post.title }</h2>
                           <div className="infos">
                             <span className="category">{post.category}</span>
