@@ -26,26 +26,24 @@ p {
 a {
   color: $purple-crown;
   outline: 0;
-  transition: all 0.2s;
-  border-bottom: 1px solid transparent;
+  text-decoration: none;
+  background: linear-gradient(to left, $purple-crown, $purple-crown) no-repeat bottom left;
+  background-size: 0% 1px;
+  padding-bottom: 4px;
+  transition: all 0.3s;
 }
-
 a:hover {
   color: $purple-crown;
   text-decoration: none;
-  border-bottom: 1px solid $purple-crown;
-  transition: all 0.2s;
+  background-size: 100% 1px;
+  transition: all 0.3s;
 }
-
-a:active {
-  color: $grey-matter;
-  border-color: transparent;
-}
-
-a:focus { border-bottom: 1px solid $purple-crown; }
+a:not(.main):focus { @extend a:hover; }
+a:not(.main):active { color: $grey-matter !important; }
 
 a.main{
   display: inline-block;
+  background: none;
   background-color: transparent;
   color: $purple-crown;
   border: 1px solid $purple-crown;
@@ -57,31 +55,39 @@ a.main{
     vertical-align: sub;
     transition: all 0.2s;
   }
+  transition: all 0.2s;
 }
-
 a.main:hover {
   background-color: $purple-crown;
   color: $white;
   border: 1px solid $purple-crown;
   box-shadow: 3px 3px 10px rgba($grey-matter, 0.2);
   svg { fill: $white; }
+  transition: all 0.2s;
 }
-
-a.main:active {
-  transform: translateY(3px);
-}
-
-a.main:focus {
-  box-shadow: 3px 3px 6px rgba($purple-crown, 0.3);
-}
+a.main:active { transform: translateY(3px); }
+a.main:focus { box-shadow: 3px 3px 6px rgba($purple-crown, 0.3) !important; }
 
 button.btn {
   @extend a.main;
   vertical-align: baseline;
 }
+button.btn:hover { @extend a.main:hover; }
+button.btn:active {
+  @extend a.main:active;
+  color: $white;
+  background-color: $purple-crown !important;
+  border: 1px solid $purple-crown !important;
+  svg { fill: $white; }
+}
+button.btn:focus { @extend a.main:focus; }
 
 button.delete {
   color: $red-strenght;
+  border-color: $red-strenght;
+}
+button.delete:hover {
+  background-color: $red-strenght;
   border-color: $red-strenght;
 }
 
@@ -89,20 +95,10 @@ button.cancel {
   color: $mantra;
   border-color: $mantra;
 }
-
-button.btn:hover { @extend a.main:hover; }
-
-button.delete:hover {
-  background-color: $red-strenght;
-  border-color: $red-strenght;
-}
-
 button.cancel:hover {
   background-color: $mantra;
   border-color: $mantra;
 }
-
-button.btn:focus { @extend a.main:focus; }
 
 .video-container {
   position: relative;

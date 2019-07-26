@@ -14,16 +14,12 @@ footer {
         ul {
             list-style-type: none;
             padding: 0;
-
-            a {
-                color: $mantra;
-                border: none;
+            a { color: $mantra; }
+            a:focus { @extend a:hover; }
+            a:active {
+                @extend a:hover;
+                color: $purple-crown !important;
             }
-            a:hover {
-                color: $purple-crown;
-                border: none;
-            }
-            
         }
 
     }
