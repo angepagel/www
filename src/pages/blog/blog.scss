@@ -45,7 +45,13 @@
       p { margin: 21px 0px 21px 0px; }
 
     }
+    transition: all 0.6s;
 
+  }
+
+  .post:hover {
+    box-shadow: 3px 4px 10px rgba($grey-matter, 0.1);
+    transition: all 0.3s;
   }
 
 }
