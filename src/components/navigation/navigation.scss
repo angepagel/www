@@ -16,9 +16,11 @@ nav {
     .navbar-brand {
         .nav-link {
             color: $white !important;
-            background: none;
+            background: linear-gradient(to left, $purple-crown, $purple-crown) no-repeat bottom center;
+            background-size: 0% 2px;
         }
-        .nav-link:hover { color: $purple-crown !important; }
+        .nav-link:hover { background-size: 100% 2px; }
+        .nav-link:focus, .active { @extend .nav-link:hover; }
     }
 
     .navbar-toggler {
