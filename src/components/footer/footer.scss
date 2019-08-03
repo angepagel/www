@@ -28,19 +28,17 @@ footer {
         background-color: $purple-crown;
         color: $white;
         text-align: center;
-        padding: 6px 0 6px 0;
+        padding: 10px 0 10px 0;
 
         a.main {
-            color: $white;
-            background-color: $red-strenght;
+            color: $purple-crown;
+            background-color: $white;
             border: none;
-            padding: 2px 10px 2px 10px;
-            margin: 0;
         }
 
         a.main:hover {
-            color: $red-strenght;
-            background-color: $white;
+            color: $white;
+            background-color: $grey-matter;
         }
     }
 
