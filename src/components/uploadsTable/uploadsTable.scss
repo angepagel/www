@@ -6,7 +6,7 @@
   table {
     tbody {
       tr {
-        td:first-child::before { content: ''; }
+        td.size::after { content: ' Mo'; }
       }
     }
   }

@@ -90,6 +90,7 @@ class UploadsTable extends Component {
           <thead>
             <tr>
               <th>Nom du fichier</th>
+              <th>Taille</th>
               <th>Date de mise en ligne</th>
               <th>Action</th>
             </tr>
@@ -99,6 +100,7 @@ class UploadsTable extends Component {
               files.map(file => (
                 <tr key={file.fileName}>
                   <td>{file.fileName}</td>
+                  <td className="size">{parseFloat(file.size / 1000000.0).toFixed(2)}</td>
                   <td>{new Date(file.date).toUTCString()}</td>
                   <td className="actions">
                     <Button className="delete-icon" onClick={() => this.showDeleteModal(file.fileName)}><i className="material-icons">delete_forever</i></Button>
