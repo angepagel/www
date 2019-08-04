@@ -107,7 +107,7 @@ class Home extends Component {
                     <span className="category">{latestPost.category}</span>
                     <span className="date">Publié le {latestPost.datestr}</span>
                   </div>
-                  <p>{preview}</p>
+                  <div dangerouslySetInnerHTML={{ __html:preview}} />
                   <NavLink className="main" to={link}>Lire la suite</NavLink>
                 </Col>
               </Row>

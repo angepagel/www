@@ -53,7 +53,7 @@ class Post extends Component {
                     <span className="date">Publié le {post.datestr}</span>
                 </div>
                 <hr/>
-                <p>{post.body}</p>
+                <div dangerouslySetInnerHTML={{__html:post.body}} />
               </Col>
             </Row>
           </Container>

@@ -55,7 +55,7 @@ class Blog extends Component {
                             <span className="category">{post.category}</span>
                             <span className="date">Publié le {post.datestr}</span>
                           </div>
-                          <p>{preview}</p>
+                          <div dangerouslySetInnerHTML={{__html:preview}} />
                           <NavLink className="main" to={link}>Lire la suite</NavLink>
                         </Col>
                       </Row>
