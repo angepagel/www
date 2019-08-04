@@ -19,7 +19,7 @@
         transition: all 0.3s;
 
         td { vertical-align: middle; }
-        td:first-child::before { content: '#'; }
+        td.id::before { content: '#'; }
 
         td.actions {
           
