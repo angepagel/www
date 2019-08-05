@@ -100,9 +100,12 @@ class Resume extends Component {
                           <br/>
                           <span><i className="material-icons">location_on</i> <a rel="noopener noreferrer" target="_blank" href="https://goo.gl/maps/yCfz9tZkP1nJ8BMn6">Bangkok University CROCCS</a></span>
                         </div>
-                        <p className="description">
+                        <p className="description mb-3">
                           Stage de fin d'études de mon DUT Informatique. Réalisation du projet <strong>A2T</strong> confié par le <a rel="noopener noreferrer" href="http://bucroccs.bu.ac.th/showPeople.php?ID=8" target="_blank">Dr. Chakkaphong Suthaputchakun</a>.
                         </p>
+                        <div className="infos">
+                          <i className="material-icons">description</i> <a rel="noopener noreferrer" href={require("../../media/recommendations/Recommendation_Suthaputchakun.pdf")} target="_blank">Lettre de recommandation</a>
+                        </div>
                       </div>
                     </Col>
                   </Row>
