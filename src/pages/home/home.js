@@ -79,23 +79,6 @@ class Home extends Component {
               </Row>
             </section>
 
-            <section id="recommendations">
-            <h2><FormattedMessage id="Home.recommendation.title"/></h2>
-              <Row className="mt-5">
-                <Col className="mx-auto" md="12" lg='8'>
-                  <blockquote>
-                    <p>
-                      <FormattedMessage id="Home.recommendation.suthaputchakun"/>
-                    </p>
-                    <footer>
-                      <a rel="noopener noreferrer" href="http://bucroccs.bu.ac.th/showPeople.php?ID=8" target="_blank">Dr. Chakkaphong Suthaputchakun</a>
-                      </footer>
-                  </blockquote>
-                  <a className="main mt-2" rel="noopener noreferrer" href={require("../../media/recommendations/Recommendation_Suthaputchakun.pdf")} target="_blank"><FormattedMessage id="Home.recommendation.letter" /></a>
-                </Col>
-              </Row>
-            </section>
-
             <section id="latestPost">
               <h2><FormattedMessage id="Home.latestPost.title"/></h2>
 
