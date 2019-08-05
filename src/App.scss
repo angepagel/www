@@ -118,6 +118,9 @@ blockquote {
   color: $mantra;
   border-left: 4px solid $purple-crown;
   padding-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
 
   p {
     &::before, &::after { font-family: Georgia, 'Times New Roman', Times, serif; }
