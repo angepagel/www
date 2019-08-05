@@ -90,6 +90,24 @@ class Editor extends Component {
       <div id="postEditor">
         <h1 className="page-title">Éditeur</h1>
         <Container>
+
+          <h2>Prévisualisation</h2>
+          <hr/>
+            <Row className="post">
+              <Col xl='12' className="post-image" style={{backgroundImage: `url(${this.state.image})`}}>
+                <span className="credits">Photo par {this.state.img_credit}</span>
+              </Col>
+              <Col xl='10' className="post-description mx-auto">
+                <h1 className="post-title">{this.state.title}</h1>
+                <div className="infos">
+                    <span className="category">{this.state.category}</span>
+                    <span className="date">Publié le 01/01/2020</span>
+                </div>
+                <hr/>
+                <div dangerouslySetInnerHTML={{__html:this.state.body}} />
+              </Col>
+            </Row>
+
           <Row>
             <Col className="mx-auto" lg='8'>
 
@@ -140,14 +158,13 @@ class Editor extends Component {
                   </Col>
                 </Row>
 
+                <div className="required">
+                  <span className="required">*</span> Champs requis
+                </div>
+
                 <Button type="submit">{this.state.edit ? 'Modifier' : 'Publier'}</Button>
 
               </Form>
-
-              <div className="required">
-                <span className="required">*</span> Champs requis
-              </div>
-
             </Col>
           </Row>
         </Container>

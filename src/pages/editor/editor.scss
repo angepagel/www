@@ -1,6 +1,10 @@
-@import '../../scss/colors.scss';
+@import '../post/post.scss';
 
 #postEditor {
+    @extend #post;
+    .post { margin-top: 42px !important; }
+
+    textarea { min-height: 240px; }
 
     div.required {
         color: $mantra;
