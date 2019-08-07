@@ -9,19 +9,22 @@ body {
 }
 
 
-h1 { font-size: 4rem; }
+h1 {
+  font-size: 4rem;
+  &.page-title {
+    text-align: center;
+    margin: 42px 0 84px 0;
+  }
+}
 h2 { font-size: 2em; }
 h3 { font-size: 1.3em; }
 
-h1.page-title {
-  text-align: center;
-  margin: 42px 0 84px 0;
-}
 
 p {
   text-align: justify;
   color: $mantra;
 }
+
 
 a {
   color: $purple-crown;
@@ -31,15 +34,16 @@ a {
   background-size: 0% 1px;
   padding-bottom: 4px;
   transition: all 0.3s;
+
+  &:hover {
+    color: $purple-crown;
+    text-decoration: none;
+    background-size: 100% 1px;
+    transition: all 0.3s;
+  }
+  &:not(.main):focus { @extend a:hover; }
+  &:not(.main):active { color: $grey-matter !important; }
 }
-a:hover {
-  color: $purple-crown;
-  text-decoration: none;
-  background-size: 100% 1px;
-  transition: all 0.3s;
-}
-a:not(.main):focus { @extend a:hover; }
-a:not(.main):active { color: $grey-matter !important; }
 
 a.main{
   display: inline-block;
@@ -56,49 +60,55 @@ a.main{
     transition: all 0.2s;
   }
   transition: all 0.2s;
+
+  &:hover {
+    background-color: $purple-crown;
+    color: $white;
+    border: 1px solid $purple-crown;
+    box-shadow: 3px 3px 10px rgba($grey-matter, 0.2);
+    svg { fill: $white; }
+    transition: all 0.2s;
+  }
+  &:active { transform: translateY(3px); }
+  &:focus { box-shadow: 3px 3px 6px rgba($purple-crown, 0.3) !important; }
 }
-a.main:hover {
-  background-color: $purple-crown;
-  color: $white;
-  border: 1px solid $purple-crown;
-  box-shadow: 3px 3px 10px rgba($grey-matter, 0.2);
-  svg { fill: $white; }
-  transition: all 0.2s;
-}
-a.main:active { transform: translateY(3px); }
-a.main:focus { box-shadow: 3px 3px 6px rgba($purple-crown, 0.3) !important; }
+
 
 button.btn {
   @extend a.main;
   vertical-align: baseline;
+
+  &:hover { @extend a.main:hover; }
+  &:active {
+    @extend a.main:active;
+    color: $white;
+    background-color: $purple-crown !important;
+    border: 1px solid $purple-crown !important;
+    svg { fill: $white; }
+  }
+  &:focus { @extend a.main:focus; }
 }
-button.btn:hover { @extend a.main:hover; }
-button.btn:active {
-  @extend a.main:active;
-  color: $white;
-  background-color: $purple-crown !important;
-  border: 1px solid $purple-crown !important;
-  svg { fill: $white; }
-}
-button.btn:focus { @extend a.main:focus; }
 
 button.delete {
   color: $red-strenght;
   border-color: $red-strenght;
-}
-button.delete:hover {
-  background-color: $red-strenght;
-  border-color: $red-strenght;
+
+  &:hover {
+    background-color: $red-strenght;
+    border-color: $red-strenght;
+  }
 }
 
 button.cancel {
   color: $mantra;
   border-color: $mantra;
+
+  &:hover {
+    background-color: $mantra;
+    border-color: $mantra;
+  }
 }
-button.cancel:hover {
-  background-color: $mantra;
-  border-color: $mantra;
-}
+
 
 .video-container {
   position: relative;
@@ -113,6 +123,7 @@ button.cancel:hover {
     height: 100%;
   }
 }
+
 
 blockquote {
   color: $mantra;
