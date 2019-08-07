@@ -11,13 +11,15 @@ class Blog extends Component {
     super(props);
     this.state = {
       posts: [],
+      loaded: false
     }
   }
 
   async componentDidMount() {
     try {
       this.setState({
-        posts: await API.getPosts()
+        posts: await API.getPosts(),
+        loaded: true
       })
     }
     catch(error) {
@@ -28,6 +30,67 @@ class Blog extends Component {
   render() {
 
     let { posts } = this.state;
+    let body= "";
+
+    if (this.state.loaded) {
+      body = (
+        posts.map(post => {
+          const preview = post.body.length > 252 ? `${post.body.substring(0,252)}...` : post.body;
+          const background = `url(${post.image})`;
+          const link = `/blog/${post.id}`;
+
+          return (
+            <article key={post.id}>
+              <Row className="post">
+                <Col sm='12' md='6' className="post-image" style={{backgroundImage: background}} />
+                <Col sm='12' md='6' className="post-description">
+                  <h2>{ post.title }</h2>
+                  <div className="infos">
+                    <span className="category">{post.category}</span>
+                    <span className="date">Publié le {post.datestr}</span>
+                  </div>
+                  <div dangerouslySetInnerHTML={{__html:preview}} />
+                  <NavLink className="main" to={link}>Lire la suite</NavLink>
+                </Col>
+              </Row>
+            </article>
+          )}
+        )
+      )
+    }
+    else {
+      body = (
+        <div>
+            <Row className="post-loading">
+              <Col sm='12' md='6' className="post-image"/>
+              <Col sm='12' md='6' className="post-description">
+                <div className="post-title"/>
+                <div className="infos"/>
+                <div className="post-line"/>
+                <div className="post-line"/>
+                <div className="post-line"/>
+                <div className="post-line"/>
+                <div className="post-line"/>
+                <div className="read-more"/>
+              </Col>
+            </Row>
+            <Row className="post-loading">
+              <Col sm='12' md='6' className="post-image"/>
+              <Col sm='12' md='6' className="post-description">
+                <div className="post-title"/>
+                <div className="infos"/>
+                <div className="post-line"/>
+                <div className="post-line"/>
+                <div className="post-line"/>
+                <div className="post-line"/>
+                <div className="post-line"/>
+                <div className="read-more"/>
+              </Col>
+            </Row>
+        </div>
+      )
+    }
+
 
     return (
         <div id="blog">
@@ -39,30 +102,7 @@ class Blog extends Component {
           <h1 className="page-title">Blog</h1>
           <section>
             <Container>
-              {
-                posts.map(post => {
-                  const preview = post.body.length > 252 ? `${post.body.substring(0,252)}...` : post.body;
-                  const background = `url(${post.image})`;
-                  const link = `/blog/${post.id}`;
-
-                  return (
-                    <article key={post.id}>
-                      <Row className="post">
-                        <Col sm='12' md='6' className="post-image" style={{backgroundImage: background}} />
-                        <Col sm='12' md='6' className="post-description">
-                          <h2>{ post.title }</h2>
-                          <div className="infos">
-                            <span className="category">{post.category}</span>
-                            <span className="date">Publié le {post.datestr}</span>
-                          </div>
-                          <div dangerouslySetInnerHTML={{__html:preview}} />
-                          <NavLink className="main" to={link}>Lire la suite</NavLink>
-                        </Col>
-                      </Row>
-                    </article>
-                  )}
-                )
-              }
+              {body}
             </Container>
           </section>
         </div>
