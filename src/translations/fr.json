@@ -30,6 +30,9 @@
     "Resume.download.fr" : "Télécharger (Français)",
     "Resume.download.en" : "Télécharger (Anglais)",
 
+    "Preview.published_on" : "Pulié le",
+    "Preview.read_more"    : "Lire la suite",
+
     "Dashboard.title"           : "Tableau de bord",
     "Dashboard.files.title"     : "Gérer les fichiers",
     "Dashboard.files.upload"    : "Mettre en ligne",
