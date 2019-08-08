@@ -23,17 +23,19 @@ class Projects extends Component {
             <Container>
               <article>
                 <Row className="project" id="www">
-                    <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/www.png')})`}} />
-                    <Col xl='12' className="project-description">
+                    <Col xl='12' className="image" style={{backgroundImage: `url(${require('../../media/projects/www.png')})`}} />
+                    <Col xl='12' className="body">
                       <h2>www.angepagel.fr</h2>
                       <div className="infos">
                         <span className="category">Site internet</span>
                         <span className="date">Février - Mars 2019</span>
                       </div>
-                      <p>
-                        Mon site internet personnel, conçu à l'aide de <a rel="noopener noreferrer" href="https://nodejs.org" target="_blank">Node.js</a> et des frameworks <a rel="noopener noreferrer" href="https://reactjs.org/" target="_blank">React</a> (front-end) et <a rel="noopener noreferrer" href="https://expressjs.com/" target="_blank">Express</a> (back-end, REST API). Son développement s'appuie sur une multitude de technologies web (<a rel="noopener noreferrer" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>, <a rel="noopener noreferrer" href="https://jwt.io/" target="_blank">JWT</a>, <a rel="noopener noreferrer" href="https://sass-lang.com/" target="_blank">Sass</a>, <a rel="noopener noreferrer" href="https://reacttraining.com/react-router/" target="_blank">React Router</a>, etc.) qui me permettent de présenter mon profil professionnel de manière soignée et originale tout en mettant à ma disposition un support d'expression personnel.
-                      </p>
-                      <UncontrolledCollapse className="project-details" toggler="#toggler_www">
+                      <div className="content">
+                        <p>
+                          Mon site internet personnel, conçu à l'aide de <a rel="noopener noreferrer" href="https://nodejs.org" target="_blank">Node.js</a> et des frameworks <a rel="noopener noreferrer" href="https://reactjs.org/" target="_blank">React</a> (front-end) et <a rel="noopener noreferrer" href="https://expressjs.com/" target="_blank">Express</a> (back-end, REST API). Son développement s'appuie sur une multitude de technologies web (<a rel="noopener noreferrer" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>, <a rel="noopener noreferrer" href="https://jwt.io/" target="_blank">JWT</a>, <a rel="noopener noreferrer" href="https://sass-lang.com/" target="_blank">Sass</a>, <a rel="noopener noreferrer" href="https://reacttraining.com/react-router/" target="_blank">React Router</a>, etc.) qui me permettent de présenter mon profil professionnel de manière soignée et originale tout en mettant à ma disposition un support d'expression personnel.
+                        </p>
+                      </div>
+                      <UncontrolledCollapse className="details" toggler="#toggler_www">
                         <section>
                           <h3><i className="material-icons">forum</i> Contexte</h3>
                           <p>
@@ -91,17 +93,19 @@ class Projects extends Component {
                 <Col xs='12' md='6'>
                   <article>
                     <Row className="project" id="a2t">
-                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/a2t.png')})`}} />
-                      <Col xl='12' className="project-description">
+                      <Col xl='12' className="image" style={{backgroundImage: `url(${require('../../media/projects/a2t.png')})`}} />
+                      <Col xl='12' className="body">
                         <h2>A2T</h2>
                         <div className="infos">
                           <span className="category">Simulation</span>
                           <span className="date">Avril - Juin 2019</span>
                         </div>
-                        <p>
-                          A2T (Ambulance-To-Traffic light) est une simulation <a rel="noopener noreferrer" href="https://veins.car2x.org/" target="_blank">Veins</a> visant à améliorer le déroulement des missions de sauvetage grâce à des communications ambulance - feux de circulation utilisant un réseau Ad-Hoc de véhicules (VANet).
-                        </p>
-                        <UncontrolledCollapse className="project-details" toggler="#toggler_a2t">
+                        <div className="content">
+                          <p>
+                            A2T (Ambulance-To-Traffic light) est une simulation <a rel="noopener noreferrer" href="https://veins.car2x.org/" target="_blank">Veins</a> visant à améliorer le déroulement des missions de sauvetage grâce à des communications ambulance - feux de circulation utilisant un réseau Ad-Hoc de véhicules (VANet).
+                          </p>
+                        </div>
+                        <UncontrolledCollapse className="details" toggler="#toggler_a2t">
                           <section>
                             <h3><i className="material-icons">person_add</i> Tuteur</h3>
                             <span>Dr. Chakkaphong Suthaputchakun</span>
@@ -130,17 +134,19 @@ class Projects extends Component {
                 <Col xs='12' md='6'>
                   <article>
                     <Row className="project" id="durandal">
-                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/durandal.png')})`}} />
-                      <Col xl='12' className="project-description">
+                      <Col xl='12' className="image" style={{backgroundImage: `url(${require('../../media/projects/durandal.png')})`}} />
+                      <Col xl='12' className="body">
                         <h2>Durandal</h2>
                         <div className="infos">
                           <span className="category">Bot Discord</span>
                           <span className="date">Mai 2019</span>
                         </div>
-                        <p>
-                          Durandal est un bot <a rel="noopener noreferrer" href="https://discordapp.com/" target="_blank">Discord</a> inspiré d'une intelligence artificielle du jeu vidéo <a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Marathon_(video_game)" target="_blank">Marathon</a> et propose aux membres d'un serveur Discord de jouer à un jeu de rôle global se déroulant dans l'univers de science-fiction de Marathon.
-                        </p>
-                        <UncontrolledCollapse className="project-details" toggler="#toggler_durandal">
+                        <div className="content">
+                          <p>
+                            Durandal est un bot <a rel="noopener noreferrer" href="https://discordapp.com/" target="_blank">Discord</a> inspiré d'une intelligence artificielle du jeu vidéo <a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Marathon_(video_game)" target="_blank">Marathon</a> et propose aux membres d'un serveur Discord de jouer à un jeu de rôle global se déroulant dans l'univers de science-fiction de Marathon.
+                          </p>
+                        </div>
+                        <UncontrolledCollapse className="details" toggler="#toggler_durandal">
                           <section>
                             <h3><i className="material-icons">forum</i> Contexte</h3>
                             <p>
@@ -167,17 +173,19 @@ class Projects extends Component {
                 <Col xs='12' md='6'>
                   <article>
                     <Row className="project" id="threejslab">
-                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/lab.png')})`}} />
-                      <Col xl='12' className="project-description">
+                      <Col xl='12' className="image" style={{backgroundImage: `url(${require('../../media/projects/lab.png')})`}} />
+                      <Col xl='12' className="body">
                         <h2>ThreeJS Lab</h2>
                         <div className="infos">
                           <span className="category">Infographie 3D</span>
                           <span className="date">Avril 2019</span>
                         </div>
-                        <p>
-                          Le ThreeJS Lab est un projet expérimental basé sur la bibliothèque JavaScript <a rel="noopener noreferrer" href="https://threejs.org/" target="_blank">three.js</a> qui me permet de développer mes compétences en infographie tridimensionnelle.
-                        </p>
-                        <UncontrolledCollapse className="project-details" toggler="#toggler_threejslab">
+                        <div className="content">
+                          <p>
+                            Le ThreeJS Lab est un projet expérimental basé sur la bibliothèque JavaScript <a rel="noopener noreferrer" href="https://threejs.org/" target="_blank">three.js</a> qui me permet de développer mes compétences en infographie tridimensionnelle.
+                          </p>
+                        </div>
+                        <UncontrolledCollapse className="details" toggler="#toggler_threejslab">
                           <section>
                             <h3><i className="material-icons">forum</i> Contexte</h3>
                             <p>
@@ -202,17 +210,19 @@ class Projects extends Component {
                 <Col xs='12' md='6'>
                   <article>
                     <Row className="project" id="monopoly">
-                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/monopoly.png')})`}} />
-                      <Col xl='12' className="project-description">
+                      <Col xl='12' className="image" style={{backgroundImage: `url(${require('../../media/projects/monopoly.png')})`}} />
+                      <Col xl='12' className="body">
                         <h2>Monopoly Génétique</h2>
                         <div className="infos">
                           <span className="category">Jeu vidéo</span>
                           <span className="date">Nov. 2018 - Janvier 2019</span>
                         </div>
-                        <p>
-                          Le Monopoly Génétique est un projet visant à recréer le célèbre jeu de société en Java pour ensuite entraîner une intelligence artificielle basée sur un algorithme génétique.
-                        </p>
-                        <UncontrolledCollapse className="project-details" toggler="#toggler_monopoly">
+                        <div className="content">
+                          <p>
+                            Le Monopoly Génétique est un projet visant à recréer le célèbre jeu de société en Java pour ensuite entraîner une intelligence artificielle basée sur un algorithme génétique.
+                          </p>
+                        </div>
+                        <UncontrolledCollapse className="details" toggler="#toggler_monopoly">
                           <section>
                             <h3><i className="material-icons">forum</i> Contexte</h3>
                             <p>
@@ -244,17 +254,19 @@ class Projects extends Component {
                 <Col xs='12' md='6'>
                   <article>
                     <Row className="project" id="morpion_csharp">
-                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/morpion-csharp.png')})`}} />
-                      <Col xl='12' className="project-description">
+                      <Col xl='12' className="image" style={{backgroundImage: `url(${require('../../media/projects/morpion-csharp.png')})`}} />
+                      <Col xl='12' className="body">
                         <h2>Morpion C#</h2>
                         <div className="infos">
                           <span className="category">Jeu vidéo</span>
                           <span className="date">Nov. - Déc. 2018</span>
                         </div>
-                        <p>
-                          Adaptation en C# du célèbre jeu de réflexion, proposant une intelligence artificielle avec différents niveaux de difficulté ainsi qu'un mode deux joueurs.
-                        </p>
-                        <UncontrolledCollapse className="project-details" toggler="#toggler_morpion_csharp">
+                        <div className="content">
+                          <p>
+                            Adaptation en C# du célèbre jeu de réflexion, proposant une intelligence artificielle avec différents niveaux de difficulté ainsi qu'un mode deux joueurs.
+                          </p>
+                        </div>
+                        <UncontrolledCollapse className="details" toggler="#toggler_morpion_csharp">
                           <section>
                             <h3><i className="material-icons">person_add</i> Coautheur</h3>
                             <span>Kévin KIBONGUI</span>
@@ -280,17 +292,19 @@ class Projects extends Component {
                 <Col xs='12' md='6'>
                   <article>
                     <Row className="project" id="wwwv1">
-                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/wwwv1.png')})`}} />
-                      <Col xl='12' className="project-description">
+                      <Col xl='12' className="image" style={{backgroundImage: `url(${require('../../media/projects/wwwv1.png')})`}} />
+                      <Col xl='12' className="body">
                         <h2>www (v1)</h2>
                         <div className="infos">
                           <span className="category">Site internet</span>
                           <span className="date">Juin - Août 2018</span>
                         </div>
-                        <p>
-                          Une première version en PHP de mon site internet personnel visant à présenter mon parcours, mes projets et mes aspirations tout en développant mes compétences en développement web.
-                        </p>
-                        <UncontrolledCollapse className="project-details" toggler="#toggler_wwwv1">
+                        <div className="content">
+                          <p>
+                            Une première version en PHP de mon site internet personnel visant à présenter mon parcours, mes projets et mes aspirations tout en développant mes compétences en développement web.
+                          </p>
+                        </div>
+                        <UncontrolledCollapse className="details" toggler="#toggler_wwwv1">
                           <section>
                             <h3><i className="material-icons">forum</i> Contexte</h3>
                             <p>
@@ -329,17 +343,19 @@ class Projects extends Component {
                 <Col xs='12' md='6'>
                   <article>
                     <Row className="project" id="bienvinfo">
-                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/bienvenue-en-info.png')})`}} />
-                      <Col xl='12' className="project-description">
+                      <Col xl='12' className="image" style={{backgroundImage: `url(${require('../../media/projects/bienvenue-en-info.png')})`}} />
+                      <Col xl='12' className="body">
                         <h2>Bienvenue en Info</h2>
                         <div className="infos">
                           <span className="category">Jeu vidéo</span>
                           <span className="date">Nov. 2017 - Janvier 2018</span>
                         </div>
-                        <p>
-                          Bienvenue en Info est un petit jeu de plateforme développé en Python présentant les modules d'enseignement du DUT Informatique à travers plusieurs niveaux. Le joueur découvre les différentes matières et peut répondre à un QCM faisant office d'évaluation de fin de semestre.
-                        </p>
-                        <UncontrolledCollapse className="project-details" toggler="#toggler_bienvenue_en_info">
+                        <div className="content">
+                          <p>
+                            Bienvenue en Info est un petit jeu de plateforme développé en Python présentant les modules d'enseignement du DUT Informatique à travers plusieurs niveaux. Le joueur découvre les différentes matières et peut répondre à un QCM faisant office d'évaluation de fin de semestre.
+                          </p>
+                        </div>
+                        <UncontrolledCollapse className="details" toggler="#toggler_bienvenue_en_info">
                           <section>
                             <h3><i className="material-icons">forum</i> Contexte</h3>
                             <p>
@@ -360,7 +376,7 @@ class Projects extends Component {
                             </ul>
                           </section>
                         </UncontrolledCollapse>
-                        <UncontrolledCollapse className="project-details" toggler="#toggler_bienvenue_en_info_gameplay">
+                        <UncontrolledCollapse className="details" toggler="#toggler_bienvenue_en_info_gameplay">
                           <section>
                             <h3><i className="material-icons">movie</i> Vidéo de gameplay</h3>
                             <div className="video-container mt-2">
@@ -377,17 +393,19 @@ class Projects extends Component {
                 <Col xs='12' md='6'>
                   <article>
                     <Row className="project" id="civilization">
-                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/civilization-zero.png')})`}} />
-                      <Col xl='12' className="project-description">
+                      <Col xl='12' className="image" style={{backgroundImage: `url(${require('../../media/projects/civilization-zero.png')})`}} />
+                      <Col xl='12' className="body">
                         <h2>Civilization Zero</h2>
                         <div className="infos">
                           <span className="category">Jeu vidéo</span>
                           <span className="date">Nov. - Déc. 2017</span>
                         </div>
-                        <p>
-                          Civilization Zero est un jeu en ligne de commande développé en Pascal et inspiré de la célèbre série de jeux vidéo <a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Civilization_(video_game)" target="_blank">Civilization</a>. Le joueur construit et améliore des bâtiments pour produire diverses ressources et se développer. Il doit également se protéger et diriger son armée contre les ennemis qui l'assaillent.
-                        </p>
-                        <UncontrolledCollapse className="project-details" toggler="#toggler_civilization">
+                        <div className="content">
+                          <p>
+                            Civilization Zero est un jeu en ligne de commande développé en Pascal et inspiré de la célèbre série de jeux vidéo <a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Civilization_(video_game)" target="_blank">Civilization</a>. Le joueur construit et améliore des bâtiments pour produire diverses ressources et se développer. Il doit également se protéger et diriger son armée contre les ennemis qui l'assaillent.
+                          </p>
+                        </div>
+                        <UncontrolledCollapse className="details" toggler="#toggler_civilization">
                           <section>
                             <h3><i className="material-icons">forum</i> Contexte</h3>
                             <p>
@@ -418,17 +436,19 @@ class Projects extends Component {
                 <Col xs='12' md='6'>
                   <article>
                     <Row className="project" id="spaceships">
-                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/spaceships.png')})`}} />
-                      <Col xl='12' className="project-description">
+                      <Col xl='12' className="image" style={{backgroundImage: `url(${require('../../media/projects/spaceships.png')})`}} />
+                      <Col xl='12' className="body">
                         <h2>Spaceships</h2>
                         <div className="infos">
                           <span className="category">Jeu vidéo</span>
                           <span className="date">Avril - Juin 2017</span>
                         </div>
-                        <p>
-                          Spaceships est un jeu vidéo type « Asteroids » développé en Python à l'aide de la bibliothèque Pygame. Il propose différents modes de jeux, un éditeur de niveaux et une personnalisation avancée du vaisseau dont il est possible de changer la forme, la couleur et l'arme équipée.
-                        </p>
-                        <UncontrolledCollapse className="project-details" toggler="#toggler_spaceships">
+                        <div className="content">
+                          <p>
+                            Spaceships est un jeu vidéo type « Asteroids » développé en Python à l'aide de la bibliothèque Pygame. Il propose différents modes de jeux, un éditeur de niveaux et une personnalisation avancée du vaisseau dont il est possible de changer la forme, la couleur et l'arme équipée.
+                          </p>
+                        </div>
+                        <UncontrolledCollapse className="details" toggler="#toggler_spaceships">
                           <section>
                             <h3><i className="material-icons">person_add</i> Coautheur</h3>
                             <span>Kévin KIBONGUI</span>
@@ -447,7 +467,7 @@ class Projects extends Component {
                             </ul>
                           </section>
                         </UncontrolledCollapse>
-                        <UncontrolledCollapse className="project-details" toggler="#toggler_spaceships_gameplay">
+                        <UncontrolledCollapse className="details" toggler="#toggler_spaceships_gameplay">
                           <section>
                             <h3><i className="material-icons">movie</i> Vidéo de gameplay</h3>
                             <div className="video-container mt-2">
@@ -464,17 +484,19 @@ class Projects extends Component {
                 <Col xs='12' md='6'>
                   <article>
                     <Row className="project" id="marathon">
-                      <Col xl='12' className="project-image" style={{backgroundImage: `url(${require('../../media/projects/marathon.png')})`}} />
-                      <Col xl='12' className="project-description">
+                      <Col xl='12' className="image" style={{backgroundImage: `url(${require('../../media/projects/marathon.png')})`}} />
+                      <Col xl='12' className="body">
                         <h2>Marathon Website</h2>
                         <div className="infos">
                           <span className="category">Site internet</span>
                           <span className="date">Janvier 2017</span>
                         </div>
-                        <p>
-                          Ce site est inspiré de <a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Marathon_(video_game)" target="_blank">Marathon</a>, un jeu de tir à la première personne développé par Bungie dont le premier épisode est sorti en 1994. Il s'agit de l'un de mes premiers projets web.
-                        </p>
-                        <UncontrolledCollapse className="project-details" toggler="#toggler_marathon">
+                        <div className="content">
+                          <p>
+                            Ce site est inspiré de <a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Marathon_(video_game)" target="_blank">Marathon</a>, un jeu de tir à la première personne développé par Bungie dont le premier épisode est sorti en 1994. Il s'agit de l'un de mes premiers projets web.
+                          </p>
+                        </div>
+                        <UncontrolledCollapse className="details" toggler="#toggler_marathon">
                           <section>
                             <h3><i className="material-icons">person_add</i> Coautheur</h3>
                             <span>Kévin KIBONGUI</span>

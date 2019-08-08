@@ -1,40 +1,48 @@
-@import '../blog/blog.scss';
+@import '../../components/blog/preview/preview.scss';
 
 #projects {
 
-  @extend #blog;
+    .project {
+        @extend .preview;
 
-  .project {
-    @extend .post;
-    margin: 42px 0 0px 0;
+        margin: 42px 0 0px 0;
 
-    .project-image {
-      @extend .post-image;
-      border-radius: 40px 40px 0 0;
-    }
-    .project-description { @extend .post-description; }
-    div.infos { @extend .infos; }
-
-    .project-details {
-      section {
-        margin-bottom: 20px;
-
-        h3 {
-          font-size: 1em;
-          margin-bottom: 0px;
-          .material-icons { vertical-align: middle; }
+        .image {
+            border-radius: 40px 40px 0 0 !important; 
         }
-        ul {
-          color: $mantra;
-          list-style-type: circle;
-          list-style-position: inside;
-          padding-left: 0;
-        }
-        p { margin: 0; }
-        span { color: $mantra; }
-      }
-    }
 
-  }
+        .details {
+
+            section {
+                margin-bottom: 20px;
+
+                h3 {
+                    font-size: 1em;
+                    margin-bottom: 0px;
+                    .material-icons {
+                        vertical-align: middle;
+                    }
+                }
+
+                ul {
+                    color: $mantra;
+                    list-style-type: circle;
+                    list-style-position: inside;
+                    padding-left: 0;
+                }
+
+                p {
+                    margin: 0;
+                }
+
+                span {
+                    color: $mantra;
+                }
+
+            }
+            
+        }
+
+    }
 
 }
