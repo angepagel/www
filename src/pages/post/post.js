@@ -35,28 +35,39 @@ class Post extends Component {
 
     else {
       return (
-        <div id="post">
+        <div>
 
           <Helmet>
             <title>{post.title}</title>
           </Helmet>
 
           <Container>
-            <Row className="post">
-              <Col xl='12' className="post-image" style={{backgroundImage: `url(${post.image})`}}>
-                <span className="credits">Photo par {post.img_credit}</span>
-              </Col>
-              <Col xl='10' className="post-description mx-auto">
-                <h1 className="post-title">{post.title}</h1>
-                <div className="infos">
-                    <span className="category">{post.category}</span>
-                    <span className="date">Publié le {post.datestr}</span>
-                </div>
-                <hr/>
-                <div dangerouslySetInnerHTML={{__html:post.body}} />
-              </Col>
-            </Row>
+            <article>
+              <Row className="post">
+
+                <Col xl='12' className="image" style={{backgroundImage: `url(${post.image})`}}>
+                  <span className="credits">Photo par {post.img_credit}</span>
+                </Col>
+
+                <Col xl='10' className="body mx-auto">
+
+                  <h1 className="title">{post.title}</h1>
+
+                  <div className="infos">
+                      <span className="category">{post.category}</span>
+                      <span className="date">Publié le {post.datestr}</span>
+                  </div>
+
+                  <hr/>
+
+                  <div dangerouslySetInnerHTML={{__html:post.body}} />
+                  
+                </Col>
+
+              </Row>
+            </article>
           </Container>
+          
         </div>
       );
     }

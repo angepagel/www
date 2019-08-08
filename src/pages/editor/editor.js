@@ -88,25 +88,39 @@ class Editor extends Component {
   render() {
     return (
       <div id="postEditor">
+
         <h1 className="page-title">Éditeur</h1>
+
         <Container>
 
           <h2>Prévisualisation</h2>
+
           <hr/>
+
+          <article>
             <Row className="post">
-              <Col xl='12' className="post-image" style={{backgroundImage: `url(${this.state.image})`}}>
+
+              <Col xl='12' className="image" style={{backgroundImage: `url(${this.state.image})`}}>
                 <span className="credits">Photo par {this.state.img_credit}</span>
               </Col>
-              <Col xl='10' className="post-description mx-auto">
-                <h1 className="post-title">{this.state.title}</h1>
+
+              <Col xl='10' className="body mx-auto">
+
+                <h1 className="title">{this.state.title}</h1>
+
                 <div className="infos">
                     <span className="category">{this.state.category}</span>
                     <span className="date">Publié le 01/01/2020</span>
                 </div>
+
                 <hr/>
+
                 <div dangerouslySetInnerHTML={{__html:this.state.body}} />
+
               </Col>
+
             </Row>
+          </article>
 
           <Row>
             <Col className="mx-auto" lg='8'>
@@ -165,12 +179,16 @@ class Editor extends Component {
                 <Button type="submit">{this.state.edit ? 'Modifier' : 'Publier'}</Button>
 
               </Form>
+
             </Col>
           </Row>
+
         </Container>
+        
       </div>
     );
   }
+
 }
 
 export default Editor;
