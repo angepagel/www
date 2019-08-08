@@ -21,7 +21,7 @@ class Preview extends Component {
                         </span>
                     </div>
 
-                    <div dangerouslySetInnerHTML={{__html:this.props.content}} />
+                    <div className="content" dangerouslySetInnerHTML={{__html:this.props.content}} />
 
                     <NavLink className="main" to={this.props.linkTo}>
                         <FormattedMessage id="Preview.read_more"/>
