@@ -11,7 +11,7 @@ class PreviewSkeleton extends Component {
             skeletons.push(
                 <Row className="skeleton">
                     <Col sm='12' md='6' className="image"/>
-                    <Col sm='12' md='6' className="description">
+                    <Col sm='12' md='6' className="body">
                         <div className="title"/>
                         <div className="infos"/>
                         <div className="line"/>
