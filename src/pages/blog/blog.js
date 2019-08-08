@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
-import { NavLink } from 'react-router-dom';
-import { Container, Row, Col } from 'reactstrap';
+import { Container } from 'reactstrap';
 import * as API from '../../api/APIUtils';
 import PreviewSkeleton from '../../components/blog/previewSkeleton/previewSkeleton';
+import Preview from '../../components/blog/preview/preview';
 import './blog.scss';
 
 class Blog extends Component {
@@ -39,24 +39,25 @@ class Blog extends Component {
     else {
       body = (
         posts.map(post => {
-          const preview = post.body.length > 252 ? `${post.body.substring(0,252)}...` : post.body;
-          const background = `url(${post.image})`;
-          const link = `/blog/${post.id}`;
+
+          const id        = post.id;
+          const imageUrl  = `url(${post.image})`;
+          const title     = post.title;
+          const category  = post.category;
+          const date      = post.datestr;
+          const content   = post.body.length > 252 ? `${post.body.substring(0,252)}...` : post.body;
+          const link      = `/blog/${post.id}`;
 
           return (
-            <article key={post.id}>
-              <Row className="post">
-                <Col sm='12' md='6' className="post-image" style={{backgroundImage: background}} />
-                <Col sm='12' md='6' className="post-description">
-                  <h2>{ post.title }</h2>
-                  <div className="infos">
-                    <span className="category">{post.category}</span>
-                    <span className="date">Publié le {post.datestr}</span>
-                  </div>
-                  <div dangerouslySetInnerHTML={{__html:preview}} />
-                  <NavLink className="main" to={link}>Lire la suite</NavLink>
-                </Col>
-              </Row>
+            <article key={id}>
+              <Preview
+                imageUrl={imageUrl}
+                title={title}
+                category={category}
+                date={date}
+                content={content}
+                linkTo={link}
+              />
             </article>
           )}
         )
