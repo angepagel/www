@@ -10,7 +10,7 @@ class Preview extends Component {
         return (
             <Row className="preview">
                 <Col sm='12' md='6' className="image" style={{backgroundImage: this.props.imageUrl}} />
-                <Col sm='12' md='6' className="description">
+                <Col sm='12' md='6' className="body">
 
                     <h2>{this.props.title}</h2>
                     
