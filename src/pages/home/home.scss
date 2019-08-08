@@ -1,4 +1,4 @@
-@import '../blog/blog.scss';
+@import '../../scss/colors.scss';
 
 #home {
 
@@ -16,20 +16,7 @@
     .emojis { font-size: 99px; }
     .magic { color: $mantra; }
     .finger { font-size: 21px; }
+    
   }
 
-  @extend #blog;
-
-  #latestPost {
-
-    .latest-post {
-      @extend .post;
-      margin: 21px 0 21px 0;
-  
-      .lp-image { @extend .post-image; }
-      .lp-description { @extend .post-description; }
-      div.infos { @extend .infos; }
-    }
-
-  }
 }

@@ -5,6 +5,8 @@ import { Container, Row, Col } from 'reactstrap';
 import { FormattedMessage } from 'react-intl';
 import Typed from 'react-typed';
 import * as API from '../../api/APIUtils';
+import PreviewSkeleton from '../../components/blog/previewSkeleton/previewSkeleton';
+import Preview from '../../components/blog/preview/preview';
 import './home.scss';
 
 class Home extends Component {
@@ -13,13 +15,15 @@ class Home extends Component {
     super(props);
     this.state = {
       latestPost: '',
+      loaded: false
     }
   }
 
   async componentDidMount() {
     try {
       this.setState({
-        latestPost: await API.getLatestPost()
+        latestPost: await API.getLatestPost(),
+        loaded: true
       })
     }
     catch(error) {
@@ -31,15 +35,17 @@ class Home extends Component {
 
     let { latestPost } = this.state;
 
-    let preview = '';
-    const background = `url(${latestPost.image})`;
-    const link = `/blog/${latestPost.id}`;
-
+    const imageUrl  = `url(${latestPost.image})`;
+    const title     = latestPost.title;
+    const category  = latestPost.category;
+    const date      = latestPost.datestr;
+    const link      = `/blog/${latestPost.id}`;
+    let content;
     try {
-      preview = latestPost.body.length > 252 ? `${latestPost.body.substring(0,252)}...` : latestPost.body;
+      content = latestPost.body.length > 252 ? `${latestPost.body.substring(0,252)}...` : latestPost.body;
     }
     catch(error) {
-      preview = 'Une erreur est survenue.';
+      content = 'Une erreur est survenue.';
     }
 
     return (
@@ -62,11 +68,13 @@ class Home extends Component {
 
             <section id="presentation">
               <Row>
+
                 <Col sm='12' md='6' className="emojis">
                   <span role="img" aria-label="wizard">🧙</span>
                   <span role="img" aria-label="magic">✨</span>
                   <span role="img" aria-label="laptop">💻</span>
                 </Col>
+
                 <Col sm='12' md='6'>
                   <h2><FormattedMessage id="Home.about.title"/> <span className="name">Ange Pagel</span></h2>
                   <span className="magic"><FormattedMessage id="Home.about.description"/></span>
@@ -76,25 +84,31 @@ class Home extends Component {
                     <span className="finger" role="img" aria-label="finger">👉🏻</span> <NavLink className="main" to={'/about'}><FormattedMessage id="Home.about.link"/></NavLink> <span className="finger" role="img" aria-label="finger">👈🏻</span>
                   </span>
                 </Col>
+
               </Row>
             </section>
 
             <section id="latestPost">
+
               <h2><FormattedMessage id="Home.latestPost.title"/></h2>
 
-              <Row className="latest-post">
-                <Col xs='12' md='6' className="post-image" style={{backgroundImage: background}} />
-                <Col xs='12' md='6' className="post-description">
-                  <h2>{latestPost.title}</h2>
-                  <div className="infos">
-                    <span className="category">{latestPost.category}</span>
-                    <span className="date">Publié le {latestPost.datestr}</span>
-                  </div>
-                  <div dangerouslySetInnerHTML={{ __html:preview}} />
-                  <NavLink className="main" to={link}>Lire la suite</NavLink>
-                </Col>
-              </Row>
+              {
+                !this.state.loaded ? <PreviewSkeleton/> : (
+                  <article>
+                    <Preview
+                      imageUrl={imageUrl}
+                      title={title}
+                      category={category}
+                      date={date}
+                      content={content}
+                      linkTo={link}
+                    />
+                  </article>
+                )
+              }
+
             </section>
+
           </Container>
 
         </div>
