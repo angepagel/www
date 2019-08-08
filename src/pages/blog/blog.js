@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { NavLink } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
 import * as API from '../../api/APIUtils';
+import PreviewSkeleton from '../../components/blog/previewSkeleton/previewSkeleton';
 import './blog.scss';
 
 class Blog extends Component {
@@ -32,7 +33,10 @@ class Blog extends Component {
     let { posts } = this.state;
     let body= "";
 
-    if (this.state.loaded) {
+    if (!this.state.loaded) {
+      body = (<PreviewSkeleton skeletons="3"/>)
+    }
+    else {
       body = (
         posts.map(post => {
           const preview = post.body.length > 252 ? `${post.body.substring(0,252)}...` : post.body;
@@ -58,39 +62,6 @@ class Blog extends Component {
         )
       )
     }
-    else {
-      body = (
-        <div>
-            <Row className="post-loading">
-              <Col sm='12' md='6' className="post-image"/>
-              <Col sm='12' md='6' className="post-description">
-                <div className="post-title"/>
-                <div className="infos"/>
-                <div className="post-line"/>
-                <div className="post-line"/>
-                <div className="post-line"/>
-                <div className="post-line"/>
-                <div className="post-line"/>
-                <div className="read-more"/>
-              </Col>
-            </Row>
-            <Row className="post-loading">
-              <Col sm='12' md='6' className="post-image"/>
-              <Col sm='12' md='6' className="post-description">
-                <div className="post-title"/>
-                <div className="infos"/>
-                <div className="post-line"/>
-                <div className="post-line"/>
-                <div className="post-line"/>
-                <div className="post-line"/>
-                <div className="post-line"/>
-                <div className="read-more"/>
-              </Col>
-            </Row>
-        </div>
-      )
-    }
-
 
     return (
         <div id="blog">
