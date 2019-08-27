@@ -39,6 +39,10 @@
     "Dashboard.blog.title"      : "Manage blog",
     "Dashboard.blog.new"        : "New",
 
+    "NotFound.title"        : "Oops!",
+    "NotFound.message"      : "The page you are looking for does not exist.",
+    "NotFound.redirection"  : "Go to homepage",
+
     "Footer.about.link" : "About",
     "Footer.explore.header"     : "Explore",
     "Footer.explore.resume"     : "Resume",

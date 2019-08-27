@@ -39,6 +39,10 @@
     "Dashboard.blog.title"      : "Gérer le blog",
     "Dashboard.blog.new"        : "Publier un article",
 
+    "NotFound.title"        : "Oups !",
+    "NotFound.message"      : "La page que vous recherchez n'existe pas.",
+    "NotFound.redirection"  : "Retourner à l'accueil",
+
     "Footer.about.link" : "À propos",
     "Footer.explore.header"     : "Explorer",
     "Footer.explore.resume"     : "Curriculum Vitæ",

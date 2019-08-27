@@ -1,0 +1,16 @@
+@import '../../scss/colors.scss';
+
+#notFound {
+    text-align: center;
+
+    svg {
+        max-width: 442px;
+        height: auto;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 42px;
+    }
+
+}
