@@ -47,22 +47,22 @@ class Navigation extends Component {
             <Nav className='ml-auto' navbar>
               <NavItem>
                 <NavLink to='/about' tag={ReactNavLink} activeClassName='active'>
-                  <i className='material-icons'>person</i> <span><FormattedMessage id="Navigation.about" /></span>
+                  <FormattedMessage id="Navigation.about"/>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink to='/resume' tag={ReactNavLink} activeClassName='active'>
-                  <i className='material-icons'>notes</i> <span><FormattedMessage id="Navigation.resume" /></span>
+                  <FormattedMessage id="Navigation.resume"/>
                 </NavLink>
               </NavItem>                 
               <NavItem>
                 <NavLink to='/projects' tag={ReactNavLink} activeClassName='active'>
-                  <i className='material-icons'>whatshot</i> <span><FormattedMessage id="Navigation.projects" /></span>
+                  <FormattedMessage id="Navigation.projects"/>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink to='/blog' tag={ReactNavLink} activeClassName='active'>
-                  <i className='material-icons'>edit</i> <span><FormattedMessage id="Navigation.blog" /></span>
+                  <FormattedMessage id="Navigation.blog"/>
                 </NavLink>
               </NavItem>
 
@@ -70,7 +70,7 @@ class Navigation extends Component {
                 API.isAuth() ? (
                   <NavItem>
                     <NavLink to='/dashboard' tag={ReactNavLink} activeClassName='active'>
-                      <i className='material-icons'>dashboard</i> <span><FormattedMessage id="Navigation.dashboard" /></span>
+                      <FormattedMessage id="Navigation.dashboard"/>
                     </NavLink>
                   </NavItem>
                 ) : ('')

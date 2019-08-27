@@ -3,8 +3,8 @@
 nav {
 
     .nav-item {
-        margin-left: 12px;
-        margin-right: 12px;
+        margin-left: 16px;
+        margin-right: 16px;
     }
 
     .nav-link {
@@ -14,11 +14,13 @@ nav {
     }
 
     .navbar-brand {
+        
         .nav-link {
             color: $white !important;
             background: linear-gradient(to left, $purple-crown, $purple-crown) no-repeat bottom center;
             background-size: 0% 2px;
         }
+
         .nav-link:hover { background-size: 100% 2px; }
         .nav-link:focus, .active { @extend .nav-link:hover; }
     }
@@ -38,23 +40,21 @@ nav {
 
     .navbar-nav {
 
-        .nav-link { 
+        .nav-link {
+            display: inline-block;
             color: $inner-peace !important;
             background: linear-gradient(to left, $purple-crown, $purple-crown) no-repeat bottom center;
             background-size: 0% 2px;
-        }
-        .nav-link:hover {
-            color: $white !important;
-            background-size: 100% 2px;
-        }
-        .nav-link:focus { @extend .nav-link:hover; }
 
-        .active {
-            @extend .nav-link:hover;
-            span { color: $white; }
-            i.material-icons { color: $purple-crown; }
+            &:hover {
+                color: $white !important;
+                background-size: 100% 2px;
+            }
+
+            &:focus { @extend .nav-link:hover; }
         }
 
+        .active { @extend .nav-link:hover; }
     }
 
 }
