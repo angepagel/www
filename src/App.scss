@@ -54,7 +54,6 @@ a.main{
   border-radius: 20px;
   padding: 7px 15px 7px 15px;
   svg {
-    fill: $purple-crown;
     max-height: 1.1em;
     margin-right: 5px;
     vertical-align: sub;
@@ -67,7 +66,6 @@ a.main{
     color: $white;
     border: 1px solid $purple-crown;
     box-shadow: 3px 3px 10px rgba($grey-matter, 0.2);
-    svg { fill: $white; }
     transition: all 0.2s;
   }
   &:active { transform: translateY(3px); }
