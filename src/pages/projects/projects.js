@@ -7,6 +7,13 @@ import {
   UncontrolledCollapse,
   Button
  } from 'reactstrap';
+ import {
+  MessageCircle as MessageCircleIcon,
+  Code as CodeIcon,
+  UserPlus as UserPlusIcon,
+  Film as FilmIcon,
+  Users as UsersIcon
+} from 'react-feather';
 import './projects.scss';
 
 class Projects extends Component {
@@ -37,7 +44,10 @@ class Projects extends Component {
                       </div>
                       <UncontrolledCollapse className="details" toggler="#toggler_www">
                         <section>
-                          <h3><i className="material-icons">forum</i> Contexte</h3>
+                          <h3>
+                            <MessageCircleIcon/>
+                            Contexte
+                          </h3>
                           <p>
                             Projet tutoré du 4<sup>ème</sup> semestre de mon DUT Informatique (choix libre du sujet). Ce projet fait suite à une première version de mon site internet personnel, que j'ai décidé de mettre à jour à l'aide de technologies web modernes.
                           </p>
@@ -47,7 +57,10 @@ class Projects extends Component {
                             <h3>Front-end</h3>
                             <hr/>
                             <section>
-                              <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
+                              <h3>
+                                <CodeIcon/>
+                                Langage(s) et technologie(s) utilisés
+                              </h3>
                               <ul>
                                 <li><a rel="noopener noreferrer" href="https://reactjs.org/" target="_blank">React.js</a></li>
                                 <li><a rel="noopener noreferrer" href="https://reacttraining.com/react-router/" target="_blank">React Router</a></li>
@@ -60,7 +73,10 @@ class Projects extends Component {
                             <h3>Back-end</h3>
                             <hr/>
                             <section>
-                              <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
+                              <h3>
+                                <CodeIcon/>
+                                Langage(s) et technologie(s) utilisés
+                              </h3>
                               <ul>
                                 <li><a rel="noopener noreferrer" href="https://expressjs.com/" target="_blank">Express</a> + middlewares</li>
                                 <li><a rel="noopener noreferrer" href="https://jwt.io/" target="_blank">JSON Web Tokens</a></li>
@@ -72,7 +88,10 @@ class Projects extends Component {
                             <h3>Hébergement et BD</h3>
                             <hr/>
                             <section>
-                              <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
+                              <h3>
+                                <CodeIcon/>
+                                Langage(s) et technologie(s) utilisés
+                              </h3>
                               <ul>
                                 <li>VPS sous Linux (<a rel="noopener noreferrer" href="https://www.debian.org/" target="_blank">Debian 9</a>)</li>
                                 <li>Serveur web <a rel="noopener noreferrer" href="https://www.nginx.com/" target="_blank">NGINX</a></li>
@@ -83,9 +102,15 @@ class Projects extends Component {
                           </Col>
                         </Row>
                       </UncontrolledCollapse>
-                      <Button className="main mt-2 mr-3" id="toggler_www">Informations</Button>
-                      <a className="main mt-2 mr-3" rel="noopener noreferrer" href="https://github.com/angepagel/www-front" target="_blank">Front-end (GitHub)</a>
-                      <a className="main mt-2" rel="noopener noreferrer" href="https://github.com/angepagel/www-back" target="_blank">Back-end (GitHub)</a>
+                      <Button className="main mt-2 mr-3" id="toggler_www">
+                        Informations
+                      </Button>
+                      <a className="main mt-2 mr-3" rel="noopener noreferrer" href="https://github.com/angepagel/www-front" target="_blank">
+                        Front-end (GitHub)
+                      </a>
+                      <a className="main mt-2" rel="noopener noreferrer" href="https://github.com/angepagel/www-back" target="_blank">
+                        Back-end (GitHub)
+                      </a>
                     </Col>
                 </Row>
               </article>
@@ -107,17 +132,26 @@ class Projects extends Component {
                         </div>
                         <UncontrolledCollapse className="details" toggler="#toggler_a2t">
                           <section>
-                            <h3><i className="material-icons">person_add</i> Tuteur</h3>
+                            <h3>
+                              <UserPlusIcon/>
+                              Tuteur
+                            </h3>
                             <span>Dr. Chakkaphong Suthaputchakun</span>
                           </section>
                           <section>
-                            <h3><i className="material-icons">forum</i> Contexte</h3>
+                            <h3>
+                              <MessageCircleIcon/>
+                              Contexte
+                            </h3>
                             <p>
                               Projet confié par le <a rel="noopener noreferrer" href="http://bucroccs.bu.ac.th/showPeople.php?ID=8" target="_blank">Dr. Chakkaphong Suthaputchakun</a> pendant mon stage au centre de recherche CROCCS de la Bangkok University.
                             </p>
                           </section>
                           <section>
-                          <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
+                            <h3>
+                              <CodeIcon/>
+                              Langage(s) et technologie(s) utilisés
+                            </h3>
                             <ul>
                               <li><a rel="noopener noreferrer" href="https://omnetpp.org/" target="_blank">Objective Modular Network Testbed in C++</a> (OMNeT++)</li>
                               <li><a rel="noopener noreferrer" href="https://sumo.dlr.de/index.html" target="_blank">Simulation of Urban Mobility</a> (SUMO)</li>
@@ -125,8 +159,12 @@ class Projects extends Component {
                             </ul>
                           </section>
                         </UncontrolledCollapse>
-                        <Button className="main mt-2 mr-3" id="toggler_a2t">Informations</Button>
-                        <a className="main mt-2" rel="noopener noreferrer" href="https://github.com/angepagel/A2T" target="_blank">Voir sur GitHub</a>
+                        <Button className="main mt-2 mr-3" id="toggler_a2t">
+                          Informations
+                        </Button>
+                        <a className="main mt-2" rel="noopener noreferrer" href="https://github.com/angepagel/A2T" target="_blank">
+                          Voir sur GitHub
+                        </a>
                       </Col>
                     </Row>
                   </article>
@@ -148,13 +186,19 @@ class Projects extends Component {
                         </div>
                         <UncontrolledCollapse className="details" toggler="#toggler_durandal">
                           <section>
-                            <h3><i className="material-icons">forum</i> Contexte</h3>
+                            <h3>
+                              <MessageCircleIcon/>
+                              Contexte
+                            </h3>
                             <p>
                               Projet personnel né d'une utilisation régulière du logiciel gratuit de VoIP <a rel="noopener noreferrer" href="https://discordapp.com/" target="_blank">Discord</a> et de mon intérêt pour la science fiction et les jeux de rôle.
                             </p>
                           </section>
                           <section>
-                          <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
+                            <h3>
+                              <CodeIcon/>
+                              Langage(s) et technologie(s) utilisés
+                            </h3>
                             <ul>
                               <li>JavaScript</li>
                               <li><a rel="noopener noreferrer" href="https://nodejs.org/" target="_blank">Node.js</a></li>
@@ -162,8 +206,12 @@ class Projects extends Component {
                             </ul>
                           </section>
                         </UncontrolledCollapse>
-                        <Button className="main mt-2 mr-3" id="toggler_durandal">Informations</Button>
-                        <a className="main mt-2" rel="noopener noreferrer" href="https://github.com/angepagel/Durandal" target="_blank">Voir sur GitHub</a>
+                        <Button className="main mt-2 mr-3" id="toggler_durandal">
+                          Informations
+                        </Button>
+                        <a className="main mt-2" rel="noopener noreferrer" href="https://github.com/angepagel/Durandal" target="_blank">
+                          Voir sur GitHub
+                        </a>
                       </Col>
                     </Row>
                   </article>
@@ -187,13 +235,19 @@ class Projects extends Component {
                         </div>
                         <UncontrolledCollapse className="details" toggler="#toggler_threejslab">
                           <section>
-                            <h3><i className="material-icons">forum</i> Contexte</h3>
+                            <h3>
+                              <MessageCircleIcon/>
+                              Contexte
+                            </h3>
                             <p>
                               Projet personnel visant à approfondir les notions d'infographie tridimensionnelle vues au cours du module de programmation web de mon DUT Informatique.
                             </p>
                           </section>
                           <section>
-                            <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
+                            <h3>
+                              <CodeIcon/>
+                              Langage(s) et technologie(s) utilisés
+                            </h3>
                             <ul>
                               <li>JavaScript</li>
                               <li><a rel="noopener noreferrer" href="https://threejs.org/" target="_blank">Three.js</a></li>
@@ -224,19 +278,28 @@ class Projects extends Component {
                         </div>
                         <UncontrolledCollapse className="details" toggler="#toggler_monopoly">
                           <section>
-                            <h3><i className="material-icons">forum</i> Contexte</h3>
+                            <h3>
+                              <MessageCircleIcon/>
+                              Contexte
+                            </h3>
                             <p>
                               Projet tutoré du 3<sup>ème</sup> semestre de mon DUT Informatique.
                             </p>
                           </section>
                           <section>
-                            <h3><i className="material-icons">group</i> Organisation</h3>
+                            <h3>
+                              <UsersIcon/>
+                              Organisation
+                            </h3>
                             <p>
                               Équipe de 6 étudiants, rôle de chef de projet.<br/>
                             </p>
                           </section>
                           <section>
-                            <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
+                            <h3>
+                              <CodeIcon/>
+                              Langage(s) et technologie(s) utilisés
+                            </h3>
                             <ul>
                               <li>Java</li>
                               <li>Bibliothèque UI <a rel="noopener noreferrer" href="https://openjfx.io/" target="_blank">JavaFX</a></li>
@@ -268,15 +331,24 @@ class Projects extends Component {
                         </div>
                         <UncontrolledCollapse className="details" toggler="#toggler_morpion_csharp">
                           <section>
-                            <h3><i className="material-icons">person_add</i> Coautheur</h3>
+                            <h3>
+                              <UserPlusIcon/>
+                              Coautheur
+                            </h3>
                             <span>Kévin KIBONGUI</span>
                           </section>
                           <section>
-                            <h3><i className="material-icons">forum</i> Contexte</h3>
+                            <h3>
+                              <MessageCircleIcon/>
+                              Contexte
+                            </h3>
                             <span>Projet final du module de conception et de programmation objet du 3<sup>ème</sup> semestre de mon DUT Informatique.</span>
                           </section>
                           <section>
-                            <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
+                            <h3>
+                              <CodeIcon/>
+                              Langage(s) et technologie(s) utilisés
+                            </h3>
                             <ul>
                               <li>C#</li>
                               <li>Framework UI Windows Presentation Foundation (WPF)</li>
@@ -306,7 +378,10 @@ class Projects extends Component {
                         </div>
                         <UncontrolledCollapse className="details" toggler="#toggler_wwwv1">
                           <section>
-                            <h3><i className="material-icons">forum</i> Contexte</h3>
+                            <h3>
+                              <MessageCircleIcon/>
+                              Contexte
+                            </h3>
                             <p>
                               Projet personnel réalisé afin d'acquérir de nouvelles connaissances en développement full stack tout produisant un support de communication efficace qui me permet d'anticiper ma recherche de stage pour la fin de mon DUT Informatique.
                             </p>
@@ -314,7 +389,10 @@ class Projects extends Component {
                           <h3>Front-end</h3>
                           <hr/>
                           <section>
-                            <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisé(s)</h3>
+                            <h3>
+                              <CodeIcon/>
+                              Langage(s) et technologie(s) utilisés
+                            </h3>
                             <ul>
                               <li>PHP</li>
                               <li>JavaScript</li>
@@ -325,7 +403,10 @@ class Projects extends Component {
                           <h3>Hébergement et BD</h3>
                           <hr/>
                           <section>
-                            <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisé(s)</h3>
+                            <h3>
+                              <CodeIcon/>
+                              Langage(s) et technologie(s) utilisés
+                            </h3>
                             <ul>
                               <li>VPS sous Linux (<a rel="noopener noreferrer" href="https://www.debian.org/" target="_blank">Debian 9</a>)</li>
                               <li>Serveur web <a rel="noopener noreferrer" href="https://www.nginx.com/" target="_blank">NGINX</a></li>
@@ -357,19 +438,28 @@ class Projects extends Component {
                         </div>
                         <UncontrolledCollapse className="details" toggler="#toggler_bienvenue_en_info">
                           <section>
-                            <h3><i className="material-icons">forum</i> Contexte</h3>
+                            <h3>
+                              <MessageCircleIcon/>
+                              Contexte
+                            </h3>
                             <p>
                               Projet tutoré du 1<sup>er</sup> semestre de mon DUT Informatique. Il s'agit d'un projet centré autour de la communication et destiné aux personnes souhaitant se renseigner sur la formation.
                             </p>
                           </section>
                           <section>
-                            <h3><i className="material-icons">group</i> Organisation</h3>
+                            <h3>
+                              <UsersIcon/>
+                              Organisation
+                            </h3>
                             <p>
                               Équipe de 4 étudiants, rôle de chef de projet.
                             </p>
                           </section>
                           <section>
-                            <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
+                            <h3>
+                              <CodeIcon/>
+                              Langage(s) et technologie(s) utilisés
+                            </h3>
                             <ul>
                               <li><a rel="noopener noreferrer" href="https://www.python.org/" target="_blank">Python</a></li>
                               <li><a rel="noopener noreferrer" href="https://www.pygame.org/wiki/about" target="_blank">Pygame</a></li>
@@ -378,7 +468,10 @@ class Projects extends Component {
                         </UncontrolledCollapse>
                         <UncontrolledCollapse className="details" toggler="#toggler_bienvenue_en_info_gameplay">
                           <section>
-                            <h3><i className="material-icons">movie</i> Vidéo de gameplay</h3>
+                            <h3>
+                              <FilmIcon/>
+                              Vidéo de gameplay
+                            </h3>
                             <div className="video-container mt-2">
                               <iframe title="Bienvenue en Info Gameplay" width="560" height="315" src="https://www.youtube.com/embed/f3vtvaIqiw8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
@@ -407,19 +500,28 @@ class Projects extends Component {
                         </div>
                         <UncontrolledCollapse className="details" toggler="#toggler_civilization">
                           <section>
-                            <h3><i className="material-icons">forum</i> Contexte</h3>
+                            <h3>
+                              <MessageCircleIcon/>
+                              Contexte
+                            </h3>
                             <p>
                               Projet final du module d'algorithmique du 1<sup>er</sup> semestre de mon DUT Informatique.
                             </p>
                           </section>
                           <section>
-                            <h3><i className="material-icons">group</i> Organisation</h3>
+                            <h3>
+                              <UsersIcon/>
+                              Organisation
+                            </h3>
                             <p>
                               Équipe de 4 étudiants, rôle de chef de projet.
                             </p>
                           </section>
                           <section>
-                            <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
+                            <h3>
+                              <CodeIcon/>
+                              Langage(s) et technologie(s) utilisés
+                            </h3>
                             <ul>
                               <li>Pascal</li>
                             </ul>
@@ -450,17 +552,26 @@ class Projects extends Component {
                         </div>
                         <UncontrolledCollapse className="details" toggler="#toggler_spaceships">
                           <section>
-                            <h3><i className="material-icons">person_add</i> Coautheur</h3>
+                            <h3>
+                              <UserPlusIcon/>
+                              Coautheur
+                            </h3>
                             <span>Kévin KIBONGUI</span>
                           </section>
                           <section>
-                            <h3><i className="material-icons">forum</i> Contexte</h3>
+                            <h3>
+                              <MessageCircleIcon/>
+                              Contexte
+                            </h3>
                             <p>
                               Projet de fin d'année de la spécialité Informatique et Sciences du Numérique (ISN) de mon Baccalauréat Scientifique. L'idée de Spaceships est née d'une passion commune pour la science fiction et les jeux vidéo rétro.
                             </p>
                           </section>
                           <section>
-                            <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
+                            <h3>
+                              <CodeIcon/>
+                              Langage(s) et technologie(s) utilisés
+                            </h3>
                             <ul>
                               <li><a rel="noopener noreferrer" href="https://www.python.org/" target="_blank">Python</a></li>
                               <li><a rel="noopener noreferrer" href="https://www.pygame.org/wiki/about" target="_blank">Pygame</a></li>
@@ -469,7 +580,10 @@ class Projects extends Component {
                         </UncontrolledCollapse>
                         <UncontrolledCollapse className="details" toggler="#toggler_spaceships_gameplay">
                           <section>
-                            <h3><i className="material-icons">movie</i> Vidéo de gameplay</h3>
+                            <h3>
+                              <FilmIcon/>
+                              Vidéo de gameplay
+                            </h3>
                             <div className="video-container mt-2">
                               <iframe title="Spaceships Gameplay" width="560" height="315" src="https://www.youtube.com/embed/j3SzNZpQTNQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
@@ -498,17 +612,26 @@ class Projects extends Component {
                         </div>
                         <UncontrolledCollapse className="details" toggler="#toggler_marathon">
                           <section>
-                            <h3><i className="material-icons">person_add</i> Coautheur</h3>
+                            <h3>
+                              <UserPlusIcon/>
+                              Coautheur
+                            </h3>
                             <span>Kévin KIBONGUI</span>
                           </section>
                           <section>
-                            <h3><i className="material-icons">forum</i> Contexte</h3>
+                            <h3>
+                              <MessageCircleIcon/>
+                              Contexte
+                            </h3>
                             <p>
                               Projet web de la spécialité Informatique et Sciences du Numérique (ISN) de mon Baccalauréat Scientifique.
                             </p>
                           </section>
                           <section>
-                            <h3><i className="material-icons">devices</i> Langage(s) et technologie(s) utilisés</h3>
+                            <h3>
+                              <CodeIcon/>
+                              Langage(s) et technologie(s) utilisés
+                            </h3>
                             <ul>
                               <li>HTML</li>
                               <li>CSS</li>

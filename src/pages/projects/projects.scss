@@ -13,15 +13,23 @@
 
         .details {
 
+            hr {
+                margin: 10px 0 10px 0;
+            }
+
             section {
                 margin-bottom: 20px;
 
                 h3 {
                     font-size: 1em;
                     margin-bottom: 0px;
-                    .material-icons {
-                        vertical-align: middle;
+
+                    svg {
+                        max-height: 19px;
+                        vertical-align: sub;
+                        margin-right: 5px;
                     }
+
                 }
 
                 ul {

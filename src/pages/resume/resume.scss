@@ -20,11 +20,18 @@
       div.infos {
         margin: 8px 0 10px 0;
         color: $mantra;
-        .material-icons { font-size: 1.4em; }
+
+        svg {
+          max-height: 19px;
+          vertical-align: sub;
+          margin-right: 5px;
+        }
+
       }
 
       p.description { margin-bottom: 0; }
     }
+
     div.line:first-child { margin: 0 0 42px 0; }
     div.line:last-child { margin: 42px 0 0 0; }
   }

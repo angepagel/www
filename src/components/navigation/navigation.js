@@ -11,6 +11,7 @@ import {
   NavLink 
 } from 'reactstrap';
 import { FormattedMessage } from 'react-intl';
+import { Menu as MenuIcon } from 'react-feather';
 import * as API from '../../api/APIUtils';
 import './navigation.scss';
 
@@ -41,7 +42,7 @@ class Navigation extends Component {
             </NavLink>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle}>
-            <i className="material-icons">menu</i>
+            <MenuIcon/>
           </NavbarToggler>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className='ml-auto' navbar>
