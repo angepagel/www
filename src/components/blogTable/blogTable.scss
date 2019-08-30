@@ -31,11 +31,23 @@
           button, a {
             color: $grey-matter;
             border: none;
-            vertical-align: middle;
-          }
-        
-          button:hover, a:hover {
-            background-color: transparent;
+
+            svg {
+              max-height: 21px;
+              margin: 0;
+            }
+
+            &:hover {
+              background-color: transparent !important;
+              box-shadow: none !important;
+            }
+
+            &:active, &:focus {
+              background-color: transparent !important;
+              box-shadow: none !important;
+              border: none !important;
+            }
+
           }
         
           .edit-icon:hover {

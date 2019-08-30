@@ -8,6 +8,10 @@ import {
   ModalBody,
   ModalFooter
 } from 'reactstrap';
+import {
+  Trash2 as TrashIcon,
+  ExternalLink as ExternalLinkIcon
+} from 'react-feather';
 import * as API from '../../api/APIUtils';
 import APICodes from '../../api/APICodes';
 import './uploadsTable.scss';
@@ -103,8 +107,12 @@ class UploadsTable extends Component {
                   <td className="size">{parseFloat(file.size / 1000000.0).toFixed(2)}</td>
                   <td>{new Date(file.date).toUTCString()}</td>
                   <td className="actions">
-                    <Button className="delete-icon" onClick={() => this.showDeleteModal(file.fileName)}><i className="material-icons">delete_forever</i></Button>
-                    <Button className="openinnew-icon" onClick={() => this.openInNewTab(`${process.env.REACT_APP_PROXY}/uploads/${file.fileName}`)}><i className="material-icons">open_in_new</i></Button>
+                    <Button className="delete-icon" onClick={() => this.showDeleteModal(file.fileName)}>
+                      <TrashIcon/>
+                    </Button>
+                    <Button className="openinnew-icon" onClick={() => this.openInNewTab(`${process.env.REACT_APP_PROXY}/uploads/${file.fileName}`)}>
+                      <ExternalLinkIcon/>
+                    </Button>
                   </td>
                 </tr>
               ))

@@ -88,7 +88,6 @@ button.btn {
     color: $white;
     background-color: $purple-crown !important;
     border: 1px solid $purple-crown !important;
-    svg { fill: $white; }
   }
   &:focus { @extend a.main:focus; }
 }

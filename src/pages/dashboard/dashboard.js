@@ -8,6 +8,9 @@ import {
   UncontrolledCollapse,
   Button
 } from 'reactstrap';
+import {
+  Plus as PlusIcon
+} from 'react-feather';
 import { FormattedMessage } from 'react-intl';
 import BlogTable from '../../components/blogTable/blogTable';
 import UploadsTable from '../../components/uploadsTable/uploadsTable';
@@ -22,7 +25,9 @@ class Dashboard extends Component {
             <title>Tableau de bord</title>
           </Helmet>
 
-          <h1 className="page-title"><FormattedMessage id="Dashboard.title" /></h1>
+          <h1 className="page-title">
+            <FormattedMessage id="Dashboard.title"/>
+          </h1>
 
           <Container>
 
@@ -32,7 +37,10 @@ class Dashboard extends Component {
                   <h2><FormattedMessage id="Dashboard.files.title" /> <Button className="toggler" id="toggler_uploads"><i className="material-icons">expand_more</i></Button></h2>
                   <hr/>
                   <UncontrolledCollapse toggler="#toggler_uploads">
-                    <NavLink className="main" to="/dashboard/upload"><i className="material-icons">add</i> <FormattedMessage id="Dashboard.files.upload" /></NavLink>                  
+                    <NavLink className="main" to="/dashboard/upload">
+                      <PlusIcon/>
+                      <FormattedMessage id="Dashboard.files.upload" />
+                    </NavLink>                  
                     <UploadsTable />
                   </UncontrolledCollapse>
                 </Col>
@@ -45,7 +53,10 @@ class Dashboard extends Component {
                   <h2><FormattedMessage id="Dashboard.blog.title" /> <Button className="toggler" id="toggler_blog"><i className="material-icons">expand_more</i></Button></h2>
                   <hr/>
                   <UncontrolledCollapse toggler="#toggler_blog">
-                    <NavLink className="main" to="/dashboard/editor"><i className="material-icons">add</i> <FormattedMessage id="Dashboard.blog.new" /></NavLink>
+                    <NavLink className="main" to="/dashboard/editor">
+                      <PlusIcon/>
+                      <FormattedMessage id="Dashboard.blog.new" />
+                    </NavLink>
                     <BlogTable />
                   </UncontrolledCollapse>
                 </Col>
