@@ -9,6 +9,8 @@ import {
   Button
 } from 'reactstrap';
 import {
+  MessageCircle as MessageCircleIcon,
+  File as FileIcon,
   Plus as PlusIcon
 } from 'react-feather';
 import { FormattedMessage } from 'react-intl';
@@ -19,52 +21,77 @@ import './dashboard.scss';
 class Dashboard extends Component {
   render() {
     return (
-        <div id="dashboard">
+      <div id="dashboard">
 
-          <Helmet>
-            <title>Tableau de bord</title>
-          </Helmet>
+        <Helmet>
+          <title>Tableau de bord</title>
+        </Helmet>
 
-          <h1 className="page-title">
-            <FormattedMessage id="Dashboard.title"/>
-          </h1>
+        <h1 className="page-title">
+          <FormattedMessage id="Dashboard.title"/>
+        </h1>
 
-          <Container>
+        <Container>
+          <Row>
 
-            <section>
+            <Col md="3" id="dashboard_tools">
+              
+              <h2>
+                <FormattedMessage id="Dashboard.tools.title"/>
+              </h2>
+              <hr/>
+              
               <Row>
                 <Col>
-                  <h2><FormattedMessage id="Dashboard.files.title" /> <Button className="toggler" id="toggler_uploads"><i className="material-icons">expand_more</i></Button></h2>
-                  <hr/>
-                  <UncontrolledCollapse toggler="#toggler_uploads">
-                    <NavLink className="main" to="/dashboard/upload">
-                      <PlusIcon/>
-                      <FormattedMessage id="Dashboard.files.upload" />
-                    </NavLink>                  
-                    <UploadsTable />
-                  </UncontrolledCollapse>
+                  <Button id="toggler_blog">
+                    <MessageCircleIcon/>
+                    <FormattedMessage id="Dashboard.tools.blog"/>
+                  </Button>
                 </Col>
               </Row>
-            </section>
 
-            <section>
               <Row>
                 <Col>
-                  <h2><FormattedMessage id="Dashboard.blog.title" /> <Button className="toggler" id="toggler_blog"><i className="material-icons">expand_more</i></Button></h2>
-                  <hr/>
-                  <UncontrolledCollapse toggler="#toggler_blog">
-                    <NavLink className="main" to="/dashboard/editor">
-                      <PlusIcon/>
-                      <FormattedMessage id="Dashboard.blog.new" />
-                    </NavLink>
-                    <BlogTable />
-                  </UncontrolledCollapse>
+                  <Button id="toggler_uploads">
+                    <FileIcon/>
+                    <FormattedMessage id="Dashboard.tools.files"/>
+                  </Button>
                 </Col>
               </Row>
-            </section>
+              
+            </Col>
 
-          </Container>
-        </div>
+            <Col>
+
+              <UncontrolledCollapse toggler="#toggler_blog">
+                <h2>
+                  <FormattedMessage id="Dashboard.blog.title"/>
+                </h2>
+                <hr/>
+                <NavLink className="main" to="/dashboard/editor">
+                  <PlusIcon/>
+                  <FormattedMessage id="Dashboard.blog.add" />
+                </NavLink>
+                <BlogTable />
+              </UncontrolledCollapse>
+
+              <UncontrolledCollapse toggler="#toggler_uploads">
+                <h2>
+                  <FormattedMessage id="Dashboard.files.title"/>
+                </h2>
+                <hr/>
+                <NavLink className="main" to="/dashboard/upload">
+                  <PlusIcon/>
+                  <FormattedMessage id="Dashboard.files.add" />
+                </NavLink>                  
+                <UploadsTable />
+              </UncontrolledCollapse>
+
+            </Col>
+
+          </Row>
+        </Container>
+      </div>
     );
   }
 }
