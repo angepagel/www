@@ -12,8 +12,13 @@ import {
   Alert,
   Button
 } from 'reactstrap';
+import {
+  User as UserIcon,
+  Shield as ShieldIcon
+} from 'react-feather';
 import * as API from '../../api/APIUtils';
 import APICodes from '../../api/APICodes';
+import './login.scss';
 
 class Login extends Component {
 
@@ -66,29 +71,62 @@ class Login extends Component {
           <h1 className="page-title">Connexion</h1>
             <Container>
               <Row>
-                <Col className="mx-auto" lg='6'>
+
+                <Col md="6">
+
+                  <h2>Avertissement</h2>
+
+                  <p>
+                    Vous êtes sur le point de vous authentifier afin d'accéder au système de gestion de contenu de ce site internet. <strong>Tout accès non autorisé est interdit.</strong>
+                  </p>
 
                   <Alert className="mb-4"
                     color={this.state.apicode === 'successful_login' ? 'success' : 'danger'}
                     isOpen={this.state.apicode !== ''}>
                     {APICodes[this.state.apicode]}
                   </Alert>
-                  
-                  <Form onSubmit={this.handleSubmit}>
-                    <FormGroup>
-                      <Label for="username"><i className="material-icons">person</i> Nom d'utilisateur</Label>
-                      <Input required type="text" name="username" onChange={this.handleChange} />
-                    </FormGroup>
-                    <FormGroup>
-                      <Label for="password"><i className="material-icons">security</i> Mot de passe</Label>
-                      <Input required type="password" name="password" onChange={this.handleChange} />
-                    </FormGroup>
-                    <Button className="mt-3" type='submit'>Connexion</Button>
-                  </Form>
+
                 </Col>
+
+                <Col>
+
+                  <Row>
+                    <Col className="mx-auto" lg='8'>
+
+                      <Form onSubmit={this.handleSubmit}>
+
+                        <FormGroup>
+                          <Label for="username">
+                            <UserIcon/>
+                            Nom d'utilisateur
+                          </Label>
+                          <Input required type="text" name="username" onChange={this.handleChange} />
+                        </FormGroup>
+
+                        <FormGroup>
+                          <Label for="password">
+                            <ShieldIcon/>
+                            Mot de passe
+                          </Label>
+                          <Input required type="password" name="password" onChange={this.handleChange} />
+                        </FormGroup>
+                        
+                        <Button className="mt-3" type='submit'>
+                          Connexion
+                        </Button>
+
+                      </Form>
+
+                    </Col>
+                  </Row>
+
+                </Col>
+
               </Row>
             </Container>
+
             {API.isAuth() ? <Redirect to="/dashboard" /> : ''}
+            
         </div>
     );
   }
