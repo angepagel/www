@@ -39,6 +39,14 @@
     "Dashboard.blog.title"      : "Gérer le blog",
     "Dashboard.blog.new"        : "Publier un article",
 
+    "Login.title" : "Connexion",
+    "Login.warning.title"               : "Avertissement",
+    "Login.warning.message"             : "Vous êtes sur le point de vous authentifier afin d'accéder au système de gestion de contenu de ce site internet.",
+    "Login.warning.unauthorized_access" : "Tout accès non autorisé est interdit.",
+    "Login.form.username"   : "Nom d'utilisateur",
+    "Login.form.password"   : "Mot de passe",
+    "Login.form.submit"     : "Connexion",
+
     "NotFound.title"        : "Oups !",
     "NotFound.message"      : "La page que vous recherchez n'existe pas.",
     "NotFound.redirection"  : "Retourner à l'accueil",

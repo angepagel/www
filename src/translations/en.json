@@ -39,6 +39,14 @@
     "Dashboard.blog.title"      : "Manage blog",
     "Dashboard.blog.new"        : "New",
 
+    "Login.title" : "Log In",
+    "Login.warning.title"               : "Warning",
+    "Login.warning.message"             : "You are about to authenticate yourself to access the content management system of this website.",
+    "Login.warning.unauthorized_access" : "Unauthorized access is prohibited.",
+    "Login.form.username"   : "Username",
+    "Login.form.password"   : "Password",
+    "Login.form.submit"     : "Log In",
+
     "NotFound.title"        : "Oops!",
     "NotFound.message"      : "The page you are looking for does not exist.",
     "NotFound.redirection"  : "Go to homepage",

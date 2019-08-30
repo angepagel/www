@@ -12,6 +12,7 @@ import {
   Alert,
   Button
 } from 'reactstrap';
+import { FormattedMessage } from 'react-intl';
 import {
   User as UserIcon,
   Shield as ShieldIcon
@@ -65,67 +66,70 @@ class Login extends Component {
         <div id="login">
 
           <Helmet>
-            <title>Connexion</title>
+            <title>Ange Pagel – Connexion</title>
           </Helmet>
 
-          <h1 className="page-title">Connexion</h1>
-            <Container>
-              <Row>
+          <h1 className="page-title">
+            <FormattedMessage id="Login.title"/>
+          </h1>
 
-                <Col md="6">
+          <Container>
+            <Row>
 
-                  <h2>Avertissement</h2>
+              <Col md="6">
 
-                  <p>
-                    Vous êtes sur le point de vous authentifier afin d'accéder au système de gestion de contenu de ce site internet. <strong>Tout accès non autorisé est interdit.</strong>
-                  </p>
+                <h2><FormattedMessage id="Login.warning.title"/></h2>
 
-                  <Alert className="mb-4"
-                    color={this.state.apicode === 'successful_login' ? 'success' : 'danger'}
-                    isOpen={this.state.apicode !== ''}>
-                    {APICodes[this.state.apicode]}
-                  </Alert>
+                <p>
+                  <FormattedMessage id="Login.warning.message"/> <strong><FormattedMessage id="Login.warning.unauthorized_access"/></strong>
+                </p>
 
-                </Col>
+                <Alert className="mb-4"
+                  color={this.state.apicode === 'successful_login' ? 'success' : 'danger'}
+                  isOpen={this.state.apicode !== ''}>
+                  {APICodes[this.state.apicode]}
+                </Alert>
 
-                <Col>
+              </Col>
 
-                  <Row>
-                    <Col className="mx-auto" lg='8'>
+              <Col>
 
-                      <Form onSubmit={this.handleSubmit}>
+                <Row>
+                  <Col className="mx-auto" lg='8'>
 
-                        <FormGroup>
-                          <Label for="username">
-                            <UserIcon/>
-                            Nom d'utilisateur
-                          </Label>
-                          <Input required type="text" name="username" onChange={this.handleChange} />
-                        </FormGroup>
+                    <Form onSubmit={this.handleSubmit}>
 
-                        <FormGroup>
-                          <Label for="password">
-                            <ShieldIcon/>
-                            Mot de passe
-                          </Label>
-                          <Input required type="password" name="password" onChange={this.handleChange} />
-                        </FormGroup>
-                        
-                        <Button className="mt-3" type='submit'>
-                          Connexion
-                        </Button>
+                      <FormGroup>
+                        <Label for="username">
+                          <UserIcon/>
+                          <FormattedMessage id="Login.form.username"/>
+                        </Label>
+                        <Input required type="text" name="username" onChange={this.handleChange} />
+                      </FormGroup>
 
-                      </Form>
+                      <FormGroup>
+                        <Label for="password">
+                          <ShieldIcon/>
+                          <FormattedMessage id="Login.form.password"/>
+                        </Label>
+                        <Input required type="password" name="password" onChange={this.handleChange} />
+                      </FormGroup>
+                      
+                      <Button className="mt-3" type='submit'>
+                      <FormattedMessage id="Login.form.submit"/>
+                      </Button>
 
-                    </Col>
-                  </Row>
+                    </Form>
 
-                </Col>
+                  </Col>
+                </Row>
 
-              </Row>
-            </Container>
+              </Col>
 
-            {API.isAuth() ? <Redirect to="/dashboard" /> : ''}
+            </Row>
+          </Container>
+
+          {API.isAuth() ? <Redirect to="/dashboard" /> : ''}
             
         </div>
     );
