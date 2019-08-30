@@ -3,23 +3,27 @@
 footer {
 
     #links {
-        margin-top: 84px;
+        margin-top: 68px;
         margin-bottom: 42px;
-
-        .col-sm-6 {
-            margin-top: 21px;
-            margin-bottom: 21px;
-        }
 
         ul {
             list-style-type: none;
             padding: 0;
-            a { color: $mantra; }
-            a:focus { @extend a:hover; }
-            a:active {
-                @extend a:hover;
-                color: $purple-crown !important;
+
+            a {
+                color: $mantra;
+
+                &:focus {
+                    @extend a:hover;
+                }
+
+                &:active {
+                    @extend a:hover;
+                    color: $purple-crown !important;
+                }
+            
             }
+
         }
 
     }
@@ -28,25 +32,27 @@ footer {
         background-color: $purple-crown;
         color: $white;
         text-align: center;
-        padding: 10px 0 10px 0;
+        padding: 10px 0;
 
         a.main {
             color: $purple-crown;
             background-color: $white;
             border: none;
+
+            &:hover {
+                color: $white;
+                background-color: $grey-matter;
+            }
+            
         }
 
-        a.main:hover {
-            color: $white;
-            background-color: $grey-matter;
-        }
     }
 
     #mentions {
         background-color: $grey-matter;
         color: $inner-peace;
         text-align: center;
-        padding: 10px 0 10px 0;
+        padding: 10px 0;
     }
 
 }

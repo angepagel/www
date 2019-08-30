@@ -4,10 +4,19 @@
   @extend #blogTable;
 
   table {
+
     tbody {
+
       tr {
-        td.size::after { content: ' Mo'; }
+
+        td.size::after {
+          content: ' Mo';
+        }
+
       }
+
     }
+
   }
+  
 }

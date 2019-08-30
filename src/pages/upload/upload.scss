@@ -2,13 +2,12 @@
 
 #upload {
 
-    section { margin: 42px 0 42px 0; }
     section:first-child { margin: 0 0 42px 0; }
     section:last-child { margin: 42px 0 0 0; }
     section:only-child { margin: 0; }
 
     .url {
-        margin: 21px 0 21px 0;
+        margin: 26px 0 26px 0;
 
         button {
             background-color: $grey-matter;

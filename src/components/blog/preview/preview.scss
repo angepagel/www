@@ -2,8 +2,8 @@
 
 .preview {
     background-color: $white;
-    border-radius: 40px;
-    margin: 42px 0 42px 0;
+    border-radius: 42px;
+    margin: 42px 0;
     transition: all 0.6s;
 
     &:hover {
@@ -17,24 +17,24 @@
         background-position: center;
         padding: 0;
 
-        border-radius: 40px 0 0 40px;
+        border-radius: 42px 0 0 42px;
         @media (max-width: 767.98px) {
-            & { border-radius: 40px 40px 0 0; }
+            & { border-radius: 42px 42px 0 0; }
         }
     }
 
     .body { 
-        padding: 20px 30px 30px 30px;
+        padding: 26px;
 
         .infos {
             display: inline-block;
-            margin-top: 10px;
+            margin-top: 16px;
 
             .category {
                 color: $mantra;
                 border: 1px solid rgba($purple-crown, 0.6);
-                border-radius: 15px;
-                padding: 5px 14px 5px 14px;
+                border-radius: 16px;
+                padding: 6px 16px;
             }
 
             .date {
@@ -45,7 +45,7 @@
         }
 
         .content {
-            margin: 21px 0px 21px 0px;
+            margin: 26px 0;
         }
 
     }

@@ -5,19 +5,20 @@
     .project {
         @extend .preview;
 
-        margin: 42px 0 0px 0;
+        margin: 42px 0 0 0;
 
         .image {
-            border-radius: 40px 40px 0 0 !important; 
+            border-radius: 42px 42px 0 0 !important; 
         }
 
         .details {
 
             hr {
-                margin: 10px 0 10px 0;
+                margin: 10px 0;
             }
 
             section {
+                margin-top: 0;
                 margin-bottom: 20px;
 
                 h3 {

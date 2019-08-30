@@ -2,31 +2,41 @@
 
 article {
 
-  .post {
-    @extend .preview;
+    .post {
+        @extend .preview;
 
-    margin-top: 84px;
+        margin-top: 68px;
 
-    .image { border-radius: 40px 40px 0 0; }
+        .image {
+            border-radius: 42px 42px 0 0;
 
-    h1 { font-size: 2.4em; }
+            span.credits {
+                color: $white;
+                background-color: $grey-matter;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                padding: 6px 16px;
+            }
 
-    span.credits {
-      color: $white;
-      background-color: $grey-matter;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      padding: 5px 14px 5px 14px;
+        }
+
+        .body {
+            padding: 42px 0;
+
+            h1 {
+                font-size: 2.4em;
+            }
+
+            img {
+                display: block;
+                margin: 42px auto;
+                border-radius: 26px;
+                max-width: 100%;
+            }
+
+        }
+
     }
-  
-    img {
-      display: block;
-      margin: 42px auto 42px auto;
-      border-radius: 20px;
-      max-width: 100%;
-    }
-
-  }
   
 }

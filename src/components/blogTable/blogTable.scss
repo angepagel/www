@@ -2,7 +2,7 @@
 
 #blogTable {
 
-  padding: 21px 0 21px 0;
+  margin: 26px 0;
 
   table {
 
@@ -18,8 +18,13 @@
       tr {
         transition: all 0.3s;
 
-        td { vertical-align: middle; }
-        td.id::before { content: '#'; }
+        td {
+          vertical-align: middle;
+        }
+        
+        td.id::before {
+          content: '#';
+        }
 
         td.actions {
           
@@ -29,18 +34,31 @@
             vertical-align: middle;
           }
         
-          button:hover, a:hover { background-color: transparent; }
+          button:hover, a:hover {
+            background-color: transparent;
+          }
         
-          .edit-icon:hover { color: $purple-crown; }
-          .delete-icon:hover { color: $red-strenght; }
-          .openinnew-icon:hover { color: $green-pulse; }
+          .edit-icon:hover {
+            color: $purple-crown;
+          }
+
+          .delete-icon:hover {
+            color: $red-strenght;
+          }
+
+          .openinnew-icon:hover {
+            color: $green-pulse;
+          }
+
         }
+
       }
 
       tr:hover {
         background-color: rgba($inner-peace, 0.12);
         transition: all 0.3s;
       }
+
     }
 
   }

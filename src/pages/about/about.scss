@@ -2,21 +2,6 @@
 
 #about {
 
-  hr { margin: 42px 0 42px 0; }
-  section { margin: 33px 0 33px 0; }
-
-  #interests {
-    .row {
-      text-align: center;
-
-      img {
-        max-height: 133px;
-        border-radius: 100%;
-        margin: 21px 0 21px 0;
-      }
-    }
-  }
-
   .terminal {
     background-color: $mind-white-open;
     border-radius: 3px;
@@ -35,14 +20,35 @@
       color: $mind-white-open;
       line-height: 1.2em;
       border-radius: 0 0 3px 3px;
-      padding: 7px;
+      padding: 10px;
 
       a {
         color: inherit;
         background: none;
+
+        &:hover {
+          color: $blue-link;
+        }
+
       }
-      a:hover { color: $blue-link; }
+
     }
+    
+  }
+
+  #interests {
+
+    .row {
+      text-align: center;
+
+      img {
+        max-height: 133px;
+        border-radius: 100%;
+        margin: 26px 0;
+      }
+
+    }
+    
   }
 
 }

@@ -9,11 +9,16 @@ body {
 }
 
 
+section {
+  margin: 42px 0;
+}
+
+
 h1 {
   font-size: 4rem;
   &.page-title {
     text-align: center;
-    margin: 42px 0 84px 0;
+    margin: 42px 0 68px 0;
   }
 }
 h2 { font-size: 2em; }
@@ -51,11 +56,11 @@ a.main{
   background-color: transparent;
   color: $purple-crown;
   border: 1px solid $purple-crown;
-  border-radius: 20px;
-  padding: 7px 15px 7px 15px;
+  border-radius: 26px;
+  padding: 6px 16px;
   svg {
-    max-height: 1.1em;
-    margin-right: 5px;
+    max-height: 19px;
+    margin-right: 6px;
     vertical-align: sub;
     transition: all 0.2s;
   }
@@ -127,7 +132,7 @@ button.cancel {
 blockquote {
   color: $mantra;
   border-left: 4px solid $purple-crown;
-  padding-left: 20px;
+  padding-left: 16px;
   margin-left: auto;
   margin-right: auto;
   width: 75%;

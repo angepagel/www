@@ -19,15 +19,22 @@ nav {
             color: $white !important;
             background: linear-gradient(to left, $purple-crown, $purple-crown) no-repeat bottom center;
             background-size: 0% 2px;
+
+            &:hover {
+                background-size: 100% 2px;
+            }
+
+            &:focus, &.active {
+                @extend .nav-link:hover;
+            }
+
         }
 
-        .nav-link:hover { background-size: 100% 2px; }
-        .nav-link:focus, .active { @extend .nav-link:hover; }
     }
 
     .navbar-toggler {
         outline: 0;
-        border-radius: 20px;
+        border-radius: 26px;
         border-width: 2px;
         transition: all 0.3s;
     }
@@ -51,10 +58,16 @@ nav {
                 background-size: 100% 2px;
             }
 
-            &:focus { @extend .nav-link:hover; }
+            &:focus {
+                @extend .nav-link:hover;
+            }
+
         }
 
-        .active { @extend .nav-link:hover; }
+        .active {
+            @extend .nav-link:hover;
+        }
+        
     }
 
 }

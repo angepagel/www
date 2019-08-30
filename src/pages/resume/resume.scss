@@ -1,38 +1,51 @@
 @import '../../scss/colors.scss';
 
 #resume {
+
   hr {
     width: 75%;
     margin: 42px auto 42px auto;
   }
 
   #download {
-    margin-bottom: 84px;
-    .col-12 { margin-bottom: 21px; }
+    margin: 0 0 68px 0;
   }
 
   #education, #experience, #events {
-    h2 { margin-bottom: 42px; }
+
+    h2 {
+      margin-bottom: 42px;
+    }
 
     div.line { 
       margin: 42px 0 42px 0;
 
       div.infos {
-        margin: 8px 0 10px 0;
         color: $mantra;
+        margin: 6px 0 10px 0;
 
         svg {
           max-height: 19px;
           vertical-align: sub;
-          margin-right: 5px;
+          margin-right: 6px;
         }
 
       }
 
-      p.description { margin-bottom: 0; }
+      p.description {
+        margin-bottom: 0;
+      }
+
+      &:first-child {
+        margin: 0 0 42px 0;
+      }
+
+      &:last-child {
+        margin: 42px 0 0 0;
+      }
+
     }
 
-    div.line:first-child { margin: 0 0 42px 0; }
-    div.line:last-child { margin: 42px 0 0 0; }
   }
+  
 }
