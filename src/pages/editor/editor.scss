@@ -10,6 +10,7 @@
     form {
 
         label {
+            color: $grey-matter;
 
             svg {
                 max-height: 19px;
@@ -33,6 +34,7 @@
         }
 
         div.required_fields {
+            color: $mantra;
             text-align: right;
             margin-bottom: 16px;
         
