@@ -7,17 +7,43 @@
         margin-top: 42px !important;
     }
 
-    textarea {
-        min-height: 240px;
-    }
+    form {
 
-    div.required {
-        color: $mantra;
-        text-align: right;
-    }
+        label {
 
-    span.required {
-        color: $red-strenght;
+            svg {
+                max-height: 19px;
+                vertical-align: sub;
+                margin-right: 6px;
+            }
+    
+            &.required::after {
+                content: '*';
+                color: $red-strenght;
+            }
+    
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        textarea {
+            min-height: 240px;
+        }
+
+        div.required_fields {
+            text-align: right;
+            margin-bottom: 16px;
+        
+            &::before {
+                content: '*';
+                color: $red-strenght;
+                margin-right: 6px;
+            }
+    
+        }
+
     }
 
 }

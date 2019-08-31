@@ -10,6 +10,13 @@ import {
   Input,
   Button
 } from 'reactstrap';
+import {
+  Image as ImageIcon,
+  UserCheck as UserCheckIcon,
+  Tag as TagIcon,
+  Edit3 as EditIcon,
+  AlignLeft as AlignLeftIcon
+} from 'react-feather';
 import * as API from '../../api/APIUtils';
 import APICodes from '../../api/APICodes';
 import './editor.scss';
@@ -94,7 +101,6 @@ class Editor extends Component {
         <Container>
 
           <h2>Prévisualisation</h2>
-
           <hr/>
 
           <article>
@@ -136,13 +142,20 @@ class Editor extends Component {
                 <Row>
                   <Col>
                     <FormGroup>
-                      <Label for="image"><i className="material-icons">photo</i> Image d'en-tête<span className="required">*</span></Label>
+                      <Label className="required" for="image">
+                        <ImageIcon/>
+                        Image d'en-tête
+                      </Label>
                       <Input required type="text" name="image" onChange={this.handleChange} value={this.state.image} />
                     </FormGroup>
                   </Col>
+
                   <Col>
                     <FormGroup>
-                      <Label for="img_credit"><i className="material-icons">portrait</i> Crédit photo</Label>
+                      <Label for="img_credit">
+                        <UserCheckIcon/>
+                        Crédit photo
+                      </Label>
                       <Input type="text" name="img_credit" onChange={this.handleChange} value={this.state.img_credit} />
                     </FormGroup>
                   </Col>
@@ -151,13 +164,20 @@ class Editor extends Component {
                 <Row>
                   <Col>
                     <FormGroup>
-                      <Label for="title"><i className="material-icons">short_text</i> Titre<span className="required">*</span></Label>
+                      <Label className="required" for="title">
+                        <EditIcon/>
+                        Titre
+                      </Label>
                       <Input required type="text" name="title" onChange={this.handleChange} value={this.state.title} />
                     </FormGroup>
                   </Col>
+
                   <Col>
                     <FormGroup>
-                      <Label for="category"><i className="material-icons">bookmark</i> Catégorie<span className="required">*</span></Label>
+                      <Label className="required" for="category">
+                        <TagIcon/>
+                        Catégorie
+                      </Label>
                       <Input required type="text" name="category" onChange={this.handleChange} value={this.state.category} />
                     </FormGroup>
                   </Col>
@@ -166,17 +186,22 @@ class Editor extends Component {
                 <Row>
                   <Col>
                     <FormGroup>
-                      <Label for="body"><i className="material-icons">chat</i> Corps<span className="required">*</span></Label>
+                      <Label className="required" for="body">
+                        <AlignLeftIcon/>
+                        Corps
+                      </Label>
                       <Input required type="textarea" name="body" onChange={this.handleChange} value={this.state.body} />
                     </FormGroup>
                   </Col>
                 </Row>
 
-                <div className="required">
-                  <span className="required">*</span> Champs requis
+                <div className="required_fields">
+                  Champs requis
                 </div>
 
-                <Button type="submit">{this.state.edit ? 'Modifier' : 'Publier'}</Button>
+                <Button type="submit">
+                  {this.state.edit ? 'Modifier' : 'Publier'}
+                </Button>
 
               </Form>
 
